@@ -14,26 +14,26 @@ class Paper:
 
     Attributes
     -----------
-    paper_record : strt
-        a string containing paper record for an individual paper
+    paper_record : str
+        a string containing raw paper record for an individual paper
     paper_id : int
         an unique id of the paper
     pub_year : int
         publication year of the paper
-    metrics_org : list
-        a list containing metrics used in the paper. 
-    metrics_sm : list
-        a list containing first level grouping of original metrics (e.g., voice features -> speech features).
-    metrics_lg : list
-        a list containing second level grouping of original metrics (e.g., voice features -> verbal).
-    outcome_sm : list
-        a list containing first level grouping of original outcome (e.g., collaboration quality -> coordination)
-    outcome_lg : list
-        a list containing second level grouping of original outcome (e.g., collaboration quality -> process)
+    metrics_org : dict
+        a dict containing metrics used in the paper. 
+    metrics_sm : dict
+        a dict containing first level grouping of original metrics (e.g., voice features -> speech features).
+    metrics_lg : dict
+        a dict containing second level grouping of original metrics (e.g., voice features -> verbal).
+    outcome_sm : dict
+        a dict containing first level grouping of original outcome (e.g., collaboration quality -> coordination)
+    outcome_lg : dict
+        a dict containing second level grouping of original outcome (e.g., collaboration quality -> process)
     relationship : dict
-        a dictionary mapping relationship between metrics and outcomes. Keys represent metric and values represent outcomes.
-    data_types : list
-        a list containg types of data used in the paper.
+        a list of tuples mapping relationship between metrics and outcomes. 
+    data_types : dict
+        a dict containg types of data used in the paper.
 
 
     Methods
@@ -43,17 +43,17 @@ class Paper:
     get_pub_id ()
         Returns publication year of the paper
     get_metrics_org()
-        Returns a list of metrics used in the paper
+        Returns a dict of metrics used in the paper
     get_metrics_sm ()
-        Returns a list of first level grouping of metrics
+        Returns a dict of first level grouping of metrics
     get_metrics_lg ()
-        Returns a list of second level grouping of metrics   
+        Returns a dict of second level grouping of metrics   
     get_outcome_sm ()
-        Returns a list of first level grouping of outcomes
+        Returns a dict of first level grouping of outcomes
     get_outcome_lg ()
-        Returns a list of second level grouping of outcomes
+        Returns a dict of second level grouping of outcomes
     get_relationship ()
-        Returns dictionary mapping metrics to outcomes
+        Returns list of tuples mapping metrics to outcomes
     get_data_types ()
         Returns a list of data used in the paper
 
