@@ -1,12 +1,12 @@
 # How to access formatted paper records
 
-This tutorial is targetted at providing information on accessing mmca literature review data ( data metric sheet) in a formatted version.
+This tutorial is targeted at providing information on accessing mmca literature review data ( data metric sheet) in a formatted version.
 
 
 
 * step-1: first import LiteratureDataset from mmcalib
 * step-2: create an object of LiteratureDataset class by specify file_path of data_metric csv file.
-* step-3: call populate_dataset function on Literature dataset class object.
+* step-3: call populate_dataset function on the Literature dataset class object.
 
 
 ```python
@@ -28,7 +28,7 @@ lit.populate_dataset()
 
 
 ### Accessing paper record
-Once you have created Literature Dataset object and populated it with papers record, you can access paper records.
+Once you have created a Literature Dataset object and populated it with papers record, you can access paper records.
 
 
 ```python
@@ -56,7 +56,7 @@ paper.print_paper_record()
 
 
 ### Accessing particular details of the paper
-You can access information like data, metrics, outcomes, relationship in a structured way once you have paper obejct.
+You can access information like data, metrics, outcomes, and relationships in a structured way once you have a paper object.
 
 
 ```python
@@ -88,7 +88,7 @@ pp.pprint(metrics_org)
      '4': 'task actions'}
 
 
-In a similar way you can access the outcomes investigated in the paper.
+Similarly, you can access the outcomes investigated in the paper.
 
 
 
@@ -98,7 +98,7 @@ outcomes_lg = paper.get_outcomes_lg
 ```
 
 ### Accessing relationship data
-Each paper object has relationship mapping in the form of a dictionary.
+Each paper object has a relationship mapping in the form of a list of tuples (metric,outcome,method).
 
 
 ```python
@@ -127,7 +127,7 @@ pp.pprint(relationship)
      ('gesture', 'frustration', ' regression')]
 
 
-For example the first tuple ('dialogue acts', 'engagement', ' regression') represents that the paper has found a relationship between dialogue acts and engagment through regression method.
+For example, the first tuple ('dialogue acts', 'engagement', ' regression') represents that the paper has found a relationship between dialogue acts and engagement through the regression method.
 
 
 ```python
