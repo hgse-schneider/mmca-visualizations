@@ -1,62 +1,66 @@
-# How to access formatted paper records
+# How to use mmcalib library
 
-This tutorial is targeted at providing information on accessing mmca literature review data ( data metric sheet) in a formatted version.
-
-
+This tutorial is targetted at providing information on accessing mmca literature review data in a formatted version.
 
 * step-1: first import LiteratureDataset from mmcalib
-* step-2: create an object of LiteratureDataset class by specify file_path of data_metric csv file.
-* step-3: call populate_dataset function on the Literature dataset class object.
+* step-2: create an object of LiteratureDataset class by specify file_paths of data_metric, paper details, and paper meta CSV files.
+
 
 
 ```python
 # import required classes
 from mmcalib import LiteratureDataset
 
-# instantiating LiteratureDataset
-lit = LiteratureDataset('./data_metric_constructs.csv')
 
-# populating the dataset with papers information
-lit.populate_dataset()
+# instantiating LiteratureDataset
+lit = LiteratureDataset('4.2023 Summer - data_metrics_constructs.csv',
+                       '4.2023 Summer - paper_details.csv',
+                       '4.2023 Summer - paper_meta.csv')
+
 ```
 
-    1. Record parsing begins...
-    2. Record parsing completed
-       Total 155 records are parsed
-    3. Populating literature dataset
-    4. Literature dataset is succefully populated
+    Populating with paper records ...
+    Literature dataset is succefully populated. 
+      Total papers: 144
+    Updates paper records with study setting, learning task and sample size
 
 
 ### Accessing paper record
-Once you have created a Literature Dataset object and populated it with papers record, you can access paper records.
+Once you have created Literature Dataset object and populated it with papers record, you can access paper records.
 
 
 ```python
 # fetching a paper with a particular id
-paper = lit.get_paper(11)
+paper = lit.get_paper(10)
 
 # printing paper details
 paper.print_paper_record()
 ```
 
     
-    ####################   PAPER ID: 11     ####################
+    ####################   PAPER ID: 10     ####################
     
-    Data: {'II': 'video', 'IV': 'kinesiology', 'V': 'log data'}
-    Metrics: {'1': 'dialogue acts', '2': 'facial expression', '3': 'gesture', '4': 'task actions'}
-    Metrics smaller: {'1': 'speech content', '2': 'facial expressions', '3': 'hand motion', '4': 'task-related'}
-    Metrics larger: {'1': 'verbal', '2': 'head', '3': 'body', '4': 'log data'}
-    Outcomes smaller: {'A': 'engagement', 'B': 'frustration', 'c': 'learning gains'}
-    Outcomes larger: {'A': 'cognitive engagement', 'B': 'affective', 'c': 'learning'}
-    Outcomes type: {'A': 'process', 'B': 'process', 'c': 'product'}
-    Results: [('dialogue acts', 'engagement', ' regression'), ('facial expression', 'engagement', ' regression'), ('gesture', 'engagement', ' regression'), ('dialogue acts', 'frustration', ' regression'), ('facial expression', 'frustration', ' regression'), ('gesture', 'frustration', ' regression')]
+    Year: 2018
+    Study setting: lab
+    Learning task: Each dyad was assigned a sandwich-building task: one participant made verbal references to visible ingredients they would like added to their sandwich, while the other participant assembled those ingredients into a sandwich.
+    Study setting: G=13; I=26
+    Data: {'i': 'eye gaze'}
+    Metrics: {'1': 'gaze fixations', '2': 'gaze saccades'}
+    Metrics smaller: {'1': 'visual attention', '2': 'eye motion'}
+    Metrics larger: {'1': 'gaze', '2': 'gaze'}
+    Outcomes: {'a': 'task performance'}
+    Outcomes smaller: {'a': 'performance'}
+    Outcomes larger: {'a': 'product'}
+    Outcomes instrument: {'a': 'researcher coded'}
+    Results: 1+2-A: correlation: nonsig
+    Results: [('visual attention', 'performance', ' correlation'), ('eye motion', 'performance', ' correlation')]
     
     ############################################################
     
 
 
 ### Accessing particular details of the paper
-You can access information like data, metrics, outcomes, and relationships in a structured way once you have a paper object.
+You can access information like data, metrics, outcomes, relationship in a structured way once you have paper obejct.
 
 
 ```python
@@ -82,52 +86,47 @@ metrics_lg = paper.get_metrics_lg()
 pp.pprint(metrics_org)
 ```
 
-    {'1': 'dialogue acts',
-     '2': 'facial expression',
-     '3': 'gesture',
-     '4': 'task actions'}
+    {'1': 'gaze fixations', '2': 'gaze saccades'}
 
 
-Similarly, you can access the outcomes investigated in the paper.
+In a similar way you can access the outcomes investigated in the paper.
 
 
 
 ```python
-outcomes_sm = paper.get_outcomes_sm
-outcomes_lg = paper.get_outcomes_lg
+outcomes_sm = paper.get_outcomes_sm()
+outcomes_lg = paper.get_outcomes_lg()
 ```
 
+
+```python
+pp.pprint(outcomes_sm)
+```
+
+    {'a': 'performance'}
+
+
 ### Accessing relationship data
-Each paper object has a relationship mapping in the form of a list of tuples (metric,outcome,method).
+Each paper object has relationship mapping in the form of a dictionary.
 
 
 ```python
 # accessing raw relationship codes
-relationship = paper.get_relationship()
-pp.pprint(relationship)
-```
-
-    '"1,2,3-A: regression: sig;1,2,3-B: regression: sig;1,2,3-C: regression: sig"'
-
-
-
-```python
-# accessing parsed relationship codes
-# each tuple consist of three items, (metric,outcome,method)
+raw_relationship = paper.get_raw_relationship()
+print('Raw relationship:',raw_relationship)
 
 relationship = paper.parse_relationship()
+print('Processed relationshp:')
 pp.pprint(relationship)
 ```
 
-    [('dialogue acts', 'engagement', ' regression'),
-     ('facial expression', 'engagement', ' regression'),
-     ('gesture', 'engagement', ' regression'),
-     ('dialogue acts', 'frustration', ' regression'),
-     ('facial expression', 'frustration', ' regression'),
-     ('gesture', 'frustration', ' regression')]
+    Raw relationship: 1+2-A: correlation: nonsig
+    Processed relationshp:
+    [('visual attention', 'performance', ' correlation'),
+     ('eye motion', 'performance', ' correlation')]
 
 
-For example, the first tuple ('dialogue acts', 'engagement', ' regression') represents that the paper has found a relationship between dialogue acts and engagement through the regression method.
+Parsed relationships are in tuple form. For example the first tuple ('visual attention', 'performance', ' correlation') represents that the paper has found a relationship between visual attention and performance using correlation analysis.
 
 
 ```python
