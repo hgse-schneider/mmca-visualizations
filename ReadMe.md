@@ -1,4 +1,17 @@
-# How to use mmcalib library
+# Multimodal Collaboration Analytics (MMCA) Literature Review 
+This repository contains source code for analyzing literature review dataset of MMCA.
+
+
+
+![](dashboard_demo.gif)
+
+
+
+## Setting up environment
+First, you need to install required python packages and for that we recommend you set-up a virtual envrioment. 
+You can use `requirement.txt` file which contains python packages list. You can use that file to setup your envrionment
+
+## How to access formatted paper records using mmca library
 
 This tutorial is targetted at providing information on accessing mmca literature review data in a formatted version.
 
@@ -127,6 +140,17 @@ pp.pprint(relationship)
 
 
 Parsed relationships are in tuple form. For example the first tuple ('visual attention', 'performance', ' correlation') represents that the paper has found a relationship between visual attention and performance using correlation analysis.
+
+### Generating an interactive dashboard for exploration
+Run following command to generate a dashboard.
+
+```
+> python3 dashboard_mmca.py
+```
+
+Next, open your browser and type `http://localhost:8070`
+
+![](dashboard_demo.gif)
 
 
 ```python
