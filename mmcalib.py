@@ -9,108 +9,109 @@ author: Pankaj Chejara (pankajchejara23@gmail.com)
 from collections import Counter
 import pandas as pd
 
-def reduce_intensity(c,intensity=.2):
-    return c.replace('0.8','0.2')
+
+def reduce_intensity(c, intensity=.2):
+    return c.replace('0.8', '0.2')
+
 
 color = ["rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "magenta",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "magenta",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "magenta",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)",
-                    "rgba(188, 189, 34, 0.8)",
-                    "rgba(23, 190, 207, 0.8)",
-                    "rgba(31, 119, 180, 0.8)",
-                    "rgba(255, 127, 14, 0.8)",
-                    "rgba(44, 160, 44, 0.8)",
-                    "rgba(214, 39, 40, 0.8)",
-                    "rgba(148, 103, 189, 0.8)",
-                    "rgba(140, 86, 75, 0.8)",
-                    "rgba(227, 119, 194, 0.8)",
-                    "rgba(127, 127, 127, 0.8)"]
-
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "magenta",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "magenta",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "magenta",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)",
+         "rgba(188, 189, 34, 0.8)",
+         "rgba(23, 190, 207, 0.8)",
+         "rgba(31, 119, 180, 0.8)",
+         "rgba(255, 127, 14, 0.8)",
+         "rgba(44, 160, 44, 0.8)",
+         "rgba(214, 39, 40, 0.8)",
+         "rgba(148, 103, 189, 0.8)",
+         "rgba(140, 86, 75, 0.8)",
+         "rgba(227, 119, 194, 0.8)",
+         "rgba(127, 127, 127, 0.8)"]
 
 
 class Paper:
@@ -190,7 +191,8 @@ class Paper:
 
 
     """
-    def  __init__(self,paper_record):
+
+    def __init__(self, paper_record):
         self.paper_record = paper_record
         self.paper_id = paper_record['id']
         self.pub_year = None
@@ -203,20 +205,24 @@ class Paper:
         self.sensor = self.parsed_items(paper_record['sensor'])
         self.data_metric = self.parsed_items(paper_record['data_per_metric'])
         self.metrics_org = self.parsed_items(paper_record['metric'])
-        self.metrics_sm = self.parsed_items(paper_record['metric_smaller_category'])
-        self.metrics_lg = self.parsed_items(paper_record['metric_larger_category'])
+        self.metrics_sm = self.parsed_items(
+            paper_record['metric_smaller_category'])
+        self.metrics_lg = self.parsed_items(
+            paper_record['metric_larger_category'])
 
         # Outcome
         self.outcomes_org = self.parsed_items(paper_record['outcome'])
-        self.outcomes_sm = self.parsed_items(paper_record['outcome_smaller_category'])
-        self.outcomes_lg = self.parsed_items(paper_record['outcome_larger_category'])
-        self.outcomes_instrument = self.parsed_items(paper_record['outcome_instrument'])
+        self.outcomes_sm = self.parsed_items(
+            paper_record['outcome_smaller_category'])
+        self.outcomes_lg = self.parsed_items(
+            paper_record['outcome_larger_category'])
+        self.outcomes_instrument = self.parsed_items(
+            paper_record['outcome_instrument'])
 
         # Relationship
         self.raw_relationship = paper_record['analysis_and_results mm-oo:analysis:resultsig']
 
-
-    def set_pub_year(self,year):
+    def set_pub_year(self, year):
         """
         Attributes
         ---------
@@ -225,7 +231,7 @@ class Paper:
         """
         self.pub_year = year
 
-    def set_study_setting(self,study_setting):
+    def set_study_setting(self, study_setting):
         """
         Attributes
         ---------
@@ -234,7 +240,7 @@ class Paper:
         """
         self.study_setting = study_setting
 
-    def set_sample_size(self,sample):
+    def set_sample_size(self, sample):
         """
         Attributes
         ---------
@@ -243,7 +249,7 @@ class Paper:
         """
         self.sample_size = sample
 
-    def set_task(self,task):
+    def set_task(self, task):
         """
         Attributes
         ---------
@@ -254,7 +260,7 @@ class Paper:
 
     def get_study_setting(self):
         return self.study_setting
-    
+
     def get_sensor(self):
         return self.sensor
 
@@ -357,8 +363,7 @@ class Paper:
         """
         return self.raw_relationship
 
-
-    def parsed_items(self,text):
+    def parsed_items(self, text):
         """
         This general function takes a string which contains data in a particular format (e.g.,  VI) EDA).
         The function then process the string, extract the information in dictionary data structure.
@@ -377,10 +382,10 @@ class Paper:
 
         """
         # remove additional quotes
-        text_no_quotes = text.replace('\"','')
+        text_no_quotes = text.replace('\"', '')
         text_items = text_no_quotes.split('\n')
 
-        pre_text_items = [item for item in text_items if item != '' ]
+        pre_text_items = [item for item in text_items if item != '']
         labels = [item.split(')')[1].strip() for item in pre_text_items]
         index = [item.split(')')[0].strip() for item in pre_text_items]
 
@@ -388,12 +393,11 @@ class Paper:
         index = [item.lower() for item in index]
 
         pre_met = {}
-        for ind,lab in zip(index,labels):
+        for ind, lab in zip(index, labels):
             pre_met[ind] = lab.lower()
         return pre_met
 
-
-    def parse_relationship(self,item_index = False):
+    def parse_relationship(self, item_index=False):
         """
         This function processess relationship data and prepare a mapping between metrics and outcomes.
 
@@ -406,17 +410,17 @@ class Paper:
         """
         data = self.raw_relationship
 
-        data = data.replace('+',',')
-        data = data.replace('*',',')
+        data = data.replace('+', ',')
+        data = data.replace('*', ',')
 
         if data.strip() == '':
             return []
         metrics_org = self.metrics_org
         metrics_sm = self.metrics_sm
         outcome_smaller = self.outcomes_sm
-        text_no_quotes = data.replace('\"','')
+        text_no_quotes = data.replace('\"', '')
         text_items = text_no_quotes.split('\n')
-        pre_text_items = [item for item in text_items if item != '' ]
+        pre_text_items = [item for item in text_items if item != '']
         rel_tuples = []
         for rel in pre_text_items:
             parts = rel.split(':')
@@ -431,38 +435,40 @@ class Paper:
             for metric in metrics:
                 for outcome in outcomes:
                     if item_index:
-                        rel_tuples.append((metric,outcome,rel_method))
+                        rel_tuples.append((metric, outcome, rel_method))
                     else:
-                        rel_tuples.append((metrics_sm[metric],outcome_smaller[outcome],rel_method))
+                        rel_tuples.append(
+                            (metrics_sm[metric], outcome_smaller[outcome], rel_method))
 
         return rel_tuples
 
     def __str__(self):
-        return 'Paper id:{} '.format(self.paper_id,self.data_types)
+        return 'Paper id:{} '.format(self.paper_id, self.data_types)
 
     def print_paper_record(self):
         """
             This function print the paper record.
         """
-        print('\n####################   PAPER ID: {}     ####################\n'.format(self.paper_id))
+        print('\n####################   PAPER ID: {}     ####################\n'.format(
+            self.paper_id))
         if self.pub_year:
-            print('Year:',self.pub_year)
+            print('Year:', self.pub_year)
         if self.study_setting:
-            print('Study setting:',self.study_setting)
+            print('Study setting:', self.study_setting)
         if self.task:
-            print('Learning task:',self.task)
+            print('Learning task:', self.task)
         if self.sample_size:
-            print('Study setting:',self.sample_size)
-        print('Data:',self.data)
-        print('Metrics:',self.metrics_org)
-        print('Metrics smaller:',self.metrics_sm)
-        print('Metrics larger:',self.metrics_lg)
-        print('Outcomes:',self.outcomes_org)
-        print('Outcomes smaller:',self.outcomes_sm)
-        print('Outcomes larger:',self.outcomes_lg)
-        print('Outcomes instrument:',self.outcomes_instrument)
-        print('Results:',self.raw_relationship)
-        print('Results:',self.parse_relationship())
+            print('Study setting:', self.sample_size)
+        print('Data:', self.data)
+        print('Metrics:', self.metrics_org)
+        print('Metrics smaller:', self.metrics_sm)
+        print('Metrics larger:', self.metrics_lg)
+        print('Outcomes:', self.outcomes_org)
+        print('Outcomes smaller:', self.outcomes_sm)
+        print('Outcomes larger:', self.outcomes_lg)
+        print('Outcomes instrument:', self.outcomes_instrument)
+        print('Results:', self.raw_relationship)
+        print('Results:', self.parse_relationship())
         print('\n############################################################\n')
 
 
@@ -481,7 +487,8 @@ class LiteratureDataset:
     paper_meta_file_path : str
         a string containing path of CSV file of paper meta sheet imported from MMCA literature review dataset
     """
-    def  __init__(self,data_metric_file_path,paper_details_file_path,paper_meta_file_path):
+
+    def __init__(self, data_metric_file_path, paper_details_file_path, paper_meta_file_path):
         self.data_metric_file_path = data_metric_file_path
         self.paper_details_file_path = paper_details_file_path
         self.paper_meta_file_path = paper_meta_file_path
@@ -499,8 +506,7 @@ class LiteratureDataset:
         except:
             print('Literature dataset could not update contextual information, e.g., study setting, learning task, and sample size.')
 
-
-    def get_record(self,df,index):
+    def get_record(self, df, index):
         """
         Function to parse data metric sheet. This function combines record expanding over multiple lines into a single record.
         The proper exeuction of this function requires adding '#' in the last column of the sheet.
@@ -515,7 +521,7 @@ class LiteratureDataset:
             line_index: line number for the next record
 
         """
-        return df.iloc[index,:].to_dict()
+        return df.iloc[index, :].to_dict()
 
     def update_year(self):
         """
@@ -523,108 +529,157 @@ class LiteratureDataset:
 
         """
         year = pd.read_csv(self.paper_meta_file_path)
-        pub_year = year[['ID_updated','year']]
+        pub_year = year[['ID_updated', 'year']]
         pub_year.index = pub_year.ID_updated
         for ind in self.paper_store.keys():
-            self.paper_store[ind].set_pub_year(pub_year.to_dict()['year'][int(ind)])
+            self.paper_store[ind].set_pub_year(
+                pub_year.to_dict()['year'][int(ind)])
 
-    def generate_sankey_data(self,year1=2000,year2=2010):
+    def generate_sankey_data(self, year1=2000, year2=2005, selected_levels={'metrics_lg': 2, 'metrics_sm': 1, 'outcome_sm': 4, 'outcome_lg': 3}):
+        """
+        This general function takes a string which contains data in a particular format (e.g.,  VI) EDA).
+        The function then process the string, extract the information in dictionary data structure.
+
+        Parameters
+        ----------
+        year1 : int
+            starting year for filtering
+        year2 : int
+            ending year for filtering
+        selected_levels : dict
+            dictionary containing levels for each node type to configure sankey diagram
+
+
+        Returns
+        ---------
+        dataframe
+            pandas dataframe containing record for sankey diagram generation (e.g., source, target)
+        dict
+            dictionary containing unique node labels for each level in sankey diagram (e.g., labels for smaller metrics)
+        dict
+            dictionary containing data for nodes to be used in sankey diagram
+        dict
+            dictionary containing data for links to be used in sakey diagram
+        """
         linked_paper_ids = []
         available_color_index = 0
-        papers = self.get_papers_between_interval(year1,year2)
-        sankey = pd.DataFrame(columns=['source','target','level','paper_id','year','color'])
+        papers = self.get_papers_between_interval(year1, year2)
+        sankey = pd.DataFrame(
+            columns=['source', 'target', 'level', 'paper_id', 'year', 'color'])
+
         nodes_level = {}
         nodes_color = {}
-        
-        link_color =  {}
-
+        link_color = {}
+        level_wise_nodes = {
+            1: list(),
+            2: list(),
+            3: list(),
+            4: list()
+        }
         for paper in papers:
             metrics_org = paper.get_metrics_org()
             metrics_sm = paper.get_metrics_sm()
             metrics_lg = paper.get_metrics_lg()
             outcome_sm = paper.get_outcomes_sm()
             outcome_lg = paper.get_outcomes_lg()
-            outcome = paper.get_outcomes_org()   
+            outcome = paper.get_outcomes_org()
             rels = paper.parse_relationship(item_index=True)
             for rel in rels:
                 check = 0
 
                 if rel[0] in metrics_org.keys():
-                    check +=1
+                    check += 1
                 if rel[0] in metrics_sm.keys():
-                    check +=1
+                    check += 1
                 if rel[0] in metrics_lg.keys():
-                    check +=1
+                    check += 1
                 if rel[1] in outcome_sm.keys():
-                    check +=1 
+                    check += 1
                 if rel[1] in outcome_lg.keys():
-                    check +=1 
+                    check += 1
                 if rel[1] in outcome.keys():
-                    check +=1
+                    check += 1
 
-                if check == 6: 
-                    if metrics_lg[rel[0]] == metrics_sm[rel[0]] or metrics_sm[rel[0]] == metrics_org[rel[0]] or outcome_sm[rel[1]] == outcome_lg[rel[1]] or outcome[rel[1]] == outcome_lg[rel[1]] or outcome_sm[rel[1]] == outcome[rel[1]] :
+                if check == 6:
+                    if metrics_lg[rel[0]] == metrics_sm[rel[0]] or outcome_sm[rel[1]] == outcome_lg[rel[1]]:
                         continue
-                
-                
+
                     if metrics_lg[rel[0]] not in nodes_level.keys():
-                        nodes_level[metrics_lg[rel[0]]] = .1
-                        nodes_color[metrics_lg[rel[0]]] = color[available_color_index]
+                        nodes_level[metrics_lg[rel[0]]
+                                    ] = selected_levels['metrics_lg'] if selected_levels else .1
+                        nodes_color[metrics_lg[rel[0]]
+                                    ] = color[available_color_index]
+                        level_wise_nodes[1].append(metrics_lg[rel[0]])
                         available_color_index += 1
 
                     if metrics_sm[rel[0]] not in nodes_level.keys():
-                        #print('  adding metrics sm')
-                        nodes_level[metrics_sm[rel[0]]] = .2
-                        nodes_color[metrics_sm[rel[0]]] = nodes_color[metrics_lg[rel[0]]]
-
-                    if metrics_org[rel[0]] not in nodes_level.keys():
-                        #print('  adding metrics org')
-                        nodes_level[metrics_org[rel[0]]] = .3
-                        nodes_color[metrics_org[rel[0]]] = nodes_color[metrics_lg[rel[0]]]
+                        # print('  adding metrics sm')
+                        nodes_level[metrics_sm[rel[0]]
+                                    ] = selected_levels['metrics_sm'] if selected_levels else .2
+                        level_wise_nodes[2].append(metrics_sm[rel[0]])
+                        nodes_color[metrics_sm[rel[0]]
+                                    ] = nodes_color[metrics_lg[rel[0]]]
 
                     if outcome_lg[rel[1]] not in nodes_level.keys():
-                        nodes_level[outcome_lg[rel[1]]] = .6
-                        nodes_color[outcome_lg[rel[1]]] = color[available_color_index]
+                        nodes_level[outcome_lg[rel[1]]
+                                    ] = selected_levels['outcome_lg'] if selected_levels else .6
+                        nodes_color[outcome_lg[rel[1]]
+                                    ] = color[available_color_index]
+                        level_wise_nodes[4].append(outcome_lg[rel[1]])
                         available_color_index += 1
 
                     if outcome_sm[rel[1]] not in nodes_level.keys():
-                        nodes_level[outcome_sm[rel[1]]] = .5
-                        nodes_color[outcome_sm[rel[1]]] = nodes_color[outcome_lg[rel[1]]]
-                    
-                    if outcome[rel[1]] not in nodes_level.keys():
-                        nodes_level[outcome[rel[1]]] = .4
-                        nodes_color[outcome[rel[1]]] = 'grey'
-                        #available_color_index += 1
+                        nodes_level[outcome_sm[rel[1]]
+                                    ] = selected_levels['outcome_sm'] if selected_levels else .5
+                        nodes_color[outcome_sm[rel[1]]
+                                    ] = nodes_color[outcome_lg[rel[1]]]
+                        level_wise_nodes[3].append(outcome_sm[rel[1]])
 
                     linked_paper_ids.append(paper.paper_id)
-                
-                    temp = pd.DataFrame({'source':metrics_lg[rel[0]],'target':metrics_sm[rel[0]],
-                        'level':1,'paper_id':paper.paper_id,'year':paper.pub_year,'color':reduce_intensity(nodes_color[metrics_lg[rel[0]]])},index=[0])
-                    sankey = pd.concat([sankey,temp],axis=0)
-                
-                    temp = pd.DataFrame({'source':metrics_sm[rel[0]],'target':metrics_org[rel[0]],
-                        'level':2,'paper_id':paper.paper_id,'year':paper.pub_year,'color':reduce_intensity(nodes_color[metrics_sm[rel[0]]])},index=[0])
-                    sankey = pd.concat([sankey,temp],axis=0)
-                    
-                    temp = pd.DataFrame({'source':metrics_org[rel[0]],'target':outcome_sm[rel[1]],
-                        'level':4,'paper_id':paper.paper_id,'year':paper.pub_year,'color':reduce_intensity(nodes_color[metrics_org[rel[0]]])},index=[0])
-                    sankey = pd.concat([sankey,temp],axis=0)
+                    sorted_order = sorted(
+                        selected_levels.items(), key=lambda item: item[1])
+                    node_type_names = [item[0] for item in sorted_order]
 
-                    temp = pd.DataFrame({'source':outcome_sm[rel[1]],'target':outcome_lg[rel[1]],
-                        'level':5,'paper_id':paper.paper_id,'year':paper.pub_year,'color':reduce_intensity(nodes_color[metrics_org[rel[0]]])},index=[0])
-                    sankey = pd.concat([sankey,temp],axis=0)
-         
+                    source = eval(node_type_names[0])[
+                        rel[0]] if 'metric' in node_type_names[0] else eval(node_type_names[0])[rel[1]]
+                    target = eval(node_type_names[1])[
+                        rel[0]] if 'metric' in node_type_names[1] else eval(node_type_names[1])[rel[1]]
+                    temp = pd.DataFrame({'source': source, 'target': target,
+                                         'level': 1, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[source])}, index=[0])
+                    sankey = pd.concat([sankey, temp], axis=0)
+
+                    source = eval(node_type_names[1])[
+                        rel[0]] if 'metric' in node_type_names[1] else eval(node_type_names[1])[rel[1]]
+                    target = eval(node_type_names[2])[
+                        rel[0]] if 'metric' in node_type_names[2] else eval(node_type_names[2])[rel[1]]
+                    temp = pd.DataFrame({'source': source, 'target': target,
+                                         'level': 2, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[source])}, index=[0])
+                    sankey = pd.concat([sankey, temp], axis=0)
+
+                    source = eval(node_type_names[2])[
+                        rel[0]] if 'metric' in node_type_names[2] else eval(node_type_names[2])[rel[1]]
+                    target = eval(node_type_names[3])[
+                        rel[0]] if 'metric' in node_type_names[3] else eval(node_type_names[3])[rel[1]]
+                    temp = pd.DataFrame({'source': source, 'target': target,
+                                         'level': 3, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[target])}, index=[0])
+                    sankey = pd.concat([sankey, temp], axis=0)
+
         sankey.drop_duplicates(inplace=True)
         nodes = list(nodes_level.keys())
         x_pos = list(nodes_level.values())
         link = []
         value = []
         link_color = []
+
+        ## Code to check number of features which found to be related with collaboration constructs ##
+        feat_count = sankey.loc[sankey.level == 4, ['source']]
+
+        ## End new code ##
         for row in sankey.itertuples():
-            t_rel = (nodes.index(row.source),nodes.index(row.target))
+            t_rel = (nodes.index(row.source), nodes.index(row.target))
             if t_rel in link:
                 ind = link.index(t_rel)
-                value[ind] += 1 
+                value[ind] += 1
             else:
                 link.append(t_rel)
                 value.append(1)
@@ -633,30 +688,29 @@ class LiteratureDataset:
         source = [item[0] for item in link]
         target = [item[1] for item in link]
 
-        return sankey,{'pad':15, 
-                       'thickness':15, 
-                       'label':nodes, 
-                       'x':x_pos, 
-                       'color':list(nodes_color.values())
-                      },{'source':source,
-                         'target':target,
-                         'value':value, 
-                         'color':link_color, 
-                         'customdata':linked_paper_ids, 
-                         'hovertemplate': 'Paper id:%{customdata}'}
+        return sankey, level_wise_nodes, {'pad': 15,
+                                          'thickness': 15,
+                                          'label': nodes,
+                                          'x': x_pos,
+                                          'color': list(nodes_color.values())
+                                          }, {'source': source,
+                                              'target': target,
+                                              'value': value,
+                                              'color': link_color,
+                                              'customdata': linked_paper_ids,
+                                              'hovertemplate': 'Paper id:%{customdata}'}
 
-        
-    def count_or_mean(self,year1=2000,year2=2010):
+    def count_or_mean(self, year1=2000, year2=2010):
         """
         This function count frequencies for each characteristic of the papers
-        
+
         Returns
         ---------
         dict
             dictionary containing frequency count for all attributes of Paper class
         """
         attrs = {}
-        papers = self.get_papers_between_interval(year1,year2)
+        papers = self.get_papers_between_interval(year1, year2)
         temp_data_store = []
         temp_sensor_store = []
         temp_metrics_store = []
@@ -676,10 +730,10 @@ class LiteratureDataset:
             temp_outcomes_store += list(paper.get_outcomes_org().values())
             temp_outcomes_sm_store += list(paper.get_outcomes_sm().values())
             temp_outcomes_lg_store += list(paper.get_outcomes_lg().values())
-            temp_outcomes_instrument_store += list(paper.get_outcomes_instrument().values())
+            temp_outcomes_instrument_store += list(
+                paper.get_outcomes_instrument().values())
             temp_setting_store.append(paper.get_study_setting())
 
-            
         attrs['data_stats'] = Counter(temp_data_store)
         attrs['sensor_stats'] = Counter(temp_sensor_store)
         attrs['metrics_stats'] = Counter(temp_metrics_store)
@@ -688,11 +742,11 @@ class LiteratureDataset:
         attrs['outcomes_stats'] = Counter(temp_outcomes_store)
         attrs['outcomes_sm_stats'] = Counter(temp_outcomes_sm_store)
         attrs['outcomes_lg_stats'] = Counter(temp_outcomes_lg_store)
-        attrs['outcomes_instrument_stats'] = Counter(temp_outcomes_instrument_store)
+        attrs['outcomes_instrument_stats'] = Counter(
+            temp_outcomes_instrument_store)
         attrs['setting_stats'] = Counter(temp_setting_store)
-        
-        return attrs
 
+        return attrs
 
     def update_setting_task_sample(self):
         """
@@ -700,14 +754,16 @@ class LiteratureDataset:
 
         """
         context_org = pd.read_csv(self.paper_details_file_path)
-        context = context_org[['study_setting','task','sample_size']]
+        context = context_org[['study_setting', 'task', 'sample_size']]
         context.index = context_org.ID_updated
         for ind in self.paper_store.keys():
-            self.paper_store[ind].set_study_setting(context.to_dict()['study_setting'][int(ind)])
+            self.paper_store[ind].set_study_setting(
+                context.to_dict()['study_setting'][int(ind)])
             self.paper_store[ind].set_task(context.to_dict()['task'][int(ind)])
-            self.paper_store[ind].set_sample_size(context.to_dict()['sample_size'][int(ind)])
+            self.paper_store[ind].set_sample_size(
+                context.to_dict()['sample_size'][int(ind)])
 
-        print('Updates paper records with study setting, learning task and sample size')
+        print('Updated paper records with study setting, learning task and sample size')
 
     def get_papers(self):
         """
@@ -721,7 +777,7 @@ class LiteratureDataset:
         """
         return self.paper_store
 
-    def get_papers_between_interval(self,start_year,end_year):
+    def get_papers_between_interval(self, start_year, end_year):
         """
         This function return a list containing all paper records published between specified interval.
 
@@ -740,7 +796,7 @@ class LiteratureDataset:
         """
 
         results = []
-        for paper_id,paper in self.paper_store.items():
+        for paper_id, paper in self.paper_store.items():
 
             pub_year = int(paper.pub_year)
 
@@ -749,7 +805,7 @@ class LiteratureDataset:
         print('Total {} papers found between'.format(len(results)))
         return results
 
-    def get_paper(self,id):
+    def get_paper(self, id):
         """
         This function return a list containing all paper records published between specified interval.
 
@@ -776,8 +832,9 @@ class LiteratureDataset:
         df = pd.read_csv(self.data_metric_file_path)
         print('Populating with paper records ...')
         for paper_id in df.index:
-            record = self.get_record(df,paper_id)
+            record = self.get_record(df, paper_id)
             paper_object = Paper(record)
             self.paper_store[paper_object.paper_id] = paper_object
 
-        print('Literature dataset is succefully populated. \n  Total papers:',len(self.paper_store))
+        print('Literature dataset is succefully populated. \n  Total papers:', len(
+            self.paper_store))
