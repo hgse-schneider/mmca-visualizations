@@ -254,7 +254,7 @@ def display_value(clickData, value):
             msg = '{} data has been used in {} papers'.format(
                 node_label, total_papers)
             pie_data = targets['outcome_sm'].value_counts().to_dict()
-            title = 'Type of outcomes found to associated with {}'.format(
+            title = 'Type of outcomes found to be associated with {}'.format(
                 node_label)
         elif clicked_node_level == 3:
             targets = full.loc[full['outcome_sm'] == node_label, :]
@@ -262,7 +262,7 @@ def display_value(clickData, value):
             msg = '{} construct has been used in {} papers'.format(
                 node_label, total_papers)
             pie_data = targets['metrics_sm'].value_counts().to_dict()
-            title = 'Type of metrics found to associated with {}'.format(
+            title = 'Type of metrics found to be associated with {}'.format(
                 node_label)
         elif clicked_node_level == 4:
             targets = full.loc[full['outcome_lg'] == node_label, :]
