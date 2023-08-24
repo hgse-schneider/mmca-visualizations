@@ -567,6 +567,10 @@ class LiteratureDataset:
         sankey = pd.DataFrame(
             columns=['source', 'target', 'level', 'paper_id', 'year', 'color'])
 
+        full = pd.DataFrame(
+            columns=['metrics_lg', 'metrics_sm', 'outcome_sm',
+                     'outcome_lg', 'paper_id', 'year']
+        )
         nodes_level = {}
         nodes_color = {}
         link_color = {}
@@ -664,6 +668,15 @@ class LiteratureDataset:
                                          'level': 3, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[target])}, index=[0])
                     sankey = pd.concat([sankey, temp], axis=0)
 
+                    temp_full = pd.DataFrame({'metrics_lg': metrics_lg[rel[0]],
+                                              'metrics_sm': metrics_sm[rel[0]],
+                                              'outcome_sm': outcome_sm[rel[1]],
+                                              'outcome_lg': outcome_lg[rel[1]],
+                                              'paper_id': paper.paper_id,
+                                              'year': paper.pub_year},
+                                             index=[0])
+                    full = pd.concat([full, temp_full], axis=0)
+
         sankey.drop_duplicates(inplace=True)
         nodes = list(nodes_level.keys())
         x_pos = list(nodes_level.values())
@@ -688,17 +701,17 @@ class LiteratureDataset:
         source = [item[0] for item in link]
         target = [item[1] for item in link]
 
-        return sankey, level_wise_nodes, {'pad': 15,
-                                          'thickness': 15,
-                                          'label': nodes,
-                                          'x': x_pos,
-                                          'color': list(nodes_color.values())
-                                          }, {'source': source,
-                                              'target': target,
-                                              'value': value,
-                                              'color': link_color,
-                                              'customdata': linked_paper_ids,
-                                              'hovertemplate': 'Paper id:%{customdata}'}
+        return full, sankey, level_wise_nodes, {'pad': 15,
+                                                'thickness': 15,
+                                                'label': nodes,
+                                                'x': x_pos,
+                                                'color': list(nodes_color.values())
+                                                }, {'source': source,
+                                                    'target': target,
+                                                    'value': value,
+                                                    'color': link_color,
+                                                    'customdata': linked_paper_ids,
+                                                    'hovertemplate': 'Paper id:%{customdata}'}
 
     def count_or_mean(self, year1=2000, year2=2010):
         """

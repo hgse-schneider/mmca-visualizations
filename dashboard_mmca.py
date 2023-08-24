@@ -27,7 +27,7 @@ year_options = list(range(1999, 2023, 1))
 marks = {}
 for year in year_options:
     marks[year] = year
-sankey, _, node, link = lit.generate_sankey_data(2000, 2010)
+full, sankey, _, node, link = lit.generate_sankey_data(2000, 2010)
 # creating dash app
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 start_year = []
@@ -120,7 +120,7 @@ app.layout = dbc.Container([
             html.Div(id='error', className="p-2 my-3"),
         ], style={'padding': '3em', 'margin-bottom': '2em'}, className='border rounded-top rounded-bottom')], id='collapse', is_open=False
     ),
-    html.Pre(id='json'),
+
     dbc.Row([
         dbc.Card([
             dbc.CardBody([
@@ -132,18 +132,36 @@ app.layout = dbc.Container([
                     ]),
         ], style={'padding': '1em', 'margin-bottom': '1em'})
     ]),
+    dbc.Modal(
+        [
+            dbc.ModalHeader("Header", id='modalheader'),
+            dbc.ModalBody(dcc.Graph(id='node_details')),
+            dbc.ModalFooter(
+                dbc.Button("Close", id="close", className="ml-auto")
+            ),
+        ],
+        size="xl",
+        id="modal",
+    ),
     dbc.Row([
-        dcc.Graph(id='sankey',
-                  style={'padding': '3em', 'width': '100%', 'height': '100%'},
-                  figure=go.Figure(
-                      data=[
-                          go.Sankey(
-                              node=node,
-                              link=link,
-                          )
-                      ]
-                  )
-                  )
+
+    ]),
+    dbc.Row([
+
+        dbc.Col([
+            dcc.Graph(id='sankey',
+                      style={'padding': '3em',
+                             'width': '100%', 'height': '100%'},
+                      figure=go.Figure(
+                          data=[
+                              go.Sankey(
+                                  node=node,
+                                  link=link,
+                              )
+                          ]
+                      )
+                      )
+        ])
     ]
     )
 ])
@@ -187,33 +205,83 @@ def display_value(value):
         return {'display': 'none'}
 
 
-@app.callback(Output('json', 'children'),
+@app.callback(Output('modal', 'is_open'),
+              [Input('sankey', 'clickData'), Input(
+                  'close', 'n_clicks')],
+              [State("modal", "is_open")],)
+def open_modal(clickData, n1, is_open):
+    if n1:
+        return not is_open
+    elif clickData['points'][0]['label']:
+        return True
+    else:
+        return False
+
+
+@app.callback(Output('node_details', 'figure'),
               [Input('sankey', 'clickData'), Input('year_range', 'value')])
 def display_value(clickData, value):
     print('Click Data:=======>')
     year_range = value
     year1 = year_range[0]
     year2 = year_range[1]
-    sankey, level_wise_nodes, node, link = lit.generate_sankey_data(
+    full, sankey, level_wise_nodes, node, link = lit.generate_sankey_data(
         year_range[0], year_range[1])
-    node_label = ''  # clickData['points'][0]['label']
+
+    node_label = clickData['points'][0]['label']
 
     if node_label:
-        paper_total = sankey[(sankey['source'] == node_label)
-                             | (sankey['target'] == node_label)]
         for key in level_wise_nodes.keys():
             if node_label in level_wise_nodes[key]:
                 clicked_node_level = key
                 break
-
+        msg = ''
+        labels = []
+        values = []
+        title = ''
+        if clicked_node_level == 1:
+            targets = full.loc[full['metrics_lg'] == node_label, :]
+            print('clicked data in full', targets.shape)
+            total_papers = len(targets['paper_id'].unique())
+            msg = '{} data has been used in {} papers'.format(
+                node_label, total_papers)
+            pie_data = targets['metrics_sm'].value_counts().to_dict()
+            title = 'Type of features extracted from {} data'.format(
+                node_label)
+        elif clicked_node_level == 2:
+            targets = full.loc[full['metrics_sm'] == node_label, :]
+            total_papers = len(targets['paper_id'].unique())
+            msg = '{} data has been used in {} papers'.format(
+                node_label, total_papers)
+            pie_data = targets['outcome_sm'].value_counts().to_dict()
+            title = 'Type of outcomes found to associated with {}'.format(
+                node_label)
+        elif clicked_node_level == 3:
+            targets = full.loc[full['outcome_sm'] == node_label, :]
+            total_papers = len(targets['paper_id'].unique())
+            msg = '{} construct has been used in {} papers'.format(
+                node_label, total_papers)
+            pie_data = targets['metrics_sm'].value_counts().to_dict()
+            title = 'Type of metrics found to associated with {}'.format(
+                node_label)
+        elif clicked_node_level == 4:
+            targets = full.loc[full['outcome_lg'] == node_label, :]
+            total_papers = len(targets['paper_id'].unique())
+            msg = '{} type of construct has been used in {} papers'.format(
+                node_label, total_papers)
+            pie_data = targets['outcome_sm'].value_counts().to_dict()
+            title = 'Type of outcomes grouped under {}'.format(node_label)
         print_data = {}
+        labels = [key for key in pie_data.keys()]
+        values = [value for value in pie_data.values()]
 
         if clicked_node_level:
             print_data['level'] = clicked_node_level
-        print_data['text'] = 'You clicked a node at level {}.'.format(
-            clicked_node_level)
+        print_data['text'] = msg
 
-        return json.dumps(print_data, indent=2)
+        fig = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.3)])
+        fig.update_layout(title={'text': title, 'xanchor': 'left'})
+        return fig
     else:
         return None
 
@@ -230,7 +298,7 @@ def display_value(n_clicks, value, lg_metric, sm_metric, sm_outcome, lg_outcome)
                        'outcome_sm': int(sm_outcome),
                        'outcome_lg': int(lg_outcome)
                        }
-    sankey, _, node, link = lit.generate_sankey_data(
+    full, sankey, _, node, link = lit.generate_sankey_data(
         year_range[0], year_range[1], selected_levels)
 
     figure = go.Figure(
