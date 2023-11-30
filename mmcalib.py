@@ -1,10 +1,7 @@
 
 """
 Source codes for pre-processing MMCA literature review dataset (data metrics)
-
 author: Pankaj Chejara (pankajchejara23@gmail.com)
-
-
 """
 from collections import Counter
 import pandas as pd
@@ -199,6 +196,7 @@ class Paper:
         self.sample_size = None
         self.study_setting = None
         self.task = None
+        self.experimental_study = None
 
         # Input
         self.data = self.parsed_items(paper_record['data'])
@@ -230,6 +228,15 @@ class Paper:
             set publication year
         """
         self.pub_year = year
+
+    def set_experimental_type(self, experimental_type):
+        """
+        Returns
+        ---------
+        list
+            Returns whether the study reported in the paper was experimental in nature.
+        """
+        self.experimental_study = experimental_type
 
     def set_study_setting(self, study_setting):
         """
@@ -354,6 +361,15 @@ class Paper:
         """
         return self.data
 
+    def get_experimental_type(self):
+        """
+        Returns
+        ---------
+        list
+            Returns whether the study reported in the paper was experimental in nature.
+        """
+        return self.experimental_study
+
     def get_raw_relationship(self):
         """
         Returns
@@ -435,10 +451,11 @@ class Paper:
             for metric in metrics:
                 for outcome in outcomes:
                     if item_index:
-                        rel_tuples.append((metric, outcome, rel_method))
+                        rel_tuples.append(
+                            (metric, outcome, rel_method, rel_type.strip()))
                     else:
                         rel_tuples.append(
-                            (metrics_sm[metric], outcome_smaller[outcome], rel_method))
+                            (metrics_sm[metric], outcome_smaller[outcome], rel_method, rel_type.strip()))
 
         return rel_tuples
 
@@ -467,6 +484,7 @@ class Paper:
         print('Outcomes smaller:', self.outcomes_sm)
         print('Outcomes larger:', self.outcomes_lg)
         print('Outcomes instrument:', self.outcomes_instrument)
+        print('Experimental type:', self.experimental_study)
         print('Results:', self.raw_relationship)
         print('Results:', self.parse_relationship())
         print('\n############################################################\n')
@@ -498,13 +516,15 @@ class LiteratureDataset:
 
         try:
             self.update_year()
-        except:
+        except Exception as e:
+            print(e)
             print('Literature dataset could not update publication year.')
 
         try:
-            self.update_setting_task_sample()
-        except:
-            print('Literature dataset could not update contextual information, e.g., study setting, learning task, and sample size.')
+            self.update_setting_task_sample_experimental()
+        except Exception as e:
+            print(e)
+            print('Literature dataset could not update contextual information, e.g., study setting, learning task, sample size, and  experimental type.')
 
     def get_record(self, df, index):
         """
@@ -529,8 +549,8 @@ class LiteratureDataset:
 
         """
         year = pd.read_csv(self.paper_meta_file_path)
-        pub_year = year[['ID_updated', 'year']]
-        pub_year.index = pub_year.ID_updated
+        pub_year = year[['ID updated', 'year']]
+        pub_year.index = pub_year['ID updated']
         for ind in self.paper_store.keys():
             self.paper_store[ind].set_pub_year(
                 pub_year.to_dict()['year'][int(ind)])
@@ -565,7 +585,7 @@ class LiteratureDataset:
         available_color_index = 0
         papers = self.get_papers_between_interval(year1, year2)
         sankey = pd.DataFrame(
-            columns=['source', 'target', 'level', 'paper_id', 'year', 'color'])
+            columns=['source', 'target', 'level', 'paper_id', 'year', 'color', 'edge_label'])
 
         full = pd.DataFrame(
             columns=['metrics_lg', 'metrics_sm', 'outcome_sm',
@@ -648,24 +668,50 @@ class LiteratureDataset:
                         rel[0]] if 'metric' in node_type_names[0] else eval(node_type_names[0])[rel[1]]
                     target = eval(node_type_names[1])[
                         rel[0]] if 'metric' in node_type_names[1] else eval(node_type_names[1])[rel[1]]
-                    temp = pd.DataFrame({'source': source, 'target': target,
-                                         'level': 1, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[source])}, index=[0])
+                    # adding label for edges
+                    edge_label = '{}:{}-{}'.format(paper.paper_id,
+                                                   source, target)
+
+                    temp = pd.DataFrame({'source': source,
+                                         'target': target,
+                                         'level': 1,
+                                         'paper_id': paper.paper_id,
+                                         'year': paper.pub_year,
+                                         'edge_label': edge_label,
+                                         'color': reduce_intensity(nodes_color[source])},
+                                        index=[0])
                     sankey = pd.concat([sankey, temp], axis=0)
 
                     source = eval(node_type_names[1])[
                         rel[0]] if 'metric' in node_type_names[1] else eval(node_type_names[1])[rel[1]]
                     target = eval(node_type_names[2])[
                         rel[0]] if 'metric' in node_type_names[2] else eval(node_type_names[2])[rel[1]]
+                    edge_label = '{}:{}-{}'.format(paper.paper_id,
+                                                   source, target)
+
                     temp = pd.DataFrame({'source': source, 'target': target,
-                                         'level': 2, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[source])}, index=[0])
+                                         'level': 2,
+                                         'paper_id': paper.paper_id,
+                                         'year': paper.pub_year,
+                                         'edge_label': edge_label,
+                                         'color': reduce_intensity(nodes_color[source])},
+                                        index=[0])
                     sankey = pd.concat([sankey, temp], axis=0)
 
                     source = eval(node_type_names[2])[
                         rel[0]] if 'metric' in node_type_names[2] else eval(node_type_names[2])[rel[1]]
                     target = eval(node_type_names[3])[
                         rel[0]] if 'metric' in node_type_names[3] else eval(node_type_names[3])[rel[1]]
+                    edge_label = '{}:{}-{}'.format(paper.paper_id,
+                                                   source, target)
+
                     temp = pd.DataFrame({'source': source, 'target': target,
-                                         'level': 3, 'paper_id': paper.paper_id, 'year': paper.pub_year, 'color': reduce_intensity(nodes_color[target])}, index=[0])
+                                         'level': 3,
+                                         'paper_id': paper.paper_id,
+                                         'year': paper.pub_year,
+                                         'edge_label': edge_label,
+                                         'color': reduce_intensity(nodes_color[target])},
+                                        index=[0])
                     sankey = pd.concat([sankey, temp], axis=0)
 
                     temp_full = pd.DataFrame({'metrics_lg': metrics_lg[rel[0]],
@@ -677,11 +723,12 @@ class LiteratureDataset:
                                              index=[0])
                     full = pd.concat([full, temp_full], axis=0)
 
-        sankey.drop_duplicates(inplace=True)
+        # sankey.drop_duplicates(inplace=True)
         nodes = list(nodes_level.keys())
         x_pos = list(nodes_level.values())
         link = []
         value = []
+        label = []
         link_color = []
 
         ## Code to check number of features which found to be related with collaboration constructs ##
@@ -692,11 +739,15 @@ class LiteratureDataset:
             t_rel = (nodes.index(row.source), nodes.index(row.target))
             if t_rel in link:
                 ind = link.index(t_rel)
+                label[ind] = label[ind] + ',' + row.edge_label
+                linked_paper_ids[ind] = str(linked_paper_ids[ind]) + \
+                    ',' + str(row.paper_id)
                 value[ind] += 1
             else:
                 link.append(t_rel)
+                label.append(row.edge_label)
                 value.append(1)
-                linked_paper_ids.append(row.paper_id)
+                linked_paper_ids.append(str(row.paper_id))
                 link_color.append(row.color)
         source = [item[0] for item in link]
         target = [item[1] for item in link]
@@ -710,6 +761,7 @@ class LiteratureDataset:
                                                     'target': target,
                                                     'value': value,
                                                     'color': link_color,
+                                                    'label': label,
                                                     'customdata': linked_paper_ids,
                                                     'hovertemplate': 'Paper id:%{customdata}'}
 
@@ -761,13 +813,15 @@ class LiteratureDataset:
 
         return attrs
 
-    def update_setting_task_sample(self):
+    def update_setting_task_sample_experimental(self):
         """
         This function adds details of sample size, type of study settings, and learning task.
 
         """
         context_org = pd.read_csv(self.paper_details_file_path)
-        context = context_org[['study_setting', 'task', 'sample_size']]
+
+        context = context_org[['study_setting', 'task',
+                               'sample_size', 'experimental_conditions']]
         context.index = context_org.ID_updated
         for ind in self.paper_store.keys():
             self.paper_store[ind].set_study_setting(
@@ -775,8 +829,10 @@ class LiteratureDataset:
             self.paper_store[ind].set_task(context.to_dict()['task'][int(ind)])
             self.paper_store[ind].set_sample_size(
                 context.to_dict()['sample_size'][int(ind)])
+            self.paper_store[ind].set_experimental_type(
+                context.to_dict()['experimental_conditions'][int(ind)])
 
-        print('Updated paper records with study setting, learning task and sample size')
+        print('Updated paper records with study setting, learning task, sample size and experimental study type')
 
     def get_papers(self):
         """
@@ -810,7 +866,7 @@ class LiteratureDataset:
 
         results = []
         for paper_id, paper in self.paper_store.items():
-
+            print('year:',paper.pub_year)
             pub_year = int(paper.pub_year)
 
             if pub_year > start_year and pub_year <= end_year:
