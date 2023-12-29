@@ -26,9 +26,9 @@ from mmcalib import LiteratureDataset
 
 
 # instantiating LiteratureDataset
-lit = LiteratureDataset('4.2023 Summer - data_metrics_constructs.csv',
-                       '4.2023 Summer - paper_details.csv',
-                       '4.2023 Summer - paper_meta.csv')
+lit = LiteratureDataset('5.2023 CSCW dataset_data_metrics.csv',
+                       '5.2023-CSCW-paper_details.csv',
+                       '5.2023-CSCW-dataset-paper_meta.csv')
 
 ```
 
