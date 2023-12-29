@@ -22,10 +22,9 @@ This tutorial is targetted at providing information on accessing mmca literature
 
 ```python
 # import required classes
-from mmcalib import LiteratureDataset
+from mmcalib_cscw import LiteratureDataset
 
 
-# instantiating LiteratureDataset
 lit = LiteratureDataset('5.2023 CSCW dataset_data_metrics.csv',
                        '5.2023-CSCW-paper_details.csv',
                        '5.2023-CSCW-dataset-paper_meta.csv')
@@ -33,9 +32,11 @@ lit = LiteratureDataset('5.2023 CSCW dataset_data_metrics.csv',
 ```
 
     Populating with paper records ...
+    'float' object has no attribute 'replace'
+    Excluding paper: 76
     Literature dataset is succefully populated. 
       Total papers: 144
-    Updates paper records with study setting, learning task and sample size
+    Updated paper records with study setting, learning task, sample size and experimental study type
 
 
 ### Accessing paper record
@@ -53,7 +54,8 @@ paper.print_paper_record()
     
     ####################   PAPER ID: 10     ####################
     
-    Year: 2018
+    Year: 2018.0
+    Title: A Network Analytic Approach to Gaze Coordination during a Collaborative Task
     Study setting: lab
     Learning task: Each dyad was assigned a sandwich-building task: one participant made verbal references to visible ingredients they would like added to their sandwich, while the other participant assembled those ingredients into a sandwich.
     Study setting: G=13; I=26
@@ -64,9 +66,10 @@ paper.print_paper_record()
     Outcomes: {'a': 'task performance'}
     Outcomes smaller: {'a': 'performance'}
     Outcomes larger: {'a': 'product'}
-    Outcomes instrument: {'a': 'researcher coded'}
+    Outcomes instrument: {'a': 'human evaluation'}
+    Experimental type: NS
     Results: 1+2-A: correlation: nonsig
-    Results: [('visual attention', 'performance', ' correlation'), ('eye motion', 'performance', ' correlation')]
+    Results: [('visual attention', 'performance', ' correlation', 'nonsig'), ('eye motion', 'performance', ' correlation', 'nonsig')]
     
     ############################################################
     
@@ -135,8 +138,8 @@ pp.pprint(relationship)
 
     Raw relationship: 1+2-A: correlation: nonsig
     Processed relationshp:
-    [('visual attention', 'performance', ' correlation'),
-     ('eye motion', 'performance', ' correlation')]
+    [('visual attention', 'performance', ' correlation', 'nonsig'),
+     ('eye motion', 'performance', ' correlation', 'nonsig')]
 
 
 Parsed relationships are in tuple form. For example the first tuple ('visual attention', 'performance', ' correlation') represents that the paper has found a relationship between visual attention and performance using correlation analysis.
@@ -145,14 +148,9 @@ Parsed relationships are in tuple form. For example the first tuple ('visual att
 Run following command to generate a dashboard.
 
 ```
-> python3 dashboard_mmca.py
+> python3 dashboard_mmca_cscw.py
 ```
 
 Next, open your browser and type `http://localhost:8070`
 
 ![](dashboard_demo.gif)
-
-
-```python
-
-```
