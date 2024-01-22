@@ -6,11 +6,15 @@ We present the current state-of-the-art in MMCA with our extensive literature re
 
 This repository primarily contains two main components
 
-* **MMCA Review library**: This library aims to allow easier access to our literature review dataset through Python. Additionally, the library also provides some utility functions, e.g., filtering papers based on a time interval, and plotting trends for different coded attributes of papers (e.g., metrics, outcomes). <br/> Read the documentation [here]()
+* **MMCA Review library**: This library aims to allow easier access to our literature review dataset through Python. Additionally, the library also provides some utility functions, e.g., filtering papers based on a time interval, and plotting trends for different coded attributes of papers (e.g., metrics, outcomes). <br/> Read the documentation [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/MMCA_library.md)
 
-* **Dashboard Generator**: The dashboard generator utilizes the MMCA review library and generates a web-based dashboard for the users. The dashboard allows users to explore the review dataset in terms of metric-outcome relationships, and filter papers as per their needs. <br/> Read [here]() the steps to generate the dashboard
+* **Dashboard Generator**: The dashboard generator utilizes the MMCA review library and generates a web-based dashboard for the users. The dashboard allows users to explore the review dataset in terms of metric-outcome relationships, and filter papers as per their needs. <br/> Read [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/Dashboard.md) the steps to generate the dashboard
 
-Copyright (c) 2024 Learning, Innovation, and Technology Lab at Harvard University, USA
+
+
+
+
+Copyright (c) 2024 [Learning, Innovation, and Technology Lab](https://lit.gse.harvard.edu/) at Harvard University, USA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
