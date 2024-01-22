@@ -1,4 +1,4 @@
-![logo.png](attachment:logo.png)
+![](./logo.png)
 
 MMCA represents the field of multimodal collaboration analytics which utilizes different sensor technologies to gain insights into the group's behavior during group work to enhance the group's collaboration.
 
