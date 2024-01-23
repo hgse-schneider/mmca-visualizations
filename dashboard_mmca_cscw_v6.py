@@ -416,7 +416,7 @@ def display_value(n_clicks, value, lg_metric, sm_metric, sm_outcome, lg_outcome)
     print('############        ######### New Sankey data:',sankey.shape)
 
     figure.update_layout(height=1100,
-                         font_size=19)
+                         font_size=14)
     return figure
 
 

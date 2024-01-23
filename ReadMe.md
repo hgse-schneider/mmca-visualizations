@@ -10,10 +10,6 @@ This repository primarily contains two main components
 
 * **Dashboard Generator**: The dashboard generator utilizes the MMCA review library and generates a web-based dashboard for the users. The dashboard allows users to explore the review dataset in terms of metric-outcome relationships, and filter papers as per their needs. <br/> Read [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/Dashboard.md) the steps to generate the dashboard
 
-
-
-
-
 Copyright (c) 2024 [Learning, Innovation, and Technology Lab](https://lit.gse.harvard.edu/) at Harvard University, USA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

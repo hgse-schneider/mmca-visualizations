@@ -1007,7 +1007,7 @@ correlation_regression",a) process,"1) Verbal
 29,29,2016,Can Eye Help You?: Effects of Visualizing Eye Fixations on Remote Collaboration Scenarios for Physical Tasks,I) Eye Gaze,I) Optical See-Through Head-Mounted Display,I) NS,1) Gaze Location,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) quality of remote collaboration
 B) task completion time","a) survey
 B) task outcome","a) performance
-B) performance","a) process
+B) performance","a) product
 B) product","1-A: Wilcoxon Signed Ranks test: sig
 1-B: Wilcoxon Signed Ranks test: sig","a) 1
 B) 1","non-parametric tests
@@ -2511,7 +2511,7 @@ IV) Microsoft Kinect","1) Upper Body Agitation
 3) II
 4) III",a) agreement,a) human evaluation,a) coordination,a) process,1+2+3+4-A: sup. machine learning: sig: (75%),a)1,machine learning,machine-learning,a) process,"1) Body
 2) Body
-3) Body
+3) Head
 4) Verbal"
 67,67,2020,Predicting Collaborative Learning Quality through Physiological Synchrony Recorded by Wearable Biosensors,"VI) EDA
 VII) ECG","VI) Wearable Sensor
@@ -3247,7 +3247,7 @@ correlation_regression",a) product,"1) Body
 2) Hand Motion","1) Individual
  2) Individual","1) pure_indiv
 2) pure_indiv","1) II
-2) II",a) cps competence,a) human evaluation ,a) learning,a) process,"1,2-A: machine learning: sig: (0.75)",a) 1,machine learning,machine-learning,a) process,"1) Body
+2) II",a) cps competence,a) human evaluation ,a) learning,a) product,"1,2-A: machine learning: sig: (0.75)",a) 1,machine learning,machine-learning,a) process,"1) Body
 2) Body"
 99,101,2021,An Integrated Observing Technic for Collaborative Learning: The Multimodal Learning Analytics Based on the Video Coding and EEG Data Mining,VIII) EEG,VIII) EEG Sensor,VIII) NS,1) Mediation- Anxiety Level,1) Physiological,1) Brain,1) Brain,1) Individual,1) pure_indiv,1) VIII,a) learning gain ,a) human evaluation ,a) learning ,a) product,1-A: Mann-Whitney U and Kruskal-Wllis tests: sig,a) 1,non-parametric tests,between-group,a) product,1) Physiological
 100,102,2021,Inter-brain synchrony in teams predicts collective performance,VIII) EEG ,VIII) EEG Sensor,"VIII) Emotiv
@@ -3377,7 +3377,8 @@ X) NS","1) Physiological
 2) pure_indiv","1) III
 2) III",a) social perception,a) survey,a) interpersonal relationship,a) process,"1,2-A: sup. machine learning: sig: (93%)",a) 1,machine learning,machine-learning,a) process,"1) Verbal
 2) Verbal"
-112,119,2006,"Toward Open-Microphone Engagementfor Multiparty Interactions",III) Audio,III) Microphone,III) NS,"1) Speech Features
+112,119,2006,"Toward Open-Microphone Engagement
+for Multiparty Interactions",III) Audio,III) Microphone,III) NS,"1) Speech Features
 2) Speech Features
 3) Speech Style","1) Verbal
 2) Verbal
@@ -3587,14 +3588,14 @@ IV) Kinesiology","I) Camera
 IV) Motion Detecting Sensor ","II) NS
 IV) Polhemus Pose Tracker","1) Eye Gaze Directions
 2) Head Movements","1) Gaze
-2) Body","1) Visual Attention
+2) Head","1) Visual Attention
 2) Head Motion ","1) Visual Attention
 2) Head Motion ","1) Individual
  2) Individual","1) pure_indiv
 2) pure_indiv","1) I
 2) IV",a) focus of attention ,"a) human evaluation
 ",a) coordination,a) process,"1,2-A: sup. machine learning: sig: (93%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
-2) Body"
+2) Head"
 125,133,2002,Modeling focus of attention for meeting indexing based on multiple cues,"I) Eye Gaze
 III) Audio
 IV) Kinesiology","I) Camera
@@ -3604,7 +3605,7 @@ III) NS
 IV) Polhemus Pose Tracker","1) Eye Gaze Directions
 2) Head Movements
 3) Speech Features","1) Gaze
-2) Body
+2) Head
 3) Verbal","1) Visual Attention
 2) Head Motion
 3) Speech Features","1) Visual Attention
@@ -3616,7 +3617,7 @@ IV) Polhemus Pose Tracker","1) Eye Gaze Directions
 3) pure_indiv","1) I
 2) IV
 3) III",a) focus of attention,a) human evaluation,a) coordination,a) process,"1,2,3-A: sup. machine learning: (76%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
-2) Body
+2) Head
 3) Verbal"
 126,134,2009,Mediated attention with multimodal augmented reality,I) Eye Gaze,I) Eye Tracker,I) NS,1) Reaction Time,"1) Gaze
 2) Head
@@ -3679,7 +3680,7 @@ IV) NS
 V) NS","1) Speech Features
 2) Head Rotations
 3) Slide Data ","1) Verbal
-2) Body
+2) Head
 3) Log Data","1) Speech Features
 2) Head Motion
 3) Task-Related ","1) Speech Features
@@ -3692,10 +3693,10 @@ V) NS","1) Speech Features
 2) IV
 3) V",a) focus of attention ,"a) human evaluation
 ",a) coordination,a) process,"1,2,3-A: unsup. machine learning: (46.7%)",a) 0,machine learning,machine-learning,a) process,"1) Verbal
-2) Body
+2) Head
 3) Log Data"
-130,138,2008,Multimodal Real-Time Focus of Attention Estimation in SmartRooms,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Body,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
-",a) coordination,a) process,1-A: unsup. machine learning: (85%),a) 1,machine learning,machine-learning,a) process,1) Body
+130,138,2008,Multimodal Real-Time Focus of Attention Estimation in SmartRooms,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: (85%),a) 1,machine learning,machine-learning,a) process,1) Head
 131,139,2000,"Coordination of communication: effects of shared visual context on collaborative work","II) Video
 III) Audio","II) Camera
 III) Microphone","II) NS
@@ -3711,7 +3712,9 @@ III) NS","1) Gesture
 ANOVA","between-group
 between-group",a) product,"1) Body
 2) Verbal"
-132,140,2003,"Effectsof head-mounted and scene-oriented video systems onremote collaboration on physical tasks",I) Eye Gaze,I) Eye Tracker,I) NS,1) Focus Of Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) task performance
+132,140,2003,"Effects
+of head-mounted and scene-oriented video systems on
+remote collaboration on physical tasks",I) Eye Gaze,I) Eye Tracker,I) NS,1) Focus Of Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) task performance
 B) quality of assistance
 c) communication efficiency","a) task outcome
 B) survey
@@ -3780,7 +3783,7 @@ IV) NS","1) Speech Length
 2) pure_indiv
 3) pure_indiv","1) III
 2) III
-3) IV",a) dominance,a)assigned,a) group composition,a) process,"1-A: sup. machine learning: (85%)
+3) IV",a) dominance,a)assigned,a) group composition,a) condition,"1-A: sup. machine learning: (85%)
 2-A: sup. machine learning: (82%)
 3-A: sup. machine learning: (62%)",a) 1/0,"machine learning
 machine learning
@@ -3789,8 +3792,8 @@ machine-learning
 machine-learning",a) process,"1) Verbal
 2) Verbal
 3) Body"
-138,146,2008,Visual focus of attention estimation from head pose posterior probability distributions,IV) Kinesiology,IV) Camera,IV) NS,1) Head Pose,1) Body,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
-",a) coordination,a) process,1-A: unsup. machine learning: sig: (53.6%),a) 1,machine learning,machine-learning,a) process,1) Body
+138,146,2008,Visual focus of attention estimation from head pose posterior probability distributions,IV) Kinesiology,IV) Camera,IV) NS,1) Head Pose,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: sig: (53.6%),a) 1,machine learning,machine-learning,a) process,1) Head
 139,147,2010,Towards High-Level Human Activity Recognition through Computer Vision and Temporal Logic,"II) Video
 III) Audio
 IV) Kinesiology","II) Camera
@@ -3820,9 +3823,9 @@ VII) Wearable Sensor","VI) Shimmer 3 Gsr+
 VII) Emotion Faros 180",1) Social Physiological Compliance (Spc),1) Physiological,1) Combined,1) Combined,1) Individual,1) pure_indiv,"1) VI, VII",a) task performance,a) log data ,a) performance,a) product,1-A: minimum-width envelope: sig,a) 1,minimum-width envelope,between-group,a) product,1) Physiological
 141,149,2022,"Toward Automated Detection of Phase Changes in Team Collaboration
 ",III) Audio,III) Microphone,III) NS,1) Speech Features,1) Verbal,1) Speech Features,1) Speech Features,1) Individual,1) pure_indiv,1) III,a) coordination,a) research coded,a) coordination,a) process,1-A: sup. machine learning: (40%),a) 0,machine learning,machine-learning,a) process,1) Verbal
-142,150,1999,Modeling people's focus of attention,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Body,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
-",a) coordination,a) process,1-A: unsup. machine learning: (93%),a) 1,machine learning,machine-learning,a) process,1) Body
-143,151,2001,Socialphysiological compliance as a determinant of team performance,"VI) EDA
+142,150,1999,Modeling people's focus of attention,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: (93%),a) 1,machine learning,machine-learning,a) process,1) Head
+143,151,2001,Social physiological compliance as a determinant of team performance,"VI) EDA
 VII) ECG
 XII) Other","VI) Wearable Sensor, Wristband
 VII) ECG

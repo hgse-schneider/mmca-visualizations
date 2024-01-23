@@ -158,7 +158,7 @@ class Paper:
     -------
     get_paper_id ()
         Returns unique id of the paper
-    get_pub_id ()
+    get_pub_year ()
         Returns publication year of the paper
     get_metrics_org()
         Returns a dictionary of metrics used in the paper
@@ -176,7 +176,7 @@ class Paper:
         Returns a dictionary of data used in the paper
     parse_relationship ()
         Returns parsed relationship
-    dparsed_items()
+    parsed_items()
         Returns a dictionary containing parsed items
     set_pub_year()
         Set publication year
@@ -492,8 +492,13 @@ class Paper:
             for metric in metrics:
                 for outcome in outcomes:
                     if item_index:
-                        rel_tuples.append(
-                            (metric, outcome, rel_method, rel_type.strip()))
+                        if isinstance(outcome_smaller[outcome],list):
+                            for each_outcome in outcome_smaller[outcome]:
+                                rel_tuples.append(
+                                    (metric, f'{outcome}-{each_outcome}', rel_method, rel_type.strip()))
+                        else:
+                            rel_tuples.append(
+                                    (metric, outcome, rel_method, rel_type.strip()))
                     else:
                         if isinstance(outcome_smaller[outcome],list):
                             for each_outcome in outcome_smaller[outcome]:
@@ -716,6 +721,19 @@ class LiteratureDataset:
                         level_wise_nodes[4].append(outcome_lg[rel[1]])
                         available_color_index += 1
 
+                    if '-' in rel[1]:
+                        outcome_sm_index =  rel[1].split('-')[1]
+                    else:
+                        outcome_sm_index = rel[1]
+
+                    if outcome_sm[outcome_sm_index] not in nodes_level.keys():
+                            nodes_level[outcome_sm[outcome_sm_index]
+                                    ] = selected_levels['outcome_sm'] if selected_levels else .5
+                            nodes_color[outcome_sm[outcome_sm_index]
+                                    ] = nodes_color[outcome_lg[rel[1].split('-')[0]]]
+                            level_wise_nodes[3].append(outcome_sm[outcome_sm_index])
+
+                    """
                     if isinstance(outcome_sm[rel[1]],list):
                         for out_sm in outcome_sm[rel[1]]:
                             if out_sm[rel[1]] not in nodes_level.keys():
@@ -731,7 +749,8 @@ class LiteratureDataset:
                             nodes_color[outcome_sm[rel[1]]
                                     ] = nodes_color[outcome_lg[rel[1]]]
                             level_wise_nodes[3].append(outcome_sm[rel[1]])
-
+                    """
+                            
                     # for each relationship store the related paper id
                     linked_paper_ids.append(paper.paper_id)
                     sorted_order = sorted(
@@ -961,7 +980,6 @@ class LiteratureDataset:
         list
             list of all paper records between start_year and end_year, and satisfying selected options
         """
-        print('Filtered called:',data,metric,outcome,instrument)
         papers = self.get_papers_between_interval(start_year,end_year)
         results = []
         for paper in papers:
@@ -981,7 +999,7 @@ class LiteratureDataset:
                 paper_add_flag += 1
             if paper_add_flag == 4:
                 results.append(paper)
-        print('Total {} papers found for data options filter'.format(len(results)))
+        #print('Total {} papers found for data options filter'.format(len(results)))
         return results
 
     def get_papers_between_interval(self, start_year, end_year):
@@ -1006,7 +1024,7 @@ class LiteratureDataset:
             if pub_year >= start_year and pub_year < end_year:
                 results.append(paper)
 
-        print('Total {} papers found between'.format(len(results)))
+        #print('Total {} papers found between'.format(len(results)))
         return results
 
     def get_paper(self, id):
