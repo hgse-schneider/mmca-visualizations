@@ -6,9 +6,7 @@ We present the current state-of-the-art in MMCA with our extensive literature re
 
 This repository primarily contains two main components
 
-* **MMCA Review library**: This library aims to allow easier access to our literature review dataset through Python. Additionally, the library also provides some utility functions, e.g., filtering papers based on a time interval, and plotting trends for different coded attributes of papers (e.g., metrics, outcomes). <br/> Read the documentation [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/MMCA_library.md) <br/><br/> Check some analysis examples [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/Trends_analysis.ipynb)
-  
-  
+* **MMCA Review library**: This library aims to allow easier access to our literature review dataset through Python. Additionally, the library also provides some utility functions, e.g., filtering papers based on a time interval, and plotting trends for different coded attributes of papers (e.g., metrics, outcomes). <br/> Read the documentation [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/MMCA_library.md) <br/><br/> Check some analysis examples [here](https://github.com/hgse-schneider/mmca-visualizations/blob/main/Trends.ipynb)
   
   
 
