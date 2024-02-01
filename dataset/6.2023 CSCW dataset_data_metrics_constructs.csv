@@ -1,0 +1,3893 @@
+id,paper_id_new,year,paper_title,data,sensor,brand,metric,metric_larger_category,metric_smaller_category,metric_smaller_standardized,metric_IG_category,metric_IG_specific,data_per_metric,outcome_new,outcome_instrument,outcome_smaller_category_new,outcome_larger_category_new,analysis_and_results mm-oo:analysis:resultsig,outcome -significance,test_type_standard,test_grouped,outcome_larger_category_corrected,metric_larger_category_corrected
+1,1,2010,An Interactive Table for Supporting Participation Balance in Face-to-Face Collaborative Learning,III) Audio,III) Microphone,III) NS,1) Speech Time,1) Verbal,1) Speech Features,1) Speech Features,1) Individual,1) pure_indiv,1) III,a) verbal participation,a) survey,a) communication,a) process,1-A: t-test: sig: (t[38] = 2.18),a) 1,t-test,between-group,a) process,1) Verbal
+2,2,2013,Understanding collaborative program comprehension: Interlacing gaze and dialogues,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) Tobii 1750
+III) NS","1) Focus Of Attention
+2) Together Gaze
+3) Dialogue Episode
+4) Gaze Transitions","1) Gaze
+2) Gaze
+3) Verbal
+4) Gaze","1) Visual Attention
+2) Visual Attention
+3) Speech Content
+4) Eye Motion","1) Visual Attention
+2) Visual Attention
+3) Speech Content
+4) Eye Motion","1) Individual
+ 2) Group
+ 3) Individual
+ 4) Group","1) pure_indiv
+2) synchro
+3) content_indiv
+4) indiv_freq_in_group","1) I
+2) I
+3) III
+4) I","a) level of understanding
+B) conversational features","a) human evaluation
+B) human evaluation","a) learning
+B) communication","a) product
+B) process","1+2-A: ANOVA: sig
+1+2-A+B: mixed linear model: sig
+4-B: ANOVA: sig","a) 1
+B)1","ANOVA
+LME
+ANOVA","between-group
+correlation_regression
+between-group","a) product
+B) process","1) Gaze
+2) Gaze
+3) Verbal
+4) Gaze"
+3,3,2014,Physiological Linkage of Dyadic Gaming Experience,"VI) EDA
+VII) ECG","VI) Varioport 16-Bit Digital Skin Conductance Amplifier
+VII) Modified Lead II Configuration","VI) Varioport-B Portable Recorder System
+VII) NS",1) Physiological Linkage,1) Physiological,1) EDA,1) EDA,1) Individual,1) pure_indiv,"1) VI, VII","a) Involvement
+B) emotion
+c) emotion
+D) level of understanding","a) survey
+B) survey
+c) survey
+D) survey","a) engagement
+B) affective
+c) affective
+D) learning","a) process
+B) process
+c) process
+D) product","1-A: regression: sig
+1-B: regression: sig
+1-C: regression: sig
+1-D: regression: sig","a) 1
+B) 1
+c) 1
+D) 1","regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) process
+D) product",1) Physiological
+4,4,2018,A Multimodal-Sensor-Enabled Room for Unobtrusive Group Meeting Analysis,"II) Video
+III) Audio
+XII) Other","II) Kinect
+III) Microphone
+XII) Irma Matrix Tof Sensors","II) Microsoft Kinect
+III) NS
+XII) Infrared Intelligent Systems","1) Non-Verbal Speaking Metrics
+2) Visual Attention
+3) Verbal Dominance And Information Metrics","1) Verbal
+2) Gaze
+3) Verbal","1) Speech Participation
+2) Visual Attention
+3) Speech Participation","1) Speech Participation
+2) Visual Attention
+3) Speech Participation","1) Individual
+ 2) Individual
+ 3) Group","1) pure_indiv
+2) pure_indiv
+3) indiv_freq_in_group","1) XII
+2) II
+3) III","a) leadership
+B) perceived contribution","a) survey
+B) survey","a) interpersonal relationship
+B) interpersonal relationship ","a) process
+B) process","3-A: correlation: sig
+3-B: correlation: sig
+1-A: correlation: nonsig
+1-B: correlation: nonsig
+2-A: correlation: nonsig
+2-B: correlation: sig
+1*2*3-A: regression: nonsig
+1*2*3-B: regression: nonsig","a) 1/0
+B) 1/0","correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process","1) Verbal
+2) Gaze
+3) Verbal"
+5,5,2019,"Are we together or not? The temporal interplay of monitoring, physiological arousal and physiological synchrony during a collaborative exam","VI) EDA
+II) Video","VI) EDA Sensor
+II) Camera","VI) Empatica
+II) NS","1) EDA Peak Detection
+2) Physiological Concordance Index","1) Physiological
+2) Physiological","1) EDA
+2) Combined","1) EDA
+2) Combined","1) Individual
+ 2) Group","1) pure_indiv
+2) pure_indiv","1) VI
+2) II",a) emotion ,a) human evaluation,a) affective,a) process,"1,2-A: correlation: sig: (r=0.663)",a) 1,correlation,correlation_regression,a) process,"1) Physiological
+2) Physiological"
+6,6,2012,"Linking Speaking and Looking Behavior Patterns with Group Composition, Perception, and Performance","III) Audio
+II) Video","III) Microphone
+II) Camera","III) NS
+II) Logitech Webcam Pro 9000","1) Group Participation Speaking Cues
+2) Silence And Overlap Cues
+3) Speaking Distribution Cues
+4) Visual Attention
+5) Group Looking Cues","1) Verbal
+2) Verbal
+3) Verbal
+4) Gaze
+5) Gaze","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Visual Attention
+5) Visual Attention ","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Visual Attention
+5) Visual Attention","1) Individual
+ 2) Group
+ 3) Group
+ 4) Individual
+ 5) Group","1) synchro
+2) synchro
+3) indiv_freq_in_group
+4) pure_indiv
+5) synchro","1) III
+2) III
+3) III
+4) IV
+5) IV","a) group composition
+B) social perception
+c) group performance","a) survey
+B) survey
+c) human evaluation","a) group composition
+B) interpersonal relationship
+c) performance","a) condition
+B) process
+c) product","1-A: correlation: sig
+2-A: correlation: sig
+3-A: correlation: sig
+4-A: correlation: sig
+5-A: correlation: sig
+1-B: correlation: sig
+2-B: correlation: sig
+3-B: correlation: sig
+4-B: correlation: sig
+5-B: correlation: sig
+1-C: correlation: sig
+2-C: correlation: sig
+3-C: correlation: sig
+4-C: correlation: sig
+5-C: correlation: sig
+1+2-A: regression: sig
+2+3-B: regression: sig
+2-C: regression: sig","a) 1
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) condition
+B) process
+c) product","1) Verbal
+2) Verbal
+3) Verbal
+4) Gaze
+5) Gaze"
+7,7,2018,Automatic Recognition of Affective Laughter in Spontaneous Dyadic Interactions from Audiovisual Signals,"III) Audio
+II) Video","III) NS
+II) NS","III) NS
+II) NS","1) Gemaps Acoustic Features
+2) Extended Gemaps Acoustic Features
+3) MFCCS
+4) Facial Action Units","1) Verbal
+2) Verbal
+3) Verbal
+4) Head","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Facial Expressions","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Facial Expressions","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv","1) III
+2) III
+3) III
+4) II","a) laughter
+B) laughter
+c) laughter","a) computation
+B) computation
+c) human evaluation","a) interpersonal relationship
+B) interpersonal relationship
+c) interpersonal relationship","a) process
+B) process
+c) process","1+2+3+4-A: sup. machine learning: nonsig
+1+3+3+4-B: sup. machine learning: nonsig
+1+2+3+4-C: sup. machine learning: nonsig","a) 0
+B) 0
+c) 0","machine learning
+machine learning
+machine learning","machine-learning
+machine-learning
+machine-learning","a) process
+B) process
+c) process","1) Verbal
+2) Verbal
+3) Verbal
+4) Head"
+8,8,2018,Predicting Group Performance in Task-Based Interaction,III) Audio,III) Microphone,III) NS,"1) Speech Features
+2) Linguistic Features","1) Verbal
+2) Verbal","1) Speech Features
+2) Speech Content","1) Speech Features
+2) Speech Content","1) Individual
+ 2) Individual","1) pure_indiv
+2) content_indiv","1) III
+2) III",a) group performance,a) human evaluation,a) performance,a) product,1+2-A: sup. machine learning: (64.4%),a）1,machine learning,machine-learning,a) product,"1) Verbal
+2) Verbal"
+9,9,2015,Looking AT versus Looking THROUGH: A Dual Eye-tracking Study in MOOC Context,I) Eye Gaze,I) Eye Tracker,I) NS,"1) Perceptual With-Me-Ness (Gaze)
+2) Conceptual With-Me-Ness (Gaze)
+3) Gaze Similarity ","1) Gaze
+2) Gaze
+3) Gaze","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Individual
+ 2) Individual
+ 3) Group","1) pure_indiv
+2) pure_indiv
+3) synchro","1) I
+2) I
+3) I",a) learning gain,a) survey,a) learning,a) product,"1-A: correlation: sig: (r = 0.51)
+2-A: correlation: sig: (r = 0.41)
+3-A: correlation: sig: (r = 0.39)",a)1,"correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression",a) product,"1) Gaze
+2) Gaze
+3) Gaze"
+10,10,2018,A Network Analytic Approach to Gaze Coordination during a Collaborative Task,I) Eye Gaze,I) Eye Tracker (Glasses),I) SMI,"1) Gaze Fixations
+2) Gaze Saccades","1) Gaze
+2) Gaze","1) Visual Attention
+2) Eye Motion","1) Visual Attention
+2) Eye Motion","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) I
+2) I",a) task performance,a) human evaluation,a) performance,a) product,1+2-A: correlation: nonsig,a) 0,correlation,correlation_regression,a) product,"1) Gaze
+2) Gaze"
+11,11,2014,"The Additive Value of Multimodal Features for Predicting Engagement, Frustration, and Learning during Tutoring","II) Video
+IV) Kinesiology
+V) Log Data","II) Kinect
+IV) Kinect
+V) Own Application","II) Microsoft Kinect
+IV) Microsoft Kinect
+V) Javatutor","1) Dialogue Acts
+2) Facial Expressions
+3) Gesture
+4) Task Actions","1) Verbal
+2) Head
+3) Body
+4) Log Data","1) Speech Content
+2) Facial Expressions
+3) Hand Motion
+4) Task-Related","1) Speech Content
+2) Facial Expressions
+3) Hand Motion
+4) Task-Related","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) content_indiv
+2) pure_indiv
+3) pure_indiv
+4) content_indiv","1) V
+2) II
+3) IV
+4) V","a) engagement
+B) frustration
+c) learning gain","a) survey
+B) survey
+c) survey","a) engagement
+B) affective
+c) learning","a) process
+B) process
+c) product","1+2+3-A: regression: sig
+1+2+3-B: regression: sig
+1+2+3-C: regression: sig","a) 1
+B) 1
+c) 1","regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) product","1) Verbal
+2) Head
+3) Body
+4) Log Data"
+12,12,2018,(Dis)Engagement Matters: Identifying efficacious Learning Practices with Multimodal Learning Analytics,"IV) Kinesiology
+II) Video","IV) Kinect
+II) Camera","IV) Microsoft Kinect
+II) NS","1) Clustered Hand/Wrist Movement
+2) Object Manipulation","1) Body
+2) Log Data","1) Hand Motion
+2) Task-Related","1) Hand Motion
+2) Task-Related","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) IV
+2) II",a) learning gain,a) survey,a) learning,a) product,1-A: sup. machine learning: sig: (ACC: 76%),a) 1,machine learning,machine-learning,a) product,"1) Body
+2) Log Data"
+13,13,2017,Dual Gaze as a Proxy for Collaboration in Informal Learning,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) Tobii 1750
+III) NS","1) (Not) Focused Together
+2) Dialogue Episodes","1) Gaze
+2) Verbal","1) Visual Attention
+2) Speech Content","1) Visual Attention
+2) Speech Content","1) Group
+ 2) Individual","1) synchro
+2) content_indiv","1) I
+2) III",a) level of understanding,a) human evaluation,a) learning,a) product,"1-A: ANOVA: sig: (F [1,16]=8.70)
+1+2-A: ANOVA: sig: (F [1,61]=7.60)",a) 1,"ANOVA
+ANOVA","between-group
+between-group",a) product,"1) Gaze
+2) Verbal"
+14,14,2013,Using Eye-Tracking Technology to Support Visual Coordination in Collaborative Problem-Solving Groups,I) Eye Gaze,I) Eye Tracker,I) NS,1) Joint Visual Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I,"a) learning gain
+B) collaboration quality","a) learning test
+B) human evaluation","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship","a) product
+B) process","1-A: regression: sig
+1-B: regression: sig","a) 1
+B) 1","regression
+regression","correlation_regression
+correlation_regression","a) product
+B) process",1) Gaze
+15,15,2011,Analysing frequent sequential patterns of collaborative learning activity around an interactive tabletop,V) Log Data,V) Interactive Tabletop,V) NS,1) Events,1) Log Data,1) Task-Related ,1) Task-Related ,1) Individual,1) content_indiv,1) V,a) group performance,a) human evaluation,a) performance,a) product,1-A: unsup. machine learning: sig,a) 1,machine learning,machine-learning,a) product,1) Log Data
+16,16,2014,The Effect of Mutual Gaze Perception on Students’ Verbal Coordination,"I) Eye Gaze
+V) Log Data","I) Eye Tracker
+V) NS","I) Tobii X1
+V) NS","1) Joint Visual Attention
+2) N-Grams
+3) Cosine Similarity Scores
+4) Convergence Measures
+5) Coherence Metrics","1) Gaze
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal","1) Visual Attention
+2) Speech Content
+3) Speech Content
+4) Speech Content
+5) Speech Content","1) Visual Attention
+2) Speech Content
+3) Speech Content
+4) Speech Content
+5) Speech Content","1) Group
+ 2) Group
+ 3) Group
+ 4) Group
+ 5) Group","1) synchro
+2) synchro
+3) synchro
+4) synchro
+5) synchro","1) I
+2) V
+3) V
+4) V
+5) V","a) learning gain
+B) collaboration quality","a) learning test
+B) human evaluation","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship","a) product
+B) process","1,4-A: ANOVA: nonsig
+1,4-B: ANOVA: nonsig
+1,5-A: correlation: sig
+2,3,4,5-A: sup. machine learning: 75%","a) 1/0
+B)0","ANOVA
+ANOVA
+correlation
+machine learning","between-group
+between-group
+correlation_regression
+machine-learning","a) product
+B) process","1) Gaze
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal"
+17,17,2016,Detecting Collaborative Dynamics Using Mobile Eye-Trackers,"I) Eye Gaze
+II) Video
+III) Audio","I) Eye Tracker
+II) Camera
+III) Microphone ","I) SMI (Eye- Tracking Glasses With Binocular Pupil Tracking At 30Hz)
+II) NS
+III) NS","1) Joint Visual Attention
+2) Gestures
+3) Speech Time","1) Gaze
+2) Body
+3) Verbal","1) Visual Attention
+2) Hand Motion
+3) Speech Participation","1) Visual Attention
+2) Hand Motion
+3) Speech Participation","1) Group
+ 2) Individual
+ 3) Individual","1) synchro
+2) pure_indiv
+3) pure_indiv","1) I
+2) II
+3) III","a) group performance
+B) learning gain","a) human evaluation
+B) learning test","a) performance
+B) learning","a) product
+B) product","1,2,3-B: qualitative: sig
+1-B: correlation: sig","a) /
+B) 1","qualitative
+correlation","descriptive
+correlation_regression","a) product
+B) product","1) Gaze
+2) Body
+3) Verbal"
+18,18,2013,Expertise estimation based on simple multimodal features,"II) Video
+III) Audio
+V) Log Data","II) Camera
+III) Microphone
+V) Digital Pen","II) NS
+III) NS
+V) NS","1) Calculator Use
+2) Total Movement
+3) Distance From The Center Of The Table
+4) Number Of Interventions
+5) Speech Time
+6) Times Numbers Were Mentioned
+7) Times Mathematical Terms Were Mentioned
+8) Times Commands Were Pronounced
+9) Total Number Of Pen Strokes
+10) Average Number Of Points
+11) Average Stroke Time Length
+12) Average Stroke Path Length
+13) Average Stroke Displacement
+14) Average Stroke Pressure","1) Log Data
+2) Body
+3) Body
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal
+9) Log Data
+10) Log Data
+11) Log Data
+12) Log Data
+13) Log Data
+14) Log Data","1) Task-Related
+2) Gross Body Motion
+3) Location
+4) Speech Participation
+5) Speech Participation
+6) Speech Content
+7) Speech Content
+8) Speech Content
+9) Text
+10) Text
+11) Text
+12) Text
+13) Text
+14) Text ","1) Task-Related
+2) Gross Body Motion
+3) Location
+4) Speech Participation
+5) Speech Participation
+6) Speech Content
+7) Speech Content
+8) Speech Content
+9) Text
+10) Text
+11) Text
+12) Text
+13) Text
+14) Text ","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Group
+ 5) Individual
+ 6) Individual
+ 7) Individual
+ 8) Individual
+ 9) Individual
+ 10) Individual
+ 11) Individual
+ 12) Individual
+ 13) Individual
+ 14) Individual","1) object_indiv
+2) pure_indiv
+3) object_indiv
+4) indiv_freq_in_group
+5) pure_indiv
+6) indiv_freq_in_group
+7) indiv_freq_in_group
+8) indiv_freq_in_group
+9) object_indiv
+10) object_indiv
+11) object_indiv
+12) object_indiv
+13) object_indiv
+14) object_indiv","1) II
+2) II
+3) II
+4) III
+5) III
+6) III
+7) III
+8) III
+9) V
+10) V
+11) V
+12) V
+13) V
+14) V","a) task performance
+B) expertise","a) human evaluation
+B) human evaluation","a) performance
+B) group composition","a) product
+B) condition","1,2,3,4,5,6,7,8,9,10,11,12,13,14-A: regression: sig
+1,2,3,4,5,6,7,8,9,10,11,12,13,14-B: sup. machine learning: sig","a)1
+B) 1","regression
+machine learning","correlation_regression
+machine-learning","a) product
+B) condition","1) Log Data
+2) Body
+3) Body
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal
+9) Log Data
+10) Log Data
+11) Log Data
+12) Log Data
+13) Log Data
+14) Log Data"
+19,19,2015,Personality Trait Classification via Co-Occurrent Multiparty Multimodal Event Discovery,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) Dev-Audio","1) Speaking Status
+2) Pitch
+3) Energy
+4) Head Motion
+5) Body Motion
+6) Motion Energy Images
+7) Gaze","1) Verbal
+2) Verbal
+3) Verbal
+4) Head
+5) Body
+6) Body
+7) Gaze","1) Speech Participation
+2) Speech Features
+3) Speech Features
+4) Head Motion
+5) Gross Body Motion
+6) Gross Body Motion
+7) Visual Attention","1) Speech Participation
+2) Speech Features
+3) Speech Features
+4) Head Motion
+5) Gross Body Motion
+6) Gross Body Motion
+7) Visual Attention","1) Group
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual
+ 7) Group","1) indiv_freq_in_group
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv
+5) pure_indiv
+6) pure_indiv
+7) synchro","1) III
+2) III
+3) III
+4) II
+5) II
+6) II
+7) II",a) personality ,a) survey,a) group composition,a) condition,"1,2,3,4,5,6,7-A: unsup. machine learning: (69.61%)",a) ,machine learning,machine-learning,a) condition,"1) Verbal
+2) Verbal
+3) Verbal
+4) Head
+5) Body
+6) Body
+7) Gaze"
+20,20,2019,Dynamic Adaptive Gesturing Predicts Domain Expertise in Mathematics,"II) Video
+III) Audio
+V) Log Data","II) Camera
+III) Microphone
+V) Digital Pen And Digital Paper","II) Point Grey Scorpion Digital Firewire Cameras
+III) Countryman Isomax Hyper-Cardioid Microphones
+V) Nokia Digital Pens And Anoto Digital Paper","1) Total Manual Gestures Per Second
+2) Iconic Gestures Per Second
+3) Deictic Gestures Per Second","1) Body
+2) Body
+3) Body","1) Hand Motion
+2) Hand Motion
+3) Hand Motion","1) Hand Motion
+2) Hand Motion
+3) Hand Motion","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) II
+2) II
+3) II",a) expertise,a) human evaluation,a) group composition,a) condition,"1-A: Wilcoxon Signed Ranks test: sig
+2-A: Wilcoxon Signed Ranks test: sig
+3-A: Wilcoxon Signed Ranks test: nonsig",a) 1,"non-parametric tests
+non-parametric tests
+non-parametric tests","between-group
+between-group
+between-group",a) condition,"1) Body
+2) Body
+3) Body"
+21,21,2013,Capturing and analyzing verbal and physical collaborative learning interactions at an enriched interactive tabletop,"III) Audio
+V) Log Data","III) Microphone
+V) Interactive Tabletop","III) Dev-Audio
+V) Collaid","1) Sequences Of Verbal Utterances
+2) Sequences Of Meaningful Actions","1) Verbal
+2) Log Data","1) Speech Content
+2) Touch ","1) Speech Content
+2) Touch ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) III
+2) V",a) collaboration quality,a) human evaluation,"
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship",a) process,"1,2-A: unsup. machine learning: (90%)",a) 1,machine learning,machine-learning,a) process,"1) Verbal
+2) Log Data"
+22,22,2013,Automatic identification of experts and performance prediction in the multimodal math data corpus through analysis of speech interaction.,III) Audio,III) Microphone,III) NS,"1) Duration Of All Vocalisations
+2) Average Duration Of Vocalisation
+3) Standard Deviation Of Vocalisation
+4) Probability Of A Transition From Floor To A Vocalisation
+5) Probability Of A Transition From A Vocalisation To Floor
+6) Probability Of Transitioning From A Group Vocalisation To Speaker Vocalisation
+7) Probability Of Transitioning From A Speaker Vocalisation To A Group Vocalisation
+8) Uncertainty In The Transitions Originating From A Speaker","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation
+5) Speech Participation
+6) Speech Participation
+7) Speech Participation
+8) Speech Participation","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation
+5) Speech Participation
+6) Speech Participation
+7) Speech Participation
+8) Speech Participation","1) Group
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual
+ 7) Individual
+ 8) Group","1) indiv_freq_in_group
+2) pure_indiv
+3) pure_indiv
+4) complex_indiv
+5) complex_indiv
+6) complex_indiv
+7) complex_indiv
+8) group_cycle","1) III
+2) III
+3) III
+4) III
+5) III
+6) III
+7) III
+8) III",a) expertise,a) task outcome,a) group composition,a) condition,"1,2,3,4,5,6,7,8-A: sup. machine learning: sig: (ACC: 92%)",a) 1,machine learning,machine-learning,a) condition,"1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal"
+24,24,2020,Unpacking the relationship between existing and new measures of physiological synchrony and collaborative learning: a mixed methods study,"VI) EDA
+III) Audio","VI) Smart Wristband
+III) Microphone ","VI) Empatica (E4)
+III) Microsoft Kinect","1) Physiological Synchrony (Pc)
+2) Physiological Synchrony (Da)
+3) Physiological Synchrony (Sm)
+4) Physiological Synchrony (Idm)
+5) Cycles Of Physiological Synchrony (Pc)","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA","1) Group
+ 2) Group
+ 3) Group
+ 4) Group
+ 5) Group","1) synchro
+2) synchro
+3) synchro
+4) synchro
+5) group_cycle","1) VI
+2) VI
+3) VI
+4) VI
+5) VI","a) collaboration quality
+B) task performance
+c) learning gain","a) human evaluation
+B) task outcome
+c) survey","
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship
+B) performance
+c) learning","a) process
+B) product
+c) product","1-C: correlation: sig: r = 0.35
+2-A: correlation: sig: r =0.47
+5-A: correlation: sig: r = 0.57
+5-C: correlation: sig: r = 0.47","a) 1
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) product
+c) product","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological"
+25,25,2019,Modeling Team-level Multimodal Dynamics during Multiparty Collaboration,"III) Audio
+II) Video
+VI) EDA","III) Microphone
+II) Web Camera
+VI) Electrodes","III) NS
+II) NS
+VI) Shimmer 3 Gsr+","1) Speech Rate
+2) Face And Upper Body Movement
+3) Galvanic Skin Response","1) Verbal
+2) Body
+3) Physiological","1) Speech Features
+2) Gross Body Motion
+3) EDA","1) Speech Features
+2) Gross Body Motion
+3) EDA","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) III
+2) II
+3) VI","a) collaboration quality
+B) perceived valence
+c) perceived arousal
+D) task performance","a) survey
+B) survey
+c) survey
+D) task outcome","a) interpersonal relationship
+B) affective
+c) affective
+D) performance","a) process
+B) process
+c) process
+D) product","1+2+3-A: unsup. machine learning: nonsig
+1+2+3-B: unsup. machine learning: nonsig
+1+2+3-C: unsup. machine learning: nonsig
+1+2+3-D: unsup. machine learning: nonsig","a) 0
+B) 0
+c) 0
+D)0","machine learning
+machine learning
+machine learning
+machine learning","machine-learning
+machine-learning
+machine-learning
+machine-learning","a) process
+B) process
+c) process
+D) product","1) Verbal
+2) Body
+3) Physiological"
+26,26,2018,Leveraging Mobile Eye-Trackers to Capture Joint Visual Attention in Co-Located Collaborative Learning,I) Eye Gaze,I) Eye Tracker,I) Tobii Glasses,"1) Joint Visual Attention
+2) Cycles Of Collaborative / Individual Work","1) Gaze
+2) Gaze","1) Visual Attention
+2) Visual Attention","1) Visual Attention
+2) Visual Attention","1) Group
+ 2) Group","1) synchro
+2) group_cycle","1) I
+2) I","a) learning gain
+B) collaboration quality
+c) task performance","a) survey
+B) human evaluation
+c) task outcome","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship
+c) performance","a) product
+B) process
+c) product","1-B: correlation: sig: r = 0.341
+2-B: correlation: sig: r = 0.347
+2-A: correlation: sig: r = 0.398
+2-C: correlation: sig: r = 0.355","a) 1
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) process
+c) product","1) Gaze
+2) Gaze"
+27,27,2010,Gaze quality assisted automatic recognition of social contexts in collaborative Tetris,"I) Eye Gaze
+V) Log Data","I) Eye Tracker
+V) Log Data","I) Tobii 1750
+V) Tetris","1) Gaze Location
+2) Gaze Saccades
+3) Gaze Fixation
+4) Player Actions
+5) Zoid Acceleration","1) Gaze
+2) Gaze
+3) Gaze
+4) Log Data
+5) Log Data","1) Visual Attention
+2) Eye Motion
+3) Visual Attention
+4) Task-Related
+5) Task-Related ","1) Visual Attention
+2) Eye Motion
+3) Visual Attention
+4) Task-Related
+5) Task-Related ","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv
+5) pure_indiv","1) I
+2) I
+3) I
+4) V
+5) V",a) social context,a) assigned,a) group composition,a) condition,1+2+3+4+5-A: sup. machine learning: sig: (ACC:81.43%),a) 1,machine learning,machine-learning,a) condition,"1) Gaze
+2) Gaze
+3) Gaze
+4) Log Data
+5) Log Data"
+28,28,2014,Acoustic-Prosodic Entrainment and Rapport in Collaborative Learning Dialogues,III) Audio,III) Microphone,III) NS,"1) Pitch
+2) Intensity
+3) Voice Quality
+4) Speaking Rate
+5) Proximity
+6) Convergence
+7) Synchrony","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Speech Features","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Speech Features","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Group
+ 6) Group
+ 7) Group","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv
+5) synchro
+6) synchro
+7) synchro","1) III
+2) III
+3) III
+4) III
+5) III
+6) III
+7) III",a) conversational features ,a) mixed - human evaluation & survey,a) communication,a) process,"5-A: correlation: mixed: (Max r 0.842)
+6-A: correlation: mixed: (Max r 0.741)
+7-A: correlation: mixed: (Max r 0.634)",a) 0/1,"correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression",a) process,"1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal"
+29,29,2016,Can Eye Help You?: Effects of Visualizing Eye Fixations on Remote Collaboration Scenarios for Physical Tasks,I) Eye Gaze,I) Optical See-Through Head-Mounted Display,I) NS,1) Gaze Location,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) quality of remote collaboration
+B) task completion time","a) survey
+B) task outcome","a) performance
+B) performance","a) product
+B) product","1-A: Wilcoxon Signed Ranks test: sig
+1-B: Wilcoxon Signed Ranks test: sig","a) 1
+B) 1","non-parametric tests
+non-parametric tests","between-group
+between-group","a) product
+B) product",1) Gaze
+30,30,2016,Using Mobile Eye-Trackers to Unpack the Perceptual Benefits of a Tangible User Interface for Collaborative Learning,I) Eye Gaze,I) Eye Tracker,I) SMI,1) Joint Visual Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I,"a) task performance
+B) learning gain","a) computation
+B) survey","a) performance
+B) learning","a) product
+B) product","1-A: correlation: sig: (r = 0.59)
+1-B: correlation: sig: (r = 0.42)","a) 1
+B) 1","correlation
+correlation","correlation_regression
+correlation_regression","a) product
+B) product",1) Gaze
+31,31,2016,Personality classification and behaviour interpretation: An approach based on feature categories,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Intra-Personal Features
+2) Dyadic Features
+3) One Vs All Features","1) Head
+2) Head
+3) Verbal","1) Facial Expressions
+2) Facial Expressions
+3) Speech Features","1) Facial Expressions
+2) Facial Expressions
+3) Speech Features","1) Individual
+ 2) Group
+ 3) Group","1) pure_indiv
+2) synchro
+3) synchro","1) II, III
+2) II, III
+3) II, III","a) personality
+B) social perception","a) survey
+B) survey","a) group composition
+B) interpersonal relationship","a) condition
+B) process","1-A: regression: 73.53%
+1-B: regression: 76.47%
+2-A: regression: 60.54%
+2-B: regression: 66.42%
+3-A: regression: 65.69%
+3-B: regression: 73.53%","a) 1
+B) 1","regression
+regression
+regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) condition
+B) process","1) Head
+2) Head
+3) Verbal"
+32,32,2008,Investigating Automatic Dominance Estimation in Groups From Visual Attention and Speaking Activity,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Audio Energy Features
+2) Visual Attention","1) Verbal
+2) Gaze","1) Speech Features
+2) Visual Attention","1) Speech Features
+2) Visual Attention","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) III
+2) II",a) dominance,a) human evaluation,a) group composition,a) condition,1+2-A: sup. machine learning: (79.4%),a) 1,machine learning,machine-learning,a) condition,"1) Verbal
+2) Gaze"
+33,33,2017,High Accuracy Detection of Collaboration From Log Data and Superficial Speech Features,"II) Video
+III) Audio
+V) Log Data
+XII) Other","II) Camera
+III) Microphone
+V) Digital Pen
+XII) Digital Pen","II) NS
+III) NS
+V) Fact (Formative Assessment Using Computational Technology)
+XII) NS","1) Card Movements
+2) Scrolling
+3) Zooming
+4) Audio Features","1) Log Data
+2) Log Data
+3) Log Data
+4) Verbal","1) Task-Related
+2) Task-Related
+3) Task-Related
+4) Speech Features","1) Task-Related
+2) Task-Related
+3) Task-Related
+4) Speech Features","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv","1) V
+2) V
+3) V
+4) III","a) collaboration
+B) asymmetric contribution
+c) cooperation","a) human evaluation
+B) human evaluation
+c) human evaluation","a) coordination
+a) communication
+B) coordination
+c) coordination","a) process
+B) process
+c) process","1+2+3+4-A+C: sup. machine learning: (96%)
+1+2+3+4-A+B+C: sup. machine learning: (86%)","a) 1
+B) 1
+c) 1","machine learning
+machine learning","machine-learning
+machine-learning","a) process
+B) process
+c) process","1) Log Data
+2) Log Data
+3) Log Data
+4) Verbal"
+34,34,2018,Using Interlocutor-Modulated Attention BLSTM to Predict Personality Traits in Small Group Interaction,III) Audio,III) NS,III) NS,1) Speech Utterances,1) Verbal,1) Speech Content,1) Speech Content,1) Individual,1) pure_indiv,1) III,a) personality,a) survey ,a) group composition,a) condition,1-A: sup. machine learning: (87.9%),a) 1,machine learning,machine-learning,a) condition,1) Verbal
+35,35,2019,Dynamics of Visual Attention in Multiparty Collaborative Problem Solving using Multidimensional Recurrence Quantification Analysis,I) Eye Gaze,I) Eye Tracker,I) Eyetribe,"1) Gaze Area Of Interest
+2) Cross-Recurrence Quantification Analysis
+3) Multidimensional Recurrence Quantification Analysis","1) Gaze
+2) Gaze
+3) Gaze","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Individual
+ 2) Group
+ 3) Group","1) pure_indiv
+2) synchro
+3) synchro","1) I
+2) I
+3) I","a) construction of shared knowledge
+B) negotiation
+c) coordination
+D) performance
+E) performance","a) human evaluation
+B) human evaluation
+c) human evaluation
+D) human evaluation
+E) learning test ","a) coordination
+B) communication
+c) coordination
+D) performance
+E) learning","a) process
+B) process
+c) process
+D) product
+E) product","2-A: regression: sig
+3-B: regression: sig
+3-C: regression: sig
+2-D: regression: nonsig
+2-E: regression: sig
+2-D: regression: nonsig
+2-E: regression: nosig","a) 1
+B) 1
+c) 1
+D) 0
+E) 1","regression
+regression
+regression
+regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) process
+D) product
+E) product","1) Gaze
+2) Gaze
+3) Gaze"
+37,37,2013,"Emergent leaders through looking and speaking: from audio-visual data to multimodal recognition","III) Audio
+II) Video","III) Microphone
+II) Camera","III) Dev-Audio
+II) Logitech Webcam Pro 9000","1) Speaking Activity
+2) Visual Attention
+3) Audio-Visual","1) Verbal
+2) Gaze
+3) Gaze","1) Speech Participation
+2) Visual Attention
+3) Visual Attention","1) Speech Participation
+2) Visual Attention
+3) Visual Attention","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) II, III","a) personality
+B) group interaction
+c) dominance
+D) task performance
+E) leadership","a) survey
+B) survey
+c) survey
+D) human evaluation
+E) survey","a) group composition
+B) interpersonal relationship
+c) interpersonal relationship
+D) performance
+E) interpersonal relationship","a) condition
+B) process
+c) process
+D) product
+E) process","1*3-E: sup. machine learning: (50%)
+1*3-C: sup. machine learning: (59.1%)","a) /
+B)/
+c) 0
+D) /
+E) 0","machine learning
+machine learning","machine-learning
+machine-learning","a) condition
+B) process
+c) process
+D) product
+E) process","1) Verbal
+2) Gaze
+3) Gaze"
+38,38,2019,Predicting the Quality of Collaborative Problem Solving Through Linguistic Analysis of Discourse,"I) Eye Gaze
+III) Audio
+IV) Kinesiology
+VI) EDA","I) Eye Tracker
+III) Microphone
+IV) Kinect
+VI) Smart Wristband","I) Tobii
+III) Microsoft Kinect
+IV) Microsoft Kinect
+VI) Empatica (E4)","1) Coh-Metrix Indices
+2) Physical Synchrony
+3) Physiological Synchrony (Pc)
+4) Joint Visual Attention","1) Verbal
+2) Body
+3) Physiological
+4) Gaze","1) Speech Features
+2) Gross Body Motion
+3) EDA
+4) Visual Attention","1) Speech Features
+2) Gross Body Motion
+3) EDA
+4) Visual Attention","1) Individual
+ 2) Group
+ 3) Group
+ 4) Group","1) pure_indiv
+2) synchro
+3) synchro
+4) synchro","1) III
+2) IV
+3) VI
+4) I","a) learning gain
+B) collaboration
+c) conversational features","a) survey
+B) human evaluation
+c) computation ","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship
+c) communication","a) product
+B) process
+c) process","1-A: correlation: sig
+1-B: correlation: sig
+1-C: correlation: sig
+2-C: correlation: sig
+3-C: correlation: sig
+4-C: correlation: sig
+2-B: sup. machine learning: 84%","a) 1
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+machine learning","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+machine-learning","a) product
+B) process
+c) process","1) Verbal
+2) Body
+3) Physiological
+4) Gaze"
+39,39,2014,Shared Experiences of Technology and Trust: An Experimental Study of Physiological Compliance Between Active and Passive Users in Technology-Mediated Collaborative Encounters,"VI) EDA
+VII) ECG","VI) Wearable Sensor
+VII) Wearable Sensor","VI) Mp150 Data Acquisition System
+VII) Mp150 Data Acquisition System","1) signal matching (SM) - EDA
+2) instantaneous derivative matching (IDM) - EDA
+3) directional agreement (DA) - EDA
+4) cross correlation (CC) - EDA
+5) weighted coherence (WC) - EDA
+6) signal matching (SM) - Hr
+7) instantaneous derivative matching (IDM) - Hr
+8) directional agreement (DA) - Hr
+9) cross correlation (CC) - Hr
+10) weighted coherence (WC) - Hr Low Frequency
+11) weighted coherence (WC) - Hr High Frequency","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological
+6) Physiological
+7) Physiological
+8) Physiological
+9) Physiological
+10) Physiological
+11) Physiological","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA
+6) Heart
+7) Heart
+8) Heart
+9) Heart
+10) Heart
+11) Heart","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA
+6) Heart
+7) Heart
+8) Heart
+9) Heart
+10) Heart
+11) Heart","1) Group
+ 2) Group
+ 3) Group
+ 4) Group
+ 5) Group
+ 6) Group
+ 7) Group
+ 8) Group
+ 9) Group
+ 10) Group
+ 11) Group","1) synchro
+2) synchro
+3) synchro
+4) synchro
+5) synchro
+6) synchro
+7) synchro
+8) synchro
+9) synchro
+10) synchro
+11) synchro","1) VI
+2) VI
+3) VI
+4) VI
+5) VI
+6) VII
+7) VII
+8) VII
+9) VII
+10) VII
+11) VII","a) task performance
+B) workload","a) task performance
+B) survey ","a) performance
+B) engagement","a) product
+B) process","1-A: LME: nonsig
+2-A: LME: nonsig
+3-A: LME: sig
+4-A: LME: nonsig
+5-A: LME: nonsig
+6-A: LME: nonsig
+7-A: LME: nonsig
+8-A: LME: nonsig
+9-A: LME: nonsig
+10-A: LME: nonsig
+11-A: LME: nonsig
+1-B: LME: nonsig
+2-B: LME: nonsig
+3-B: LME: nonsig
+4-B: LME: nonsig
+5-B: LME: nonsig
+6-B: LME: nonsig
+7-B: LME: nonsig
+8-A: LME: nonsig
+9-A: LME: nonsig
+10-A: LME: nonsig
+11-A: LME: nonsig","a) 0
+B) 0","LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME
+LME","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) process","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological
+6) Physiological
+7) Physiological
+8) Physiological
+9) Physiological
+10) Physiological
+11) Physiological"
+40,40,2017,Using Multimodal Learning Analytics to Identify Aspects of Collaboration in Project-Based Learning,II) Video,II) Camera,II) NS,"1) Count Of Faces Looking At Screen
+2) Distance Between Learners
+3) Mean Distance Between Hands (dbh)
+4) Hand Motion Speed","1) Gaze
+2) Body
+3) Body
+4) Body","1) Visual Attention
+2) Location
+3) Hand Motion
+4) Hand Motion","1) Visual Attention
+2) Location
+3) Hand Motion
+4) Hand Motion","1) Group
+ 2) Group
+ 3) Individual
+ 4) Individual","1) synchro
+2) synchro
+3) pure_indiv
+4) pure_indiv","1) II
+2) II
+3) II
+4) II","a) engagement
+B) synchronisation
+c) individual accountability","a) human evaluation
+B) human evaluation
+c) human evaluation","a) engagement
+B) interpersonal relationship
+c) coordination","a) process
+B) process
+c) process","3-C: regression: sig
+3-B: regression: sig
+1+3-B: regression: sig
+3-A: regression: sig","a) 1
+B) 1
+c) 1","regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) process","1) Gaze
+2) Body
+3) Body
+4) Body"
+41,41,2016,Modeling Collaboration Patterns on an Interactive Tabletop in a Classroom Setting,V) Log Data,V) Touch Screen,V) Microsoft Pixelsense Sdk,1) Touch Patterns,1) Log Data,1) Touch,1) Touch,1) Individual,1) pure_indiv,1) V,a) social regulation,a) human evaluation,a) coordination,a) process,1-A: computation: (84.2%),a) 1,computation,descriptive,a) process,1) Log Data
+42,42,2018,Toward Using Multi-Modal Learning Analytics to Support and Measure Collaboration in Co-Located Dyads,"III) Audio
+I) Eye Gaze
+VI) EDA
+IV) Kinesiology","III) Kinect
+I) Eye Tracker
+VI) Wearable Sensor
+IV) Kinect","III) Kinect
+I) Tobii Eye Trackers
+VI) Empatica (E4)
+IV) Microsoft Kinect","1) Total Movement Across Upper Body Joints And Body Parts
+2) Talking Time","1) Body
+2) Verbal","1) Gross Body Motion
+2) Speech Participation","1) Gross Body Motion
+2) Speech Participation","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) IV
+2) III",a) collaboration quality,a) human evaluation ,"
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship",a) process,"1-A: correlation: sig
+2-A: correlation: sig",a) 1,"correlation
+correlation","correlation_regression
+correlation_regression",a) process,"1) Body
+2) Verbal"
+43,43,2019,An Alternate Statistical Lens to Look at Collaboration Data: Extreme Value Theory,I) Eye Gaze,I) Eye Tracker,I) NS,1) Evt Of Spatial Entropy,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) collaboration outcome
+B) learning gain","a) task outcome
+B) learning test ","a) performance
+B) learning","a) product
+B) product","1-A: regression: sig
+1-B: regression: sig","a) 1
+B) 1","regression
+regression","correlation_regression
+correlation_regression","a) product
+B) product",1) Gaze
+44,44,2019,Going beyond what is visible: What multichannel data can reveal about interaction in the context of collaborative learning?,"II) Video
+III) Audio
+VI) EDA","II) Camera
+III) Microphone
+VI) Wearable Sensor","II) 360 Video Camera Moore System
+III) 360 Video Camera Moore System
+VI) Empatica (E3)","1) Facial Expression
+2) Physiological Simultaneous Arousal","1) Head
+2) Physiological","1) Facial Expressions
+2) EDA","1) Facial Expressions
+2) EDA","1) Individual
+ 2) Group","1) pure_indiv
+2) synchro","1) II
+2) VI","a) type of working activity
+B) group interaction","a) human evaluation
+B) human evaluation","a) coordination
+B) coordination","a) process
+B) process","1-A: computation: nonsig
+1-B: ANOVA: sig
+2-A: computation: nonsig
+2-B: computation: nonsig","a) 0
+B)0","computation
+ANOVA
+computation
+computation","descriptive
+between-group
+ descriptive
+ descriptive","a) process
+B) process","1) Head
+2) Physiological"
+45,45,2019,Task-independent Multimodal Prediction of Group Performance Based on product Dimensions,"III) Audio
+IV) Kinesiology
+V) Log Data","III) Microphone
+IV) Wearable Sensor
+V) Digital Pen","III) NS
+IV) NS
+V) NS","1) Speaking Turn Features
+2) Acoustic Features
+3) Head Motion Features
+4) Linguistic Features","1) Verbal
+2) Verbal
+3) Head
+4) Verbal","1) Speech Participation
+2) Speech Features
+3) Head Motion
+4) Speech Content","1) Speech Participation
+2) Speech Features
+3) Head Motion
+4) Speech Content","1) Group
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) indiv_freq_in_group
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv","1) III
+2) III
+3) IV
+4) V",a) task performance,a) human evaluation,a) performance,a) product,1*2*3*4-A: unsup. machine learning: sig,a) 1,machine learning,machine-learning,a) product,"1) Verbal
+2) Verbal
+3) Head
+4) Verbal"
+46,46,2014,Toward Collaboration Sensing,I) Eye Gaze,I) Eye Tracker,I) Tobii,1) Network Features,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,a) collaboration quality,a) human evaluation,"
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship",a) process,"1-A: sup. machine learning: (85-100%)
+1-A: correlation: sig",a) 1,"machine learning
+correlation","machine-learning
+correlation_regression",a) process,1) Gaze
+47,47,2017,Supervised machine learning in multimodal learning analytics for estimating success in project-based learning,"IV) Kinesiology
+IV) Kinesiology
+III) Audio
+V) Log Data","IV) Kinect
+IV) Kinect
+III) Microphone
+V) Arduino Ide ","IV) Logitech C920
+IV) Microsoft Kinect
+III) NS
+V) Arduino","1) Number Of Faces Looking At Screen
+2) Mean Distance Between Learners
+3) Mean Distance Between Hands (dbh)
+4) Mean Hand Movement Speed
+5) Mean Audio Level
+6) Arduino Measure Of Complexity
+7) Arduino Active Hardware Blocks
+8) Arduino Active Software Blocks
+9) Arduino Active Blocks
+10) Student Work Phases","1) Head
+2) Body
+3) Body
+4) Body
+5) Verbal
+6) Log Data
+7) Log Data
+8) Log Data
+9) Log Data
+10) Log Data","1) Head Motion
+2) Location
+3) Hand Motion
+4) Hand Motion
+5) Speech Features
+6) Task-Related
+7) Task-Related
+8) Task-Related
+9) Task-Related
+10) Task-Related","1) Head Motion
+2) Location
+3) Hand Motion
+4) Hand Motion
+5) Speech Features
+6) Task-Related
+7) Task-Related
+8) Task-Related
+9) Task-Related
+10) Task-Related","1) Group
+ 2) Group
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual
+ 7) Individual
+ 8) Individual
+ 9) Individual
+ 10) Individual","1) indiv_freq_in_group
+2) synchro
+3) pure_indiv
+4) pure_indiv
+5) pure_indiv
+6) object_indiv
+7) object_indiv
+8) object_indiv
+9) object_indiv
+10) pure_indiv","1) IV
+2) VI
+3) VI
+4) VI
+5) III
+6) V
+7) V
+8) V
+9) V
+10) IV",a) task performance,a) human evaluation,a) performance,a) product,1*2*3*4*5*6*7*8*9*10-A: sup. machine learning: (24%),a) 0,machine learning,machine-learning,a) product,"1) Head
+2) Body
+3) Body
+4) Body
+5) Verbal
+6) Log Data
+7) Log Data
+8) Log Data
+9) Log Data
+10) Log Data"
+48,48,2012,Multimodal prediction of expertise and leadership in learning groups,"III) Audio
+V) Log Data ","III) Microphone
+V) Digital Pen","III) NS
+V) Anoto","1) Pause Duration
+2) Energy
+3) Articulation Rate
+4) Fundamental Frequency
+5) Peak Slope
+6) Spectral Stationarity
+7) Writing Rate
+8) Writing Area
+9) Aspect Ration
+10) Pressure
+11) Uninterrupted Writing
+12) Pause Distribution/Average Pauses","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Log Data
+8) Log Data
+9) Log Data
+10) Log Data
+11) Log Data
+12) Log Data","1) Speech Participation
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Text
+8) Text
+9) Text
+10) Text
+11) Text
+12) Text","1) Speech Participation
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Text
+8) Text
+9) Text
+10) Text
+11) Text
+12) Text","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual
+ 7) Individual
+ 8) Individual
+ 9) Individual
+ 10) Individual
+ 11) Individual
+ 12) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv
+5) pure_indiv
+6) pure_indiv
+7) pure_indiv
+8) pure_indiv
+9) pure_indiv
+10) pure_indiv
+11) pure_indiv
+12) pure_indiv","1) III
+2) III
+3) III
+4) III
+5) III
+6) III
+7) V
+8) V
+9) V
+10) V
+11) V
+12) V","a) leadership
+B) expertise","a) assigned
+B)task outcome","a) group composition
+B) group composition","a) condition
+B) condition","1-A: t-test: sig
+3-A: t-test: sig
+5-A: t-test: sig
+6-A: t-test: sig
+5-B: t-test: sig
+3-B: t-test: nonsig
+1-B: t-test: nonsig
+6-B: t-test: nonsig","a) 1
+B) 0","t-test
+t-test
+t-test
+t-test
+t-test
+t-test
+t-test
+t-test","between-group
+between-group
+between-group
+between-group
+between-group
+between-group
+between-group
+between-group","a) condition
+B) condition","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Log Data
+8) Log Data
+9) Log Data
+10) Log Data
+11) Log Data
+12) Log Data"
+49,49,2017,Estimation of success in collaborative learning based on multimodal learning analytics features,"IV) Kinesiology
+V) Log Data
+III) Audio","IV) Kinect
+V) Arduino Ide
+III) Microphone","IV) NS
+V) Arduino
+III) Microphone","1) Faces Looking At Screen
+2) Distance Between Learners
+3) Mean Distance Between Hands (dbh)
+4) Number Of Active Blocks
+5) Variety Of Hardware Blocks
+6) Variety Of Software Blocks
+7) Number Of Interconnections Between Blocks
+8) Audio Level","1) Head
+2) Body
+3) Body
+4) Log Data
+5) Log Data
+6) Log Data
+7) Log Data
+8) Verbal","1) Head Motion
+2) Location
+3) Hand Motion
+4) Task-Related
+5) Task-Related
+6) Task-Related
+7) Task-Related
+8) Speech Features","1) Head Motion
+2) Location
+3) Hand Motion
+4) Task-Related
+5) Task-Related
+6) Task-Related
+7) Task-Related
+8) Speech Features","1) Group
+ 2) Group
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual
+ 7) Individual
+ 8) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) object_indiv
+5) object_indiv
+6) object_indiv
+7) object_indiv
+8) pure_indiv","1) IV
+2) IV
+3) IV
+4) V
+5) V
+6) V
+7) V
+8) III",a) task performance,a) human evaluation ,a) performance,a) product,"1+2-A: sup. machine learning: sig
+8-A: sup. machine learning: sig",a) 1,"machine learning
+machine learning","machine-learning
+machine-learning",a) product,"1) Head
+2) Body
+3) Body
+4) Log Data
+5) Log Data
+6) Log Data
+7) Log Data
+8) Verbal"
+50,50,2017,Unpacking Collaborative Learning processes during Hands-on Activities using Mobile Eye-Trackers,I) Eye Gaze,I) Eye Tracker,I) Tobii Pro Glasses 2,1) Joint Visual Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I,"a) collaboration quality
+B) collaboration
+c) learning gain
+D) task performance","a) human evaluation
+B) human evaluation
+c) survey
+D) task outcome","a) coordination
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship
+c) learning
+D) performance","a) process
+B) process
+c) product
+D) product","1-A: correlation: sig
+1-A: correlation: sig","a) 1
+B) /
+c) /
+D)/","correlation
+correlation","correlation_regression
+correlation_regression","a) process
+B) process
+c) product
+D) product",1) Gaze
+51,51,2015,3D Tangibles Facilitate Joint Visual Attention in Dyads,I) Eye Gaze,I) Eye Tracker,I) SMI (Eye- Tracking Glasses With Binocular Pupil Tracking At 30Hz),1) Joint Visual Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I,"a) collaboration quality
+B) student performance
+c) learning gain ","a) human evaluation
+B) task outcome
+c) survey","
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship
+B) performance
+c) learning","a) process
+B) product
+c) product","1-A: correlation: sig
+1-B: regression: sig
+1-C: correlation: sig","a)1
+B)1
+c) 1","correlation
+regression
+correlation","correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) product
+c) product",1) Gaze
+52,52,2018,Exploring Collaboration Using Motion Sensors and Multi-Modal Learning Analytics,IV) Kinesiology,IV) Kinect,IV) Microsoft Kinect,"1) Joint Movement
+2) Joint Angle
+3) Dyad Proximity","1) Body
+2) Body
+3) Body","1) Gross Body Motion
+2) Gross Body Motion
+3) Location","1) Gross Body Motion
+2) Gross Body Motion
+3) Location","1) Group
+ 2) Group
+ 3) Group","1) synchro
+2) synchro
+3) synchro","1) IV
+2) IV
+3) IV","a) task performance
+B) collaboration
+c) learning gain","a) human evaluation
+B) human evaluation
+c) survey","a) performance
+B) coordination
+B) communication
+c) learning","a) product
+B) process
+c) product","1-A: correlation: sig
+1-B: correlation: nonsig
+2-A: correlation: sig / mixed
+3-B: correlation: nonsig
+3-A: correlation: sig","a) 1
+B) 0
+c) /","correlation
+correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) process
+c) product","1) Body
+2) Body
+3) Body"
+53,53,2013,Real-time mutual gaze perception enhances collaborative learning and collaboration quality,"I) Eye Gaze
+II) Video","I) Eye Tracker
+II) Eye Tracker","I) Tobii X1
+II) Tobii X1","1) Joint Visual Attention
+2) Cognitive Load (From Pupil Size)","1) Gaze
+2) Gaze","1) Visual Attention
+2) Eye Physiology","1) Visual Attention
+2) Eye Physiology","1) Group
+ 2) Individual","1) synchro
+2) pure_indiv","1) I
+2) II",a) learning gain,a) survey,a) learning,a) product,"1-A: mediation: sig
+2-A: mediation: nonsig",a) 1/0,"mediation
+mediation","correlation_regression
+correlation_regression",a) product,"1) Gaze
+2) Gaze"
+54,54,2016,Investigating collaborative learning success with physiological coupling indices based on electrodermal activity,VI) EDA,VI) Wearable Sensor,VI) Empatica (E3),"1) Signal Matching
+2) Instantaneous Derivative Matching
+3) Directional Agreement
+4) Pearson’S Correlation Coefficient
+5) Fisher’S Z-Transform Of Pearson'S Correlation Coefficient","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA","1) EDA
+2) EDA
+3) EDA
+4) EDA
+5) EDA","1) Group
+ 2) Group
+ 3) Group
+ 4) Group
+ 5) Group","1) synchro
+2) synchro
+3) synchro
+4) synchro
+5) indiv_freq_in_group","1) VI
+2) VI
+3) VI
+4) VI
+5) VI","a) collaborative will
+B) collaborative learning product
+c) group learning gain","a) survey
+B) human evaluation
+c) human evaluation","a) interpersonal relationship
+B) learning
+c) learning","a) process
+B) product
+c) product","1,3,4,5-A : regression: nonsig
+2-A: regression: sig
+1,3,4,5-B : regression: nonsig
+2-B: regression: sig
+1,2,4,5-C: regression: nonsig
+3-C: regression: sig","a) 1/0
+B) 1/0
+c) 1/0","regression
+regression
+regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) product
+c) product","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Physiological"
+55,55,2017,Multimodal Analysis of Vocal Collaborative Search:A Public Corpus and Results,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Linguistic Features
+2) Voice Features
+3) Facial Expression","1) Verbal
+2) Verbal
+3) Head","1) Speech Content
+2) Speech Features
+3) Facial Expressions","1) Speech Content
+2) Speech Features
+3) Facial Expressions","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) III
+2) III
+3) II","a) social perception
+B) social perception
+c) social perception","a) survey
+B) survey
+c) survey","a) interpersonal relationship
+B) interpersonal relationship
+c) interpersonal relationship","a) process
+B) process
+c) process","1+2+3-A: correlation: sig
+1+2+3-B: correlation: sig
+1+2+3-C: correlation: sig
+1,2-A: correlation: nonsig
+1,2-B: correlation: nonsig
+1,2-C: correlation: nonsig
+3-A: correlation: sig
+3-B: correlation: sig
+3-C: correlation: sig","a) 1
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) process","1) Verbal
+2) Verbal
+3) Head"
+56,56,2020,Focused or Stuck Together: Multimodal Patterns Reveal Triads’ Performance in Collaborative Problem Solving,"II) Video
+V) Log Data","II) Camera
+V) Own Application","II) NS
+V) NS","1) Type Of Activity Done In Task
+2) Amount Of Face And Body Movement
+3) Target For Discussion Partner","1) Log Data
+2) Body
+3) Log Data","1) Task-Related
+2) Gross Body Motion
+3) Task-Related","1) Task-Related
+2) Gross Body Motion
+3) Task-Related","1) Individual
+ 2) Individual
+ 3) Individual","1) content_indiv
+2) pure_indiv
+3) pure_indiv","1) V
+2) II
+3) II","a) task performance
+B) perception of collaboration","a) human evaluation
+B) survey","a) performance
+B) interpersonal relationship","a) product
+B) process","1*2*3-A: correlation: sig
+1*2*3-B: correlation: sig","a) 1
+B) 1","correlation
+correlation","correlation_regression
+correlation_regression","a) product
+B) process","1) Log Data
+2) Body
+3) Log Data"
+57,57,2018,"Using Physiological Synchrony as an Indicator of Collaboration Quality, Task Performance and Learning","II) Video
+III) Audio
+VI) EDA","II) Kinect
+III) Kinect
+VI) Wearable Sensor","II) NS
+III) NS
+VI) Empatica (E4)","1) Signal Matching
+2) Instantaneous Derivative Matching
+3) Directional Agreement
+4) Pearson’S Correlation Coefficient
+5) Speech Activity","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Verbal","1) Combined
+2) Combined
+3) Combined
+4) Combined
+5) Speech Participation","1) Combined
+2) Combined
+3) Combined
+4) Combined
+5) Speech Participation","1) Group
+ 2) Group
+ 3) Group
+ 4) Group
+ 5) Group","1) synchro
+2) synchro
+3) synchro
+4) synchro
+5) indiv_freq_in_group","1) VI
+2) VI
+3) VI
+4) VI
+5) III","a) learning gain
+B) collaboration quality
+c) collaboration quality
+D) colaboration quality
+E) collaboration quality","a) survey
+B) human evaluation
+c) human evaluation
+D) human evaluation
+E) human evaluation","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship
+c) coordination
+D) coordination
+E) coordination","a) product
+B) process
+c) process
+D) process
+E) process","1,2,3-A: correlation : nonsig
+4-A: correlation: sig
+5-A: ANOVA : sig
+1,2,4-B: correlation : nonsig
+3-B: correlation: sig
+1,2,4-C: correlation : nonsig
+3-C: correlation: sig
+1,2,4-D: correlation: nonsig
+3-D: correlation: sig
+1,2,3-E: correlation : nonsig
+4-E: correlation: sig","a) 1/0
+B) 1/0
+c) 1/0
+D) 1/0
+E) 1/0","correlation
+correlation
+ANOVA
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+between-group
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) process
+c) process
+D) process
+E) process","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological
+5) Verbal"
+58,58,2017,Moving as a Leader: Detecting Emergent Leadership in Small Groups using Body Pose,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Head/Body Movement
+2) (Non)Concurrent Speech Length
+3) Speaking Turn Duration/Number
+4) Interruption","1) Body
+2) Verbal
+3) Verbal
+4) Verbal","1) Gross Body Motion
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation","1) Gross Body Motion
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation","1) Individual
+ 2) Individual
+ 3) Group
+ 4) Group","1) pure_indiv
+2) pure_indiv
+3) indiv_freq_in_group
+4) indiv_freq_in_group","1) II
+2) III
+3) III
+4) III",a) leadership,a) human evaluation,a) group composition,a) condition,"1-A: sup. machine learning: sig
+2+3+4-A: sup. machine learning: sig
+1+2+3+4-A: sup. machine learning: mixed",a) 1,"machine learning
+machine learning
+machine learning","machine-learning
+machine-learning
+machine-learning",a) condition,"1) Body
+2) Verbal
+3) Verbal
+4) Verbal"
+59,59,2016,Detecting emergent leader in a meeting environment using nonverbal visual features only,II) Video,II) Camera,II) NS,1) Visual Field Of Attention On A Person Features,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) II,a) leadership,a) survey,a) group composition,a) condition,"1-A: correlation: mixed
+1-A: sup. machine learning: sig",a)1,"correlation
+machine learning","correlation_regression
+machine-learning",a) condition,1) Gaze
+60,60,2013,An Automatic Approach for Mining Patterns of Collaboration around an Interactive Tabletop,"III) Audio
+V) Log Data","III) Microphone
+V) Own Application","III) Dev Audio
+V) Cmate","1) Speech Time And Frequency
+2) Symmetry Of Speech Among Group
+3) Total Number Of Touch Actions
+4) Symmetry Of Touch Actions Among Group","1) Verbal
+2) Verbal
+3) Log Data
+4) Log Data","1) Speech Participation
+2) Speech Participation
+3) Touch
+4) Touch","1) Speech Participation
+2) Speech Participation
+3) Touch
+4) Touch","1) Individual
+ 2) Group
+ 3) Individual
+ 4) Group","1) pure_indiv
+2) synchro
+3) pure_indiv
+4) synchro","1) III
+2) III
+3) V
+4) V",a) collaboration,a) human evaluation,"
+a) coordination
+a) communication
+a) engagement
+a) interpersonal relationship",a) process,1+2+3+4-A: sup. machine learning: sig: (85%),a) 1,machine learning,machine-learning,a) process,"1) Verbal
+2) Verbal
+3) Log Data
+4) Log Data"
+61,61,2011,Modelling and Identifying Collaborative Situations in a Collocated Multi-display Groupware Setting,"III) Audio
+V) Log Data","III) Microphone
+V) Own Application","III) NS
+V) NS","1) Speech Quantity
+2) Physical Participation Quantity
+3) Number Of Active Participants In Group
+4) Verbal Participation Symmetry Among Group
+5) Physical Participation Symmetry Among Group","1) Verbal
+2) Log Data
+3) Verbal
+4) Verbal
+5) Log Data","1) Speech Participation
+2) Task-Related
+3) Speech Participation
+4) Speech Participation
+5) Task-Related","1) Speech Participation
+2) Task-Related
+3) Speech Participation
+4) Speech Participation
+5) Task-Related","1) Individual
+ 2) Individual
+ 3) Group
+ 4) Group
+ 5) Group","1) pure_indiv
+2) pure_indiv
+3) indiv_freq_in_group
+4) synchro
+5) synchro","1) III
+2) V
+3) III
+4) III
+5) V",a) collaboration,a) human evaluation,a) communication,a) process,1+2+3+4-A: sup. machine learning: sig,a) 1,machine learning,machine-learning,a) process,"1) Verbal
+2) Log Data
+3) Verbal
+4) Verbal
+5) Log Data"
+62,62,2020,Using Motion Sensors to Understand Collaborative Interactions in Digital Fabrication Labs,IV) Kinesiology,IV) Kinect,IV) Microsoft Kinect,"1) Time Spent Individually
+2) Time Spent As A Group
+3) Diversity Of Collaborative Interactions
+4) Transition Probabilities Between Collaborative State","1) Body
+2) Body
+3) Body
+4) Body","1) Location
+2) Location
+3) Location
+4) Location","1) Location
+2) Location
+3) Location
+4) Location","1) Group
+ 2) Group
+ 3) Group
+ 4) Group","1) indiv_freq_in_group
+2) indiv_freq_in_group
+3) synchro
+4) group_cycle","1) IV
+2) IV
+3) IV
+4) IV","a) technical ability
+B) social ability
+c) time spent in makerspace
+D) emotion","a) human evaluation
+B) human evaluation
+c) human evaluation
+D) survey","a) performance
+B) interpersonal relationship
+c)performance
+D)affective","a) product
+B) process
+c) product
+D) process","1-A: correlation: mixed
+2-A: correlation: mixed
+2-B: correlation: mixed
+4-A: correlation: mixed
+4-C: correlation: mixed
+4-D: correlation: mixed","a) 1/0
+B) 1/0
+c) 1/0
+D) 1/0
+E) 1/0","correlation
+correlation
+correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) process
+c) product
+D) process","1) Body
+2) Body
+3) Body
+4) Body"
+63,63,2020,What does physiological synchrony reveal about metacognitive experiences and group performance?,VI) EDA,VI) Electrodes,VI) Shimmer 3 Gsr+ ,1) Physiological Synchrony (Pc),1) Physiological,1) EDA,1) EDA,1) Group,1) synchro,1) VI,"a) confidence
+B) mental effort
+c) task performance
+D) task performance
+E) emotion
+F) group performance
+g) group performance ","a) survey
+B) survey
+c) survey
+D) survey
+E) survey
+F) survey
+g) task outcome","a)affective
+B)engagement
+c)performance
+D)performance
+E) affective
+F) performance
+g) performance","a) process
+B) process
+c) product
+D)product
+E) process
+F) product
+g) product","1-A: regression: nonsig
+1-B: regression: sig: (positive)
+1-C: regression: nonsig
+1-D: regression: nonsig
+1-E: regression: nonsig
+1-F: regression: nonsig
+1-G: regression: nonsig","a) 0
+B)1
+c) 0
+D) 0
+E) 0
+F) 0
+g)0","regression
+regression
+regression
+regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process
+c) process
+D) process
+E) process
+F) product
+g) product",1) Physiological
+64,64,2016,Physiological evidence of interpersonal dynamics in a cooperative production task,"VI) EDA
+VII) ECG
+XII) Other","VI) Electrodes
+VII) Electrodes
+XII) Electrodes","VI) Biopac Mp150
+VII) Biopac El504
+XII) Biopac El254S ","1) EDA Synchrony
+2) Smiling Synchrony
+3) Heart Rate Sychrony","1) Physiological
+2) Head
+3) Physiological","1) EDA
+2) Facial Expressions
+3) Heart","1) EDA
+2) Facial Expressions
+3) Heart","1) Group
+ 2) Group
+ 3) Group","1) synchro
+2) synchro
+3) synchro","1) VI
+2) XII
+3) VII","a) team cohesion
+B) routine choice","a) survey
+B) human evaluation","a) interpersonal relationship
+B) coordination","a) process
+B) process","1-A: regression: sig: (negative)
+2-A: regression: sig
+2-B: regression: sig","a) 1
+B) 1","regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) process","1) Physiological
+2) Head
+3) Physiological"
+65,65,2017,Brain-to-Brain Synchrony Tracks Real-World Dynamic Group Interactions in the Classroom,VIII) EEG,VIII) EEG Sensor,"VIII) Emotiv
+",1) Brain Synchrony,1) Physiological,1) Brain,1) Brain,1) Individual,1) pure_indiv,1) VIII,"a) engagement
+B) social dynamics","a) survey
+B) survey","a) engagement
+B) interpersonal relationship","a) process
+B) process","1-A: regression: sig
+1-B: regression: sig","a) 1
+B) 1","regression
+regression","correlation_regression
+correlation_regression","a) process
+B) process",1) Physiological
+66,66,2013,Multi-modal Social Signal Analysis for Predicting Agreement in Conversation Settings,"III) Audio
+II) Video
+IV) Kinesiology","III) Microphone
+II) Kinect
+IV) Kinect ","III) Microsoft Kinect
+II) Microsoft Kinect
+IV) Microsoft Kinect","1) Upper Body Agitation
+2) Hand Agitation
+3) Head Orientation
+4) Speech Length/Turns","1) Body
+2) Body
+3) Head
+4) Verbal","1) Gross Body Motion
+2) Hand Motion
+3) Head Motion
+4) Speech Participation","1) Gross Body Motion
+2) Hand Motion
+3) Head Motion
+4) Speech Participation","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv","1) IV
+2) IV
+3) II
+4) III",a) agreement,a) human evaluation,a) coordination,a) process,1+2+3+4-A: sup. machine learning: sig: (75%),a)1,machine learning,machine-learning,a) process,"1) Body
+2) Body
+3) Head
+4) Verbal"
+67,67,2020,Predicting Collaborative Learning Quality through Physiological Synchrony Recorded by Wearable Biosensors,"VI) EDA
+VII) ECG","VI) Wearable Sensor
+VII) Wearable Sensor","VI) Huixin Psychorus
+VII) Huixin Psychorus","1) EDA Synchrony
+2) Heart Rate Sychrony","1) Physiological
+2) Physiological","1) EDA
+2) Heart","1) EDA
+2) Heart","1) Group
+ 2) Group","1) synchro
+2) synchro","1) VI
+2) VII",a) collaboration quality,a) human evaluation,"a) coordination
+a) engagement",a) process,"1-A: sup. machine learning: sig
+2-A: sup. machine learning: nonsig",a) 1/0,"machine learning
+machine learning","machine-learning
+machine-learning",a) process,"1) Physiological
+2) Physiological"
+68,68,2020,Effects of Shared Gaze on Audio-Versus Text-Based Remote Collaborations,I) Eye Gaze,I) Eye Tracker,I) Tobii 4C,1) Shared Gaze,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) synchro,1) I,"a) cognitive load
+B) collaboration quality
+c) task performance
+D) gaze overlap","a) survey
+B) survey
+c) task outcome
+D) computation","a) engagement
+B) coordination
+B) communication
+c) performance
+D) coordination","a) process
+B) process
+c) product
+D) process","1-A: ANOVA: nonsig
+1-B: ANOVA: sig
+1-C: ANOVA: sig
+1-D: ANOVA: sig","a) 0
+B) 1
+c) 1
+D) 1","ANOVA
+ANOVA
+ANOVA
+ANOVA","between-group
+between-group
+between-group
+between-group","a) process
+B) process
+c) product
+D) process",1) Gaze
+69,69,2020,Body synchrony in triadic interaction,II) Video,II) Camera,II) Canon VIxia Hv30,1) Body Synchronization,1) Body,1) Gross Body Motion,1) Gross Body Motion,1) Group,1) synchro,1) II,"a) cooperation
+B) cultural style matching
+c) language style matching
+D) laughter","a) task outcome
+B) human evaluation
+c) human evaluation
+D)human evaluation ","a) coordination
+B) group composition
+c) group composition
+D) interpersonal relationship","a) process
+B) condition
+c) condition
+D) process","1-A: regression: nonsig
+1-B: regression: sig: (neg)
+1-C: regression: sig: (neg)
+1-D: regression: sig","a)0
+B) 1
+c) 1
+D) 1","regression
+regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) process
+B) condition
+c) condition
+D) process",1) Body
+70,70,2017,Using the Tablet Gestures and Speech of Pairs of Students to Classify Their Collaboration,"III) Audio
+V) Log Data","III) Microphone
+V) Log Data","III) NS
+V) NS","1) Speech Time
+2) Prosodic Speech Features
+3) Movement Of Objects","1) Verbal
+2) Verbal
+3) Log Data","1) Speech Participation
+2) Speech Features
+3) Task-Related","1) Speech Participation
+2) Speech Features
+3) Task-Related","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) object_indiv","1) III
+2) III
+3) V",a) collaboration quality,a)human evaluation,"a) coordination
+a) communication ",a) process,1*2*3-A: sup. machine learning: sig,a)1,machine learning,machine-learning,,"1) Verbal
+2) Verbal
+3) Log Data"
+71,71,2011,Improving Visibility of Remote Gestures in Distributed Tabletop Collaboration,IV) Kinesiology,IV) Video Camera Array,IV) NS,1) Gesture Type And Location,1) Body,1) Hand Motion,1) Hand Motion,1) Individual,1) pure_indiv,1) IV,"a) frequency of utterances
+B) subjective workload","a) computation
+B) survey","a) communication
+B) engagement","a) process
+B) process","1-A: ANOVA: sig
+1-B: ANOVA: sig","a) 1
+B) 1","ANOVA
+ANOVA","between-group
+between-group","a) process
+B) process",1) Body
+72,72,2010,Employing Social Gaze and Speaking Activity for Automatic Determination of the Extraversion Trait,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Speech Length
+2) Attention Received Per Person
+3) Attention Given By Person","1) Verbal
+2) Gaze
+3) Gaze","1) Speech Participation
+2) Visual Attention
+3) Visual Attention","1) Speech Participation
+2) Visual Attention
+3) Visual Attention","1) Individual
+ 2) Individual
+ 3) Individual","1) indiv_freq_in_group
+2) synchro
+3) indiv_freq_in_group","1) III
+2) II
+3) II",a) personality,a) survey,a) group composition,a) condition,1*2*3-A: sup. machine learning: sig,a) 1,machine learning,machine-learning,a) condition,"1) Verbal
+2) Gaze
+3) Gaze"
+73,73,2011,See What I’m Saying? Using Dyadic Mobile Eye Tracking to Study Collaborative Reference,I) Eye Gaze,I) Eye Tracker,I) Applied Science Laboratories (Asl) Eyevision System,1) Gaze Overlap,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I ,a) conversation contents,a) human evaluation,a) communication,a) process,1-A: regression: nonsig,a) 0,regression,correlation_regression,a) process,1) Gaze
+74,74,2016,Privacy-Preserving Speech Analytics for Automatic Assessment of Student Collaboration,III) Audio,III) Microphone,III) NS,"1) Duration Of Speech By Each Student
+2) Duration In Which Each Student Was Only Speaker
+3) Duration Of Overlapping Speech From Pairs Of Students
+4) Duration Of Overlapping Speech From All People
+5) Duration Of Silence For All People
+6) Prosodic And Tone Features","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation
+5) Speech Participation
+6) Speech Features","1) Speech Participation
+2) Speech Participation
+3) Speech Participation
+4) Speech Participation
+5) Speech Participation
+6) Speech Features","1) Individual
+ 2) Individual
+ 3) Group
+ 4) Group
+ 5) Group
+ 6) Individual","1) pure_indiv
+2) pure_indiv
+3) synchro
+4) synchro
+5) synchro
+6) pure_indiv","1) III
+2) III
+3) III
+4) III
+5) III
+6) III",a) collaboration quality,a) human evaluation,a) coordination,a) process,1*2*3*4*5*6-A: sup. machine learning: nonsig,a) 0,machine learning,machine-learning,a) process,"1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal"
+75,75,2018,(Dis)Engagement Matters: Identifying Efficacious Learning Practices with Multimodal Learning Analytics,"IV) Kinesiology
+II) Video","IV) Kinect
+II) Camera","IV) Microsoft Kinect
+II) NS","1) Clustered Hand/Wrist Movement
+2) Object Manipulation","1) Body
+2) Body","1) Hand Motion
+2) Task-Related","1) Hand Motion
+2) Task-Related","1) Individual
+ 2) Individual","1) pure_indiv
+2) object_indiv","1) IV
+2) II",a) learning gain,a) survey,a) learning,a) product,1-A: sup. machine learning: sig: (ACC: 76%),a) survey,machine learning,machine-learning,a) product,"1) Body
+2) Body"
+76,76,2015,Unraveling Students’ Interaction Around a Tangible Interface Using Multimodal Learning Analytics,"IV) Kinesiology
+V) Log Data","IV) Kinect
+V) Own Application","IV) Microsoft Kinect
+V) Created","1) Amount Of Exploration
+2) Types Of Exploration
+3) Amount Of Movement
+4) Type Of Movement
+5) Body Synchronization
+6) Body Distance","1) Body
+2) Body
+3) Body
+4) Body
+5) Body
+6) Body","1) Task-Related
+2) Task-Related
+3) Gross Body Motion
+4) Gross Body Motion
+5) Gross Body Motion
+6) Location","1) Task-Related
+2) Task-Related
+3) Gross Body Motion
+4) Gross Body Motion
+5) Gross Body Motion
+6) Location","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Group
+ 6) Group","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv
+5) synchro
+6) synchro","1) V
+2) V
+3) IV
+4) IV
+5) IV
+6) IV","a) individual learning gain
+B) group learning gain
+c) leadership","a) survey
+B) survey
+c) human evaluation ","a) learning
+B) learning
+c) Interpersonal relationship","a) product
+B) product
+c) process","1-A: correlation: nonsig
+2-A: correlation: mixed
+3-A: correlation: nonsig
+4-A: correlation: sig
+4-C: ANOVA: sig
+5-A: ANOVA: nonsig
+6-A: correlation: nonsig
+1,2,3,4,5,6-B: sup. machine learning: sig: (ACC: 100%)","a) 1/0
+B) 1
+c) 1","correlation
+correlation
+correlation
+correlation
+ANOVA
+ANOVA
+correlation
+machine learning","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+between-group
+between-group
+correlation_regression
+machine-learning","a) product
+B) product
+c) process","1) Log data
+2) Log data
+3) Body
+4) Body
+5) Body
+6) Body"
+78,78,2015,Does Seeing One Another’s Gaze Affect Group Dialogue? A Computational Approach,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) Tobii X1
+III) NS","1) Joint Visual Attention
+2) Simple Linguistic Features
+3) Convergence Of Linguistic Styles
+4) Coherence","1) Gaze
+2) Verbal
+3) Verbal
+4) Verbal","1) Visual Attention
+2) Speech Participation
+3) Speech Content
+4) Speech Content","1) Visual Attention
+2) Speech Participation
+3) Speech Content
+4) Speech Content","1) Group
+ 2) Individual
+ 3) Group
+ 4) Group","1) synchro
+2) pure_indiv
+3) synchro
+4) synchro","1) I
+2) III
+3) III
+4) III","a) learning
+B) collaboration","a) survey
+B) human evaluation","a) learning
+B) coordination
+B) communication
+B) engagement
+B) interpersonal relationship","a) product
+B) process","4-A: correlation: sig
+4-B: ANOVA: sig
+2-A: sup. machine learning: (75%)","a) 1
+B) 1","correlation
+ANOVA
+machine learning","correlation_regression
+between-group
+machine-learning","a) product
+B) process","1) Gaze
+2) Verbal
+3) Verbal
+4) Verbal"
+80,80,2021,Challenging Joint Visual Attention as a Proxy for Collaborative Performance,"I) Eye Gaze
+III) Audio
+V) Log Data","I) Eye Tracker
+III) Computer System Audio
+V) NS","I) SMI (Red 250 Eye Trackers 250Hz)
+III) NS
+V) NS","1) Joint Visual Attention
+2) Joint Mental Effort
+3) Dialogue","1) Gaze
+2) Gaze
+3) Verbal","1) Visual Attention
+2) Visual Attention
+3) Speech Features ","1) Visual Attention
+2) Visual Attention
+3) Speech Features ","1) Group
+ 2) Group
+ 3) Group","1) synchro
+2) synchro
+3) synchro","1) I
+2) I
+3) III",a) learning performance,a) task outcome,a) performance,a) product,"1-A: ANOVA: sig
+2-A: ANOVA: sig",a) 1,"ANOVA
+ANOVA","between-group
+between-group",a) product,"1) Gaze
+2) Gaze
+3) Verbal"
+81,81,2020,Deep neural networks for collaborative learning analytics: Evaluating team collaborations using student gaze point prediction,I) Eye Gaze,"I) Camera, Gaze-Tracker (Deep Neural Networks)","I) Microsoft Kinect, Gaze Following Framework (Gazefollow)",1) Joint Visual Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Group,1) synchro,1) I,a) learning gain,a) learning test,a) learning,a) product,1-A: correlation: sig,a) 1,correlation,correlation_regression,a) product,1) Gaze
+82,82,2020,"Utilizing Interactive Surfaces to Enhance Learning, Collaboration and Engagement: Insights from Learners’ Gaze and Speech","I) Eye Gaze
+III) Audio
+V) Log Data","I) Eye Tracker
+III) NS
+V) Own Application","I) SMI (Red 250 Eye Trackers 250Hz)
+III) NS
+V) NS","1) Individual Gaze (Transition From Image To Text)
+2) Gaze Similarity (Collaborative Gaze)
+3) Gaze Similarity (Gaze Transition Similarity)
+4) Speech","1) Gaze
+2) Gaze
+3) Gaze
+4) Verbal","1) Visual Attention
+2) Visual Attention
+3) Visual Attention
+4) Speech Participation","1) Visual Attention
+2) Visual Attention
+3) Visual Attention
+4) Speech Participation","1) Individual
+ 2) Group
+ 3) Group
+ 4) Individual","1) pure_indiv
+2) synchro
+3) synchro
+4) content_indiv","1) I
+2) I
+3) I
+4) III","a) learning gain
+B) task performance","a) learning test
+B)task outcome","a) learning
+B) performance","a) product
+B) product","1-A: correlation: sig
+1-B: correlation: sig
+2-A: correlation: sig
+2-B: correlation: sig","a) 1
+B)1","correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) product","1) Gaze
+2) Gaze
+3) Gaze
+4) Verbal"
+83,83,2018,A Multimodal Exploration of Engineering Students Emotion and Electrodermal Activity in Design Activities,VI) EDA,VI) Wristband,VI) Empatica (E3),1) Mean Range-Corrected EDA Responses,1) Physiological,1) EDA,1) EDA,1) Individual,1) pure_indiv,1) VI,"a) emotion - negative
+","a) survey
+",a) affective,a) process,1-A: correlation: sig,a) 1,correlation,correlation_regression,a) process,1) Physiological
+84,84,2020,"Multimodal, Multiparty Modeling of Collaborative Problem Solving Performance","I) Eye Gaze
+II) Video
+III) Audio","I) Eye Tracker
+II) Web Camera
+II) Emotient
+III) Headset","I) Tobii 4C
+II) NS
+II) NS","1) Gaze Features (Fixation Dispersion, Number Of Fixations And Mean Fixation Duration, Mean Saccade Amplitude, Joint Attention)
+2) Acoustic-Prosodic Information (Fundamental Frequency (Pitch), Loudness (Energy), Center Frequency And Amplitude Of The First Through Third Formants, Harmonics To Noise Ratio, Jitter, And Shimmer)
+3) Facial Features (Face Area, Positive And Negative Valence, Expressivity, Face/Upper Body Motion)
+4) Task Content Feature","1) Gaze
+2) Verbal
+3) Head
+4) Verbal","1) Visual Attention
+2) Speech Features
+3) Facial Expressions
+4) Task-Related","1) Visual Attention
+2) Speech Features
+3) Facial Expressions
+4) Task-Related","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) content_indiv","1) I
+2) III
+3) III",a) task performance,a) task outcome,a) performance,a) product,"1,2,3,4-A: AUROC=0.71
+1-A: AUROC=0.62
+2-A: AUROC=0.54
+3-A: AUROC=0.61
+4-A: AUROC=0.67",,"AUROC
+AUROC
+AUROC
+AUROC
+AUROC","machine-learning
+machine-learning
+machine-learning
+machine-learning
+machine-learning",a) product,"1) Gaze
+2) Verbal
+3) Head
+4) Log data"
+85,85,2020,Temporal analysis of multimodal data to predict collaborative learning outcomes,"I) Eye Gaze
+III) Audio
+V) Log Data ","I) Eye Tracker
+III) Microphone
+V) NS","I) SMI (Red 250 Eye Trackers 250Hz)
+III) NS
+V) NS","1) Gaze
+2) Entropy
+3) Similarity
+4) Cognitive Load
+5) Auto-Correlation Coefficient
+6) Energy
+7) Shape Of Envelope
+8) Linear Predictive Coding
+9) Dialogue
+10) Correct/Incorrect/Hint Feedbacks","1) Gaze
+2) Gaze
+3) Gaze
+4) Gaze
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal
+9) Verbal
+10) Log Data","1) Visual Attention
+2) Visual Attention
+3) Visual Attention
+4) Eye Physiology
+5) Speech Features
+6) Speech Features
+7) Speech Features
+8) Speech Features
+9) Speech Content
+10) Task-Related","1) Visual Attention
+2) Visual Attention
+3) Visual Attention
+4) Eye Physiology
+5) Speech Features
+6) Speech Features
+7) Speech Features
+8) Speech Features
+9) Speech Content
+10) Task-Related","1) Individual
+ 2) Individual
+ 3) Group
+ 4) Individual
+ 5) Group
+ 6) Individual
+ 7) Individual
+ 8) Individual
+ 9) Group
+ 10) Individual","1) pure_indiv
+2) pure_indiv
+3) synchro
+4) pure_indiv
+5) synchro
+6) pure_indiv
+7) pure_indiv
+8) complex_indiv
+9) synchro
+10) content_indiv","1) I
+2) I
+3) I
+4) I
+5) III
+6) III
+7) III
+8) III
+9) III
+10) V",a) learning gain,a)  learning test,a) learning ,a) product,"9-A: correlation: sig
+10-A: correlation: sig
+1-A: correlation: nonsig
+2-A: correlation: nonsig
+3-A: correlation: nonsig
+4-A : correlation: nonsig
+5-A: correlation: nonsig
+6-A: correlation: nonsig
+7-A: correlation: nonsig
+8-A: correlation: nonsig",a)  1/0,"correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation
+correlation","correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression
+correlation_regression",a) product,"1) Gaze
+2) Gaze
+3) Gaze
+4) Gaze
+5) Verbal
+6) Verbal
+7) Verbal
+8) Verbal
+9) Verbal
+10) Log Data"
+86,86,2014,Collaboration on Procedural Problems May Support Conceptual Knowledge More than You May Think,"I) Eye Gaze
+III) Audio
+V) Log Data","I) Eye Tracker
+III) Computer Audio Chat
+V) Computer","I) NS
+III) NS
+V) NS","1) Hint Behavior
+2) Joint Visual Attention - Collaboration Quality
+3) Moments Of Good Collaboration ","1) Log Data
+2) Gaze
+3) Log Data","1) Task-Related
+2) Visual Attention
+3) Task-Related","1) Task-Related
+2) Visual Attention
+3) Task-Related","1) Individual
+ 2) Group
+ 3) Group","1) content_indiv
+2) synchro
+3) synchro","1) V
+2) I
+3) III","a) learning gain
+",a) learning test,a) learning ,a) product,"2-A: correlation: sig
+2-A: correlation: nonsig",a) 1/0,"correlation
+correlation","correlation_regression
+correlation_regression",a) product,"1) Log Data
+2) Gaze
+3) Log Data"
+87,87,2016,An Application of Extreme Value Theory to Learning Analytics: Predicting Collaboration Outcome from Eye-Tracking Data,I) Eye Gaze ,I) Eye Tracker ,I) NS ,"1) Gaze Visual Agitation
+2) Gaze Spatial Entropy
+3) Return Levels - Evt ","1) Gaze
+2) Gaze
+3) Gaze","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Visual Attention
+2) Visual Attention
+3) Visual Attention","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) I
+2) I
+3) I",a) quality of collaboration,a) task performance,a) coordination,a) process,"1-A: ANOVA: nonsig
+2-A: ANOVA: nonsig
+2-A: correlation: nonsig",a) 0,"ANOVA
+ANOVA
+correlation","between-group
+between-group
+correlation_regression",a) process,"1) Gaze
+2) Gaze
+3) Gaze"
+88,88,2014,Using Dual Eye-Tracking to Evaluate Students' Collaboration with an Intelligent Tutoring System for Elementary-Level Fractions,I) Eye Gaze,I) Eye Tracker,I) SMI (Red 250 Eye Trackers 250Hz),"1) Joint Visual Attention
+2) Gaze Recurrence ","1) Gaze
+2) Gaze","1) Visual Attention
+2) Visual Attention","1) Visual Attention
+2) Visual Attention","1) Group
+ 2) Group","1) synchro
+2) synchro","1) I
+2) I ",a) learning gain,a) survey,a) learning,a) product,1-A: correlation: sig,a) 1,correlation,correlation_regression,a) product,"1) Gaze
+2) Gaze"
+89,89,2013,"Understanding Collaborative Program Comprehension: Interlacing Gaze and Dialogues
+","I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) NS","I) Tobii 1750
+III) NS","1) Gaze Episodes
+2) Dialogue Episodes
+3) Gaze Transitions","1) Gaze
+2) Verbal
+3) Gaze","1) Visual Attention
+2) Speech Participation
+3) Visual Attention","1) Visual Attention
+2) Speech Participation
+3) Visual Attention","1) Individual
+ 2) Group
+ 3) Individual",,"1) I
+2) III
+3) I",a) level of understanding,a) human evaluation,a) learning,a) product,1-A: ANOVA: sig,a) 1,ANOVA,between-group,a) product,"1) Gaze
+2) Verbal
+3) Gaze"
+90,91,2005,Looking To Understand: The Coupling Between Speakers' and Listeners' Eye Movements and Its Relationship to Discourse Comprehension,I) Eye Gaze,I) Eye Tracker,I) Applied Science Laboratories (Asl) Eyevision System,1) Eye Movements,1) Gaze,1) Eye Motion,1) Eye Motion,1) Individual,1) pure_indiv,1) I,a) Learning ,a) learning test,a) learning,"a) product
+",1-A: ANOVA: sig,a) task outcome,ANOVA,between-group,"a) product
+",1) Gaze
+91,92,2019,On the Same Wavelength: Exploring Team Neurosynchrony in Undergraduate Dyads Solving a Cyberlearning Problem With Collaborative Scripts,"III) Audio
+VIII) EEG",VIII) EEG Sensor,VIII) B-Alert X-10,1) Brain Synchrony,1) Physiological,1) Brain,1) Brain,1) Group,1) synchro,1) VIII,"a) group performance
+B) group collaboration","a) human evaluation
+B) log data
+","a) performance
+B) coordination
+","a) product
+B) process","1-A: positive correlation: sig
+1-B: negative correlation: sig","a) 1
+B) 1
+","correlation
+correlation","correlation_regression
+correlation_regression","a) product
+B) process",1) Physiological
+92,93,2013,Automatically Recognizing Facial Indicators of Frustration: A Learning-centric Analysis,IV) Kinesiology,IV) Kinect,IV) Microsoft Kinect,"1) Posture Estimation
+2) Hand-To-Face Gesture","1) Body
+2) Body","1) Gross Body Motion
+2) Gross Body Motion","1) Gross Body Motion
+2) Gross Body Motion","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) IV
+2) IV","a) learning gain
+","a) learning test
+","a) learning
+","a) product
+",1-A: negative correlation: sig,"a)1
+",correlation,correlation_regression,"a) product
+","1) Body
+2) Body"
+94,95,2008,Effects of Knowledge Interdependence with the Partner on Visual and Action Transactivity in Collaborative Concept Mapping,I) Eye Gaze,I) Eye Tracker,I) Tobii 1750,"1) Concept Map Fixation Time Ratio
+2) Number Of Concept-Map Eye-Gaze Transitions","1) Gaze
+2) Gaze","1) Visual Attention
+2) Visual Attention","1) Visual Attention
+2) Visual Attention","1) Individual
+ 2) Individual","1) pure_indiv
+2) object_indiv",1) I,a) learning,a) learning test,a) learning,a) product,"1,2-A: negative correlation: sig",a) 1,correlation,correlation_regression,a) product,"1) Gaze
+2) Gaze"
+95,97,2008,The NISPI framework: Analysing collaborative problem-solving from students' physical interactions,II) Video,II) Camera,II) Microsoft Kinect,1) Physical Interactivity,1) Body,1) Gross Body Motion,1) Gross Body Motion,1) Group,1) synchro,"1) II
+",a)cps competencies,a) human evaluation ,a) learning,a) product,1-A: ANOVA: sig,a) 1,ANOVA,between-group,a) product,1) Body
+96,98,2021,Many are the ways to learn identifying multi-modal behavioral profiles of collaborative learning in constructivist activities,"II) Video
+III) Audio
+V) Log Data","II) Camera
+III) Microphone
+V) Log Data","II) RGB-D
+III) NS
+V) Learning Platform","1) Affective States
+2) Speech Activity
+3) Task- Context
+4) Gaze Behaviors","1) Head
+2) Verbal
+3) Log Data
+4) Gaze","1) Facial Expressions
+2) Speech Participation
+3) Task-Related
+4) Gaze Motion","1) Facial Expressions
+2) Speech Participation
+3) Task-Related
+4) Gaze Motion","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) content_indiv
+4) pure_indiv","1) II
+2) III
+3) V
+4) II",a) learning gain ,a) survey ,a) learning,a) product,"2-A: Kruskal-Wallis: sig
+1,2,3-A: sup. machine learning: sig: (0.89)",a) 1,"non-parametric tests
+machine learning","between-group
+machine-learning",a) product,"1) Head
+2) Verbal
+3) Log Data
+4) Gaze"
+97,99,2018,"Supervised machine learning in multimodal learning analytics for estimating success in project-based learning","II) Video
+III) Audio
+V) Log Data","II) Camera
+III) Microphone
+V) Log Data","II) NS
+III) NS
+V) Arduino","1) Total Number Of Faces Looking Toward The Screen (Flls)
+2) Total Number Of Connected Arduino Components (Idevhw)
+3) Mean Distance Between Hands (Dbh)
+4) Mean Hand Movement Speed (Hms)
+5) Mean Audio Level (Aud)
+6) Mean Arduino Components Activity (Idec)","1) Head
+2) Log Data
+3) Body
+4) Body
+5) Verbal
+6) Log Data","1) Gross Body Motion
+2) Task-Related
+3) Hand Motion
+4) Hand Motion
+5) Speech Features
+6) Task-Related","1) Gross Body Motion
+2) Task-Related
+3) Hand Motion
+4) Hand Motion
+5) Speech Features
+6) Task-Related","1) Group
+ 2) Individual
+ 3) Individual
+ 4) Individual
+ 5) Individual
+ 6) Individual","1) indiv_freq_in_group
+2) object_indiv
+3) pure_indiv
+4) pure_indiv
+5) pure_indiv
+6) object_indiv","1) II
+2) V
+3) II
+4) II
+5) III
+6) V",a) task performance,a) human evaluation,a) performance,a) product,"3,5-A: regression: sig: (0.8)
+1,2,4,6-A: regression: nonsig",a) 1/0,"regression
+regression","correlation_regression
+correlation_regression",a) product,"1) Body
+2) Log Data
+3) Body
+4) Body
+5) Verbal
+6) Log Data"
+98,100,2020,Modelling Collaborative Problem-solving Competence with Transparent Learning Analytics: Is Video Data Enough?,II) Video,II) Camera,II) NS,"1) Metrics Of Frequency
+2) Metrics Of Hands Distance","1) Body
+2) Body","1) Hand Motion
+2) Hand Motion","1) Hand Motion
+2) Hand Motion","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) II
+2) II",a) cps competence,a) human evaluation ,a) learning,a) product,"1,2-A: machine learning: sig: (0.75)",a) 1,machine learning,machine-learning,a) process,"1) Body
+2) Body"
+99,101,2021,An Integrated Observing Technic for Collaborative Learning: The Multimodal Learning Analytics Based on the Video Coding and EEG Data Mining,VIII) EEG,VIII) EEG Sensor,VIII) NS,1) Mediation- Anxiety Level,1) Physiological,1) Brain,1) Brain,1) Individual,1) pure_indiv,1) VIII,a) learning gain ,a) human evaluation ,a) learning ,a) product,1-A: Mann-Whitney U and Kruskal-Wllis tests: sig,a) 1,non-parametric tests,between-group,a) product,1) Physiological
+100,102,2021,Inter-brain synchrony in teams predicts collective performance,VIII) EEG ,VIII) EEG Sensor,"VIII) Emotiv
+",1) Inter-Brain Synchrony ,1)  Physiological,1) Brain,1) Brain,1) Individual,1) pure_indiv,1) VIII,a) tasks performance,a) mixed - human evaluation & tests,a) performance,a) product,1-A: correlation: sig,a) 1,correlation,correlation_regression,a) product,1)  Physiological
+101,103,2001,Eye gaze patterns in conversations: there is more to conversational agents than meets the eyes,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) NS
+II) NS","1) Fixation
+2) Speech Utterance","1) Gaze
+2) Verbal","1) Visual Attention
+2) Speech Features","1) Visual Attention
+2) Speech Features","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) I
+2) III",a) conversational attention,a) human evaluation,a) coordination,a) process,"1,2-A: t-test: sig",a) 1,t-test,between-group,a) process,"1) Gaze
+2) Verbal"
+102,104,2004,Another person's eye gaze as a cue in solving programming problems,I) Eye Gaze,I) Eye Tracker,I) NS,1) Eye Gaze Trace,1) Gaze,1) Eye Motion,1) Eye Motion,1) Individual,1) pure_indiv,1) I,a) performance,a) log data,a) performance,a) product,1-A: ANOVA: sig,a) 1,ANOVA,between-group,a) product,1) Gaze
+103,105,2008,Coordinating cognition: The costs and benefits of shared gaze during collaborative search,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) Eyelink II
+III) NS","1) Shared Gaze
+2) Shared Voice","1) Gaze
+2) Verbal","1) Visual Attention
+2) Speech Participation","1) Visual Attention
+2) Speech Participation","1) Group
+ 2) Group","1) synchro
+2) synchro","1) I
+2) III",a) task performance,a) task outcome,a) performance,a) product,"1,2-A: t-test: sig",a) 1,t-test,between-group,a) product,"1) Gaze
+2) Verbal"
+104,106,2005,Analyzing and predicting focus of attention in remote collaborative tasks,V) Log Data,V) Log Data,V) NS,"1) Task Properties
+2) People's Actions
+3) Message Content","1) Log Data
+2) Log Data
+3) Log Data","1) Task-Related
+2) Task-Related
+3) Task-Related","1) Task-Related
+2) Task-Related
+3) Task-Related","1) Individual
+ 2) Individual
+ 3) Individual","1) content_indiv
+2) content_indiv
+3) content_indiv","1) V
+2) V
+3) V",a) focus attention,a) log data,a) coordination,a) process,"1, 2, 3-A: sup. machine learning: sig: (74.25%)",a) 1,machine learning,machine-learning,a) process,"1) Log Data
+2) Log Data
+3) Log Data"
+105,107,2003,Gestural Communication over Video Stream: Supporting Multimodal Interaction for Remote Collaborative Physical Tasks,X) BVP,X) Digital Pen,X) Dove,1) Gesture Drawing On Video Feed,1) Body,1) Gesture Drawing,1) Gross Body Motion,1) Individual,1) pure_indiv,1) X,a) task performance,a) log data,a) coordination,a) process,1-A: ANOVA: sig,a) 1,ANOVA,between-group,a) process,1) Body
+106,108,2007,"Influencing social dynamics in meetings through a peripheral display
+","I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) NS
+II) NS","1) Attention
+2) Speech Time","1) Gaze
+2) Verbal","1) Visual Attention
+2) Speech Participation","1) Visual Attention
+2) Speech Participation","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) I
+2) III",a) quality of collaboration,a) log data,a) coordination,a) process,"1-A: t-test: nonsig
+2-A: t-test: sig",a) 1/0,"t-test
+t-test","between-group
+between-group",a) process,"1) Gaze
+2) Verbal"
+107,109,2002,A Look Is Worth a Thousand Words: Full Gaze Awareness in Video-Mediated Conversation,"I) Eye Gaze
+III) Audio
+",II) Camera,II) NS,1) Gaze Awareness ,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) task performance
+B) collaboration quality","a) log data
+B) log data ","a) performance
+B) coordination
+","a) product
+B) process","1-A: ANOVA: sig
+1-B: ANOVA: sig","a) 1
+b) 1","ANOVA
+ANOVA","between-group
+between-group","a) product
+B) process",1) Gaze
+108,110,2009,Recognizing communicative facial expressions for discovering interpersonal emotions in group meetings,II) Video,II) Camera,II) NS,1) Affective State,1) Head,1) Facial Expressions,1) Facial Expressions,1) Individual,1) pure_indiv,1) II,a) Emotion network,a) human evaluation ,a) affective,a) process,1-A: unsup. machine learning: sig ,a) 1,machine learning,machine-learning,a) process,1) Head
+109,113,2010,Coordinating spatial referencing using shared gaze,"I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) Eyelink II
+III) NS","1) Shared Gaze
+2) Shared Speech ","1) Gaze
+2) Verbal ","1) Visual Attention
+2) Speech Features","1) Visual Attention
+2) Speech Features","1) Group
+ 2) Group","1) synchro
+2) synchro","1) I
+2) III",a) collaboration,a) log data ,a) coordination,a) process,"1,2-A: t-test: sig ",a) 1,t-test,between-group,a) product,"1) Gaze
+2) Verbal "
+110,114,2009,Affective e-Learning: Using “Emotional” Data to Improve Learning in Pervasive Learning Environment,"VIII) EEG
+VII) ECG
+VI) EDA
+X) BVP",VIII) EEG Sensor,"VIII) NS
+VII) NS
+VI) NS
+X) NS","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological","1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological","1) Brain
+2) Brain
+3) Brain
+4) Brain","1) Brain
+2) Brain
+3) Brain
+4) Brain","1) Individual
+ 2) Individual
+ 3) Individual
+ 4) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv
+4) pure_indiv","1) VIII
+2) VII
+3) VI
+4) X",a) affective states,a) survey,a) affective ,a) process,"1,2,3,4-A: machine learning: sig: (86.30%)",a) 1,machine learning,machine-learning,a) process,"1) Physiological
+2) Physiological
+3) Physiological
+4) Physiological"
+111,118,2018,Multimodal Analysis of Group Attitudes Towards Meeting Management,III) Audio,III) Microphone,III) NS,"1) Speech Features
+2) Linguisitc Features ","1) Verbal
+2) Verbal","1) Speech Features
+2) Speech Features","1) Speech Features
+2) Speech Features","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) III
+2) III",a) social perception,a) survey,a) interpersonal relationship,a) process,"1,2-A: sup. machine learning: sig: (93%)",a) 1,machine learning,machine-learning,a) process,"1) Verbal
+2) Verbal"
+112,119,2006,"Toward Open-Microphone Engagement
+for Multiparty Interactions",III) Audio,III) Microphone,III) NS,"1) Speech Features
+2) Speech Features
+3) Speech Style","1) Verbal
+2) Verbal
+3) Verbal","1) Speech Instructions
+2) Adjacent Utterances
+3) Speech Features","1) Speech Content
+2) Speech Features
+3) Dialogue Style","1) Individual
+ 2) Individual
+ 3) Individual","1) content_indiv
+2) pure_indiv
+3) pure_indiv","1) III
+2) III
+3) III","a) amplitude difference
+B) command usage","a) log data
+B) human evaluation","a)communication
+B)communication","a) process
+B) process","1,2,3-A: t-test: sig
+1,2,3-B: t-test: sig","a) 1
+b) 1","t-test
+t-test","between-group
+between-group","a) process
+B) process","1) Verbal
+2) Verbal
+3) Verbal"
+113,120,2011,Evaluation of user gestures in multi-touch interaction: a case study in pair-programming,II) Video,II) Camera,II) NS,1) Gesture Fluency,1) Body,1) Gesture Fluency,1) Gross Body Motion,1) Individual,1) pure_indiv,1) II,a) communicative intent ,a) human evaluation,a)communication,a) process,1-A: ANOVA: sig,a) 1,ANOVA,between-group,a) process,1) Body
+114,121,2009,"Towards adapting fantasy, curiosity and challenge in multimodal dialogue systems for preschoolers",III) Audio,III) Microphone,III) NS,1) Speech Usage,1) Verbal,1) Speech Features,1) Speech Features,1) Individual,1) pure_indiv,1) III,"a) task performance
+B) curiosity ","a) human evaluation
+B) human evaluation","a) performance
+B) affective","a) product
+B) process","1-A: correlation: sig: (r=0.406)
+1-B: correlation: sig: (r=0.224)","a) 1
+B) 1","correlation
+correlation","correlation_regression
+correlation_regression","a) product
+B) process",1) Verbal
+115,122,2008,"Multimodal recognition of personality traits in social interactions
+
+","II) Video
+III) Audio","II) Camera
+III) Microphone","III) NS
+II) NS","1) Gross Body Movements
+2) Speech Features ","1) Body
+2) Verbal","1) Gross Body Motion
+2) Speech Features ","1) Gross Body Motion
+2) Speech Features ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) II
+2) III",a) personality,a) survey,a) group composition,a) condition,"1,2-A: sup. machine learning: sig: (90%)",a) 1,machine learning,machine-learning,a) condition,"1) Body
+2) Verbal"
+116,123,2009,Modeling the Personality of Participants During Group Interactions,"II) Video
+III) Audio","II) Camera
+III) Microphone","III) NS
+II) NS","1) Gross Body Movements
+2) Speech Features ","1) Body
+2) Verbal","1) Body
+2) Speech Features ","1) Gross Body Motion
+2) Speech Features ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) II
+2) III",a) personality,a) survey,a) group composition,a) condition,"1,2-A: sup. machine learning: sig: (90%)",a) 1,machine learning,machine-learning,a) condition,"1) Body
+2) Verbal"
+117,124,2009,"Automatic prediction of individual performance from thin slices of social behavior","II) Video
+III) Audio","II) Camera
+III) Microphone","III) NS
+II) NS","1) Gross Body Movements
+ 2) Speech Features","1) Body
+2) Verbal","1) Body
+2) Speech Features ","1) Gross Body Motion
+2) Speech Features ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) II
+2) III",a) task performance,a) human evaluation,a) performance,a) product,"1,2-A: unsup. machine learning: sig: (50%)",a) 0,machine learning,machine-learning,a) product,"1) Body
+2) Verbal"
+118,125,2006,Combining audio and video to predict helpers' focus of attention in multiparty remote collaboration on physical tasks,"II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Gross Body Movements
+2) Dialogue Episodes","1) Body
+2) Verbal","1) Worker's Actions
+2) Dialogue ","1) Gross Body Motion
+2) Speech Features","1) Individual
+ 2) Group","1) pure_indiv
+2) synchro","1) II
+2) III",a) attention,a) human evaluation,a) coordination,a) process,"1,2-A: sup. machine learning: sig: (81.79%)",a) 1,machine learning,machine-learning,a) process,"1) Body
+2) Verbal"
+119,126,2009,Predicting remote versus collocated group interactions using nonverbal cues,III) Audio,III) Microphone,III) NS,"1) Speech Length
+2) Speaking Turns
+3) Successful Interruptions
+4) Backchannels
+5) Fraction Of Overlapped Speech
+6) Fraction Of Silence","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Speech Features","1) Speech Features
+2) Speech Features
+3) Speech Features
+4) Speech Features
+5) Speech Features
+6) Speech Features
+7) Speech Features","1) Individual
+ 2) Group
+ 3) Group
+ 4) Individual
+ 5) Group
+ 6) Group","1) pure_indiv
+2) indiv_freq_in_group
+3) indiv_freq_in_group
+4) pure_indiv
+5) synchro
+6) synchro","1) III
+2) III
+3) III
+4) III
+5) III
+6) III","a) type of meeting
+B) collocated meeting inference
+c) participation","a) log data
+B) log data
+c) log data","a) coordination
+B) coordination
+c) engagement","a) process
+B) process
+c) process","2-A: unsup. machine learning: sig: (70%)
+2-B: unsup. machine learning: sig: (81%)
+1-C: unsup. machine learning: sig: (50%)","a) 1
+B) 1
+c) 0","machine learning
+machine learning
+machine learning","machine-learning
+machine-learning
+machine-learning","a) process
+B) process
+c) process","1) Verbal
+2) Verbal
+3) Verbal
+4) Verbal
+5) Verbal
+6) Verbal
+7) Verbal"
+120,127,2007,Reciprocal attentive communication in remote meeting with a humanoid robot,II) Video ,II) Camera,II) NS,1) Gaze Frequency,1) Gaze,1) Gaze Frequency,1) Eye Motion,1) Individual,1) pure_indiv,1) II,a) conversational attention,"a) survey
+",a) coordination,a) process,1-A: Tukey’s HSD test: sig,a) 1,other,between-group,a) process,1) Gaze
+121,128,2001,Estimating focus of attention based on gaze and sound,"I) Eye Gaze
+III) Audio","I) Camera
+III) Microphone","I) NS
+III) NS","1) Gaze Focus
+2) Sound Focus","1) Gaze
+2) Verbal","1) Visual Attention
+2) Speech Features ","1) Visual Attention
+2) Speech Features ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) I
+2) III",a) focus of attention,a) human evaluation ,a) coordination,a) process,"1,2-A: sup. machine learning: (74.8%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
+2) Verbal"
+122,129,2010,Gaze quality assisted automatic recognition of social contexts in collaborative Tetris,"I) Eye Gaze
+V) Log Data ","I) Eye Tracker
+V) Own Application","I) Tobii 1750
+V) NS","1) Gaze Fixations
+2) Gaze Saccades
+3) Task Actions","1) Gaze
+2) Gaze
+3) Log Data","1) Visual Attention
+2) Eye Motion
+3) Task-Related ","1) Visual Attention
+2) Eye Motion
+3) Task-Related ","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) content_indiv","1) I
+2) I
+3) V",a) group contexts ,a) human evaluation ,a) coordination,a) process,"1,2,3-A: sup. machine learning: sig: (81.43%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
+2) Gaze
+3) Log Data"
+123,131,2010,Putting the Pieces Together: Multimodal Analysis of Social Attention in Meetings,"I) Eye Gaze
+II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Eye Gaze Directions
+2) Head Movements
+3) Speech Features","1) Gaze
+2) Body
+3) Verbal","1) Visual Attention
+2) Hand Motion
+3) Speech Features","1) Visual Attention
+2) Hand Motion
+3) Speech Features","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) I
+2) II
+3) III",a) focus of attention ,a) human evaluation ,a) coordination,a) process,"1,2,3-A: sup. machine learning: sig: (94.6%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
+2) Body
+3) Verbal"
+124,132,1999,Modeling focus of attention for meeting indexing,"I) Eye Gaze
+IV) Kinesiology","I) Camera
+IV) Motion Detecting Sensor ","II) NS
+IV) Polhemus Pose Tracker","1) Eye Gaze Directions
+2) Head Movements","1) Gaze
+2) Head","1) Visual Attention
+2) Head Motion ","1) Visual Attention
+2) Head Motion ","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) I
+2) IV",a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,"1,2-A: sup. machine learning: sig: (93%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
+2) Head"
+125,133,2002,Modeling focus of attention for meeting indexing based on multiple cues,"I) Eye Gaze
+III) Audio
+IV) Kinesiology","I) Camera
+III) Microphone
+IV) Motion Detecting Sensor ","I) NS
+III) NS
+IV) Polhemus Pose Tracker","1) Eye Gaze Directions
+2) Head Movements
+3) Speech Features","1) Gaze
+2) Head
+3) Verbal","1) Visual Attention
+2) Head Motion
+3) Speech Features","1) Visual Attention
+2) Head Motion
+3) Speech Features","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) I
+2) IV
+3) III",a) focus of attention,a) human evaluation,a) coordination,a) process,"1,2,3-A: sup. machine learning: (76%)",a) 1,machine learning,machine-learning,a) process,"1) Gaze
+2) Head
+3) Verbal"
+126,134,2009,Mediated attention with multimodal augmented reality,I) Eye Gaze,I) Eye Tracker,I) NS,1) Reaction Time,"1) Gaze
+2) Head
+3) Verbal","1) Visual Attention
+2) Head Motion
+3) Speech Features ","1) Visual Attention
+2) Head Motion
+3) Speech Features ",1) Individual,1) pure_indiv,1) I,"a) search time
+B) error rate","a) log data
+B) human evaluation","a) performance
+B) performance","a) product
+B) product","1-A: t-test: sig
+1-B: t-test: sig","a) 1
+B) 1","t-test
+t-test","between-group
+between-group","a) process
+B) product","1) Gaze
+2) Head
+3) Verbal"
+127,135,2008,Implicit user-adaptive system engagement in speech and pen interfaces,"III) Audio
+V) Log Data","III) Microphone
+V) Digital Pen","III) NS
+V) NS","1) Speech Amplitude
+2) Pen Pressure","1) Verbal
+2) Log Data","1) Speech Features
+2) Task-Related","1) Speech Features
+2) Task-Related","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) III
+2) V",a) task performance,a) research coded,a) performance,a) product,"1-A: t-test: sig
+2-A: t-test: nonsig",a) 1/0,"t-test
+t-test","between-group
+between-group",a) product,"1) Verbal
+2) Log Data"
+128,136,2007,Gaze-communicative behavior of stuffed-toy robot with joint attention and eye contact based on ambient gaze-tracking,I) Eye Gaze,I) Eye Tracker,I) NS,"1) Reaction To Eye Contact
+2) User-Initiative Joint Attention","1) Gaze
+2) Gaze","1) Visual Attention
+2) Visual Attention","1) Visual Attention
+2) Visual Attention","1) Group
+ 2) Group","1) synchro
+2) synchro","1) I
+2) I","a) subconscious interest
+B) favorable feeling","a) survey
+B) survey","a) engagement
+B) interpersonal relationship
+","a) process
+B) process","1-A: t-test: sig
+2-B: t-test: sig","a) 1
+B) 1","t-test
+t-test","between-group
+between-group","a) process
+B) process","1) Gaze
+2) Gaze"
+129,137,2008,Multi-party focus of attention recognition in meetings from head pose and multimodal contextual cues,"III) Audio
+IV) Kinesiology
+V) Log Data","III) Microphone
+IV) Camera
+V) Log Data","III) NS
+IV) NS
+V) NS","1) Speech Features
+2) Head Rotations
+3) Slide Data ","1) Verbal
+2) Head
+3) Log Data","1) Speech Features
+2) Head Motion
+3) Task-Related ","1) Speech Features
+2) Head Motion
+3) Task-Related ","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) III
+2) IV
+3) V",a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,"1,2,3-A: unsup. machine learning: (46.7%)",a) 0,machine learning,machine-learning,a) process,"1) Verbal
+2) Head
+3) Log Data"
+130,138,2008,Multimodal Real-Time Focus of Attention Estimation in SmartRooms,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: (85%),a) 1,machine learning,machine-learning,a) process,1) Head
+131,139,2000,"Coordination of communication: effects of shared visual context on collaborative work","II) Video
+III) Audio","II) Camera
+III) Microphone","II) NS
+III) NS","1) Gesture
+2) Communication Quality","1) Body
+2) Verbal","1) Gross Body Motion
+2) Speech Participation","1) Gross Body Motion
+2) Speech Participation","1) Individual
+ 2) Individual","1) pure_indiv
+2) content_indiv","1) II
+2) III",a) task performance,a) human evaluation,a) performance,a) product,"1-A: ANOVA: nonsig
+2-A: ANOVA: nonsig",a) 1,"ANOVA
+ANOVA","between-group
+between-group",a) product,"1) Body
+2) Verbal"
+132,140,2003,"Effects
+of head-mounted and scene-oriented video systems on
+remote collaboration on physical tasks",I) Eye Gaze,I) Eye Tracker,I) NS,1) Focus Of Attention,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) task performance
+B) quality of assistance
+c) communication efficiency","a) task outcome
+B) survey
+c) survey","a) performance
+B) coordination
+c) communication","a) product
+B) process
+c) process","1-A: ANOVA: sig
+1-B: ANOVA: sig
+1-C: ANOVA: sig","a) 1
+B) 1
+c)  1","ANOVA
+ANOVA
+ANOVA","between-group
+between-group
+between-group","a) product
+B) process
+c) process",1) Gaze
+133,141,2022,"RemoteCoDe: Robotic Embodiment for Enhancing Peripheral Awareness in Remote Collaboration Tasks",IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Body,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,"a) peripheral awareness
+","a) human evaluation
+",a) engagement,a) process,1-A: t-test: sig,a) 1,t-test,between-group,a) process,1) Body
+134,142,2018,EEG in classroom: EMD features to detect situational interest of students during learning,VIII) EEG ,VIII) EEG Sensor,VIII) Enobio EEG,1) Brain Waves Patterns ,1) Physiological,1) Brain,1) Brain,1) Individual,1) pure_indiv,1) VIII,a) situational Interest ,a) survey,a) engagement,a) process,1-A: sup. machine learning: (93.3%),a) 1,machine learning,machine-learning,a) process,1) Physiological
+135,143,2007,Speakers’ eye gaze disambiguates referring expressions early during face-to-face conversation,I) Eye Gaze,I) Eye Tracker,I) NS,1) Eye Movements,1) Gaze,1) Visual Attention,1) Visual Attention,1) Individual,1) pure_indiv,1) I,"a) conversational contents
+B) orienting effect","a) log data
+B) human evaluation","a) communication
+B) coordination","a) process
+B) process","1-A: ANOVA: sig
+1-B: t-test: sig","a) 1
+B) 1","ANOVA
+t-test","between-group
+between-group","a) process
+B) process",1) Gaze
+136,144,2008,Meeting mediator: enhancing group collaboration with sociometric feedback,III) Audio,III) Microphone,III) NS,1) Speech Time,1) Verbal,1) Speech Features,1) Speech Features,1) Individual,1) pure_indiv,1) III,"a) speaking dynamics
+B) group interaction
+c) distraction level","a) log data
+B) human evaluation
+c) human evaluation","a) communication
+B) engagement
+c) engagement","a) process
+B) process
+c) process","1-A: ANOVA: sig
+1-B: ANOVA: sig
+1-C: ANOVA: sig","a)1
+B) 1
+c) 1","ANOVA
+ANOVA
+ANOVA","between-group
+between-group
+between-group","a) process
+B) process
+c) process",1) Verbal
+137,145,2007,"Using audio and video features to classify the most dominant person in a group meeting","III) Audio
+IV) Kinesiology","III) Microphone
+IV) Camera","III) NS
+IV) NS","1) Speech Length
+2) Speaking Energy
+3) Motion Activity","1) Verbal
+2) Verbal
+3) Body","1) Speech Features
+2) Speech Features
+3) Gross Body Motion","1) Speech Features
+2) Speech Features
+3) Gross Body Motion","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) III
+2) III
+3) IV",a) dominance,a)assigned,a) group composition,a) condition,"1-A: sup. machine learning: (85%)
+2-A: sup. machine learning: (82%)
+3-A: sup. machine learning: (62%)",a) 1/0,"machine learning
+machine learning
+machine learning","machine-learning
+machine-learning
+machine-learning",a) process,"1) Verbal
+2) Verbal
+3) Body"
+138,146,2008,Visual focus of attention estimation from head pose posterior probability distributions,IV) Kinesiology,IV) Camera,IV) NS,1) Head Pose,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: sig: (53.6%),a) 1,machine learning,machine-learning,a) process,1) Head
+139,147,2010,Towards High-Level Human Activity Recognition through Computer Vision and Temporal Logic,"II) Video
+III) Audio
+IV) Kinesiology","II) Camera
+III) Microphone
+IV) Camera","II) NS
+III) NS
+IV) NS","1) Focus Of Attention
+2) Gestures
+3) Speech Features ","1) Gaze
+2) Body
+3) Verbal","1) Visual Attention
+2) Gross Body Motion
+3) Speech Features ","1) Visual Attention
+2) Gross Body Motion
+3) Speech Features ","1) Individual
+ 2) Individual
+ 3) Individual","1) pure_indiv
+2) pure_indiv
+3) pure_indiv","1) II
+2) IV
+3) III",a) group activity,a)human evaluation,a) coordination,a) process,"1,2,3-A: unsup. machine learning: (74.4%)",a)1,machine learning,machine-learning,a) process,"1) Gaze
+2) Body
+3) Verbal"
+140,148,2018,Biosignals reflect pair-dynamics in collaborative work: EDA and ECG study of pair-programming in a classroom environment,"VI) EDA
+VII) ECG","VI) Wearable Sensor
+VII) Wearable Sensor","VI) Shimmer 3 Gsr+
+VII) Emotion Faros 180",1) Social Physiological Compliance (Spc),1) Physiological,1) Combined,1) Combined,1) Individual,1) pure_indiv,"1) VI, VII",a) task performance,a) log data ,a) performance,a) product,1-A: minimum-width envelope: sig,a) 1,minimum-width envelope,between-group,a) product,1) Physiological
+141,149,2022,"Toward Automated Detection of Phase Changes in Team Collaboration
+",III) Audio,III) Microphone,III) NS,1) Speech Features,1) Verbal,1) Speech Features,1) Speech Features,1) Individual,1) pure_indiv,1) III,a) coordination,a) research coded,a) coordination,a) process,1-A: sup. machine learning: (40%),a) 0,machine learning,machine-learning,a) process,1) Verbal
+142,150,1999,Modeling people's focus of attention,IV) Kinesiology,IV) Camera,IV) NS,1) Head Rotation,1) Head,1) Head Motion,1) Head Motion,1) Individual,1) pure_indiv,1) IV,a) focus of attention ,"a) human evaluation
+",a) coordination,a) process,1-A: unsup. machine learning: (93%),a) 1,machine learning,machine-learning,a) process,1) Head
+143,151,2001,Social physiological compliance as a determinant of team performance,"VI) EDA
+VII) ECG
+XII) Other","VI) Wearable Sensor, Wristband
+VII) ECG
+XII) Other","VI) NS
+VII) NS
+XII) NS",1) Physiological Compliance ,1) Physiological,1) Combined,1) Combined,1) Individual,1) pure_indiv,"1) VI, VII, XII","a) task performance
+B) task performance
+c) coordination","a) task outcome
+B) human evaluation
+c) human evaluation","a) performance
+B) performance
+c) coordination","a) product
+B) product
+c) process","1-A: regression: sig
+1-B: regression: nonsig
+1-C: regression: nonsig","a) 1
+B) 0
+c) 0","regression
+regression
+regression","correlation_regression
+correlation_regression
+correlation_regression","a) product
+B) product
+c) process",1) Physiological
+144,152,2011,Modelling Symmetry of Activity as an Indicator of Collocated Group Collaboration,"III) Audio
+V) Log Data","III) Microphone
+V) Log Data","III) NS
+V) NS","1) Verbal Participation
+2) Physical Participation","1) Verbal
+2) Log Data","1) Speech Features
+2) Physical Participation","1) Speech Features
+2) Task-Related","1) Individual
+ 2) Individual","1) pure_indiv
+2) pure_indiv","1) III
+2) V",a) collaboration,a) human evaluation,a) coordination,a) process,"1,2-A: unsup. machine learning: (60%)","a) 0
+",machine learning,machine-learning,a) process,"1) Verbal
+2) Log Data"
+145,153,2012,"Estimating conversational dominance in multiparty interaction","I) Eye Gaze
+III) Audio","I) Eye Tracker
+III) Microphone","I) NS
+III) NS","1) Amount Of Eye Gaze At Others
+2) Amount Of Mutual Gaze
+3) Amount Of Speech
+4) Breaking A Silence","1) Gaze
+2) Gaze
+3) Verbal
+4) Verbal","1) Visual Attention
+2) Visual Attention
+3) Speech Features
+4) Speech Participation","1) Visual Attention
+2) Visual Attention
+3) Speech Features
+4) Speech Participation","1) Group
+ 2) Group
+ 3) Indiv
+ 4) Group","1) indiv_freq_in_group
+2) synchro
+3) pure_indiv
+4) indiv_freq_in_group","1) I
+2) I
+3) III
+4) III",a) dominance,a) survey,a) interpersonal relationship,a) process,"1,2,3,4-A: regression: sig",a) 1,regression,correlation_regression,a) process,"1) Gaze
+2) Gaze
+3) Verbal
+4) Verbal"

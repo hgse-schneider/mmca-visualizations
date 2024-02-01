@@ -1,8 +1,9 @@
-# MMCA Review Library 
+# MMCA Review Library
+
 MMCA library is developed to allow easier access to the MMCA literature review dataset. The library offers a systematic way to access reviewed papers and their information which were coded during the review process.
 
-
 ## Setting up environment
+
 First, you need to install the required python packages and for that, we recommend you set up a virtual environment. 
 You can use the `requirement.txt` file which contains the python packages list. You can use that file to set your envrionment
 
@@ -13,16 +14,14 @@ To start using MMCA library, we first need to initiaze it. The steps are given b
 * Step-1: first import LiteratureDataset from mmcalib
 * Step-2: create an object of LiteratureDataset class by specify file_paths of data_metric, paper details, and paper meta CSV files.
 
-
-
 ```python
 # import required classes
 from mmcalib_cscw_v6dataset import LiteratureDataset
 
 # create an object of LiteratureDataset class
-lit = LiteratureDataset('6.2023 CSCW dataset_data_metrics_constructs.csv',
-                       '6.2023 CSCW dataset - paper_details.csv',
-                       '6.2023 CSCW dataset - paper_meta.csv')
+lit = LiteratureDataset('../dataset/6.2023 CSCW dataset_data_metrics_constructs.csv',
+                       '../dataset/6.2023 CSCW dataset - paper_details.csv',
+                       '../dataset/6.2023 CSCW dataset - paper_meta.csv')
 ```
 
     Populating with paper records ...
@@ -30,12 +29,11 @@ lit = LiteratureDataset('6.2023 CSCW dataset_data_metrics_constructs.csv',
       Total papers: 140
     Updated paper records with study setting, learning task, sample size and experimental study type
 
-
 Here, we are using the 6th version of the review dataset consisting of a total of 140 papers.
 
 ### Accessing paper record
-Once you have created a Literature Dataset object, you can access any paper record using its paper id. For example, let's say we want to access a paper with id 10. 
 
+Once you have created a Literature Dataset object, you can access any paper record using its paper id. For example, let's say we want to access a paper with id 10. 
 
 ```python
 # fetching a paper with a particular id
@@ -45,7 +43,6 @@ paper = lit.get_paper(10)
 paper.print_paper_record()
 ```
 
-    
     ####################   PAPER ID: 10     ####################
     
     Year: 2018
@@ -67,12 +64,10 @@ paper.print_paper_record()
     Results: [('visual attention', 'performance', ' correlation', 'nonsig'), ('eye motion', 'performance', ' correlation', 'nonsig')]
     
     ############################################################
-    
-
 
 ### Accessing particular details of the paper
-You can access information like data, metrics, outcomes, relationship in a structured way once you have the paper obejct.
 
+You can access information like data, metrics, outcomes, relationship in a structured way once you have the paper obejct.
 
 ```python
 # original metrics reported in the paper
@@ -93,7 +88,6 @@ outcomes_sm = paper.get_outcomes_sm()
 # larger outcomes codes
 outcomes_lg = paper.get_outcomes_lg()
 ```
-
 
 ```python
 print('Metrics')
@@ -121,10 +115,9 @@ print('  larger:',outcomes_lg)
       smaller: {'a': 'performance'}
       larger: {'a': 'product'}
 
-
 ### Accessing relationship data
-Each paper object has relationship mappings in the form of a string and a dictionary. The string version is what is available in the review dataset. While the dictionary version is a processed version.
 
+Each paper object has relationship mappings in the form of a string and a dictionary. The string version is what is available in the review dataset. While the dictionary version is a processed version.
 
 ```python
 # accessing raw relationship data
@@ -143,12 +136,11 @@ print(relationship)
     Processed relationshp:
     [('visual attention', 'performance', ' correlation', 'nonsig'), ('eye motion', 'performance', ' correlation', 'nonsig')]
 
-
 Parsed relationships are in `tuple` form. For example the first tuple `('visual attention', 'performance', ' correlation')` represents that the paper has found a relationship between visual attention and performance using correlation analysis and the relationship was significant.
 
 ### Fetching unique values for attributes
-The MMCA library offers a function `get_unique_values` which returns all unique values for a specified attribute. For example, let's say we want to see what different values are there in the dataset for the data attribute. 
 
+The MMCA library offers a function `get_unique_values` which returns all unique values for a specified attribute. For example, let's say we want to see what different values are there in the dataset for the data attribute. 
 
 ```python
 # getting unique values
@@ -158,14 +150,11 @@ print(data_unique)
 
     ['video', 'log data', 'eeg', 'audio', 'ecg', 'bvp', 'other', 'eda', 'eye gaze', 'kinesiology']
 
+### Filtering papers
 
-### Filtering papers 
 namely `get_filtered_papers` which can be used to filter papers based on time intervals, larger metrics, smaller metrics, smaller outcomes, and instruments used for collaboration constructs.
 
 Let's take an example. We want to fetch all the papers published between 2000 and 2010 which used audio data.
-
-
-
 
 ```python
 # get papers between 2000 and 2010 using audio
@@ -177,12 +166,11 @@ print('Total papers using verbal metrics between 2000 and 2010:',len(audio_paper
 
     Total papers using verbal metrics between 2000 and 2010: 19
 
-
 ### Plotting trends for different attributes
+
 The library also offers a basic functionality of plotting trends for different attributes (e.g., metrics, and instruments).
 
 Below, we show the trends in terms of different types of metrics used over the years.
-
 
 ```python
 lit.plot_trends('metrics_lg',fig_title='Metrics usages over the years')
@@ -195,13 +183,7 @@ lit.plot_trends('metrics_lg',fig_title='Metrics usages over the years')
     gaze : 59
     body : 42
 
-
-
-    
 ![png](output_19_1.png)
-    
-
-
 
 ```python
 lit.plot_trends('outcomes_sm',fig_title='Outcomes investigated over the years')
@@ -216,13 +198,7 @@ lit.plot_trends('outcomes_sm',fig_title='Outcomes investigated over the years')
     affective : 10
     performance : 42
 
-
-
-    
 ![png](output_20_1.png)
-    
-
-
 
 ```python
 lit.plot_trends('outcomes_instrument',fig_title='Instruments used over the years')
@@ -240,13 +216,7 @@ lit.plot_trends('outcomes_instrument',fig_title='Instruments used over the years
     computation : 5
     mixed - human evaluation & tests : 1
 
-
-
-    
 ![png](output_21_1.png)
-    
-
-
 
 ```python
 
