@@ -18,6 +18,13 @@ The dashboard consists of two main components.
 
 ## How to run dashboard generator
 
+Setup
+```python
+conda create -n "mmca-viz" python=3.9
+conda activate mmca-viz
+pip install -r requirements.txt
+```
+
 The dashboard generator can be started using the following command
 
 ```python
