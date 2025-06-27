@@ -7,6 +7,43 @@ from collections import Counter
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+
+import matplotlib.patches as mpatches
+import matplotlib.axes as axes
+from matplotlib.projections import register_projection
+
+
+class StaticColorAxisBBox(mpatches.FancyBboxPatch):
+    def set_edgecolor(self, color):
+        if hasattr(self, "_original_edgecolor"):
+            return
+        self._original_edgecolor = color
+        self._set_edgecolor(color)
+
+    def set_linewidth(self, w):
+        super().set_linewidth(1.5)
+
+
+class FancyAxes(axes.Axes):
+    name = "fancy_box_axes"
+    _edgecolor: str
+
+    def __init__(self, *args, **kwargs):
+        self._edgecolor = kwargs.pop("edgecolor", None)
+        super().__init__(*args, **kwargs)
+
+    def _gen_axes_patch(self):
+        return StaticColorAxisBBox(
+            (0, 0),
+            1.0,
+            1.0,
+            boxstyle="round, rounding_size=0.06, pad=0",
+            edgecolor='#4B6DC2',
+            linewidth=5,
+        )
+
+register_projection(FancyAxes)
+
 def reduce_intensity(c, intensity=.2):
     return c.replace('0.8', '0.2')
 
@@ -204,7 +241,6 @@ class Paper:
         self.sample_size = None
         self.study_setting = None
         self.task = None
-        self.experimental_study = None
         self.authors = None
 
         # Input
@@ -212,24 +248,40 @@ class Paper:
         self.sensor = self.parsed_items(paper_record['sensor'])
         self.data_metric = self.parsed_items(paper_record['data_per_metric'])
         self.metrics_org = self.parsed_items(paper_record['metric'])
-        self.paper_title = paper_record['paper_title']
+        self.paper_title = paper_record['title']
         self.pub_year = paper_record['year']
         self.metrics_sm = self.parsed_items(
-            paper_record['metric_smaller_standardized']) # using metric_smaller_standardised
+            paper_record['metric_smaller_category']) # using metric_smaller_standardised
         self.metrics_lg = self.parsed_items(
-            paper_record['metric_larger_category_corrected']) # using metric_larger_corrected
+            paper_record['metric_larger_category']) # using metric_larger_corrected
 
         # Outcome
-        self.outcomes_org = self.parsed_items(paper_record['outcome_new']) # Using udpated outcome entries from Zoe data version 6 dataset
+        self.outcomes_org = self.parsed_items(paper_record['outcome_name']) # Using udpated outcome entries from Zoe data version 6 dataset
         self.outcomes_sm = self.parsed_items(
-            paper_record['outcome_smaller_category_new'])
+            paper_record['outcome_smaller_category'])
         self.outcomes_lg = self.parsed_items(
-            paper_record['outcome_larger_category_new'])
+            paper_record['outcome_larger_category'])
         self.outcomes_instrument = self.parsed_items(
             paper_record['outcome_instrument'])
 
         # Relationship
-        self.raw_relationship = paper_record['analysis_and_results mm-oo:analysis:resultsig']
+        self.raw_relationship = paper_record['analysis_and_results']
+
+        # Settings
+        self.study_setting = paper_record['study_setting']
+        self.task = paper_record['task']
+        self.citation = paper_record['citations_2023']
+        if paper_record['N_individuals']:
+            if '=' in paper_record['N_individuals']:
+                sample = paper_record['N_individuals'].split('=')
+                if len(sample) > 1 and sample[1] == "?":
+                    self.sample_size = None
+                else:
+                    self.sample_size = int(sample[1].strip())
+        else:
+            self.sample_size = None
+            
+
 
     def set_pub_year(self, year):
         """
@@ -521,12 +573,16 @@ class Paper:
         if self.pub_year:
             print('Year:', self.pub_year)
         print('Title:',self.paper_title)
-        if self.study_setting:
-            print('Study setting:', self.study_setting)
+        print('Citations:',self.citation)
+        
         if self.task:
             print('Learning task:', self.task)
+
+        if self.study_setting:
+            print('Study setting:', self.study_setting)
+        
         if self.sample_size:
-            print('Study setting:', self.sample_size)
+            print('Sample size:', self.sample_size)
         print('Authors:',self.authors)
         print('Data:', self.data)
         print('Metrics:', self.metrics_org)
@@ -536,7 +592,7 @@ class Paper:
         print('Outcomes smaller:', self.outcomes_sm)
         print('Outcomes larger:', self.outcomes_lg)
         print('Outcomes instrument:', self.outcomes_instrument)
-        print('Experimental type:', self.experimental_study)
+        #print('Experimental type:', self.experimental_study)
         print('Results:', self.raw_relationship)
         print('Results:', self.parse_relationship())
         print('\n############################################################\n')
@@ -547,31 +603,18 @@ class LiteratureDataset:
     A class used to represent a collection of objects of class:Paper type
     """
 
-    def __init__(self, data_metric_file_path, paper_details_file_path, paper_meta_file_path):
+    def __init__(self, data_metric_file_path):
         """
         Attributes
         -----------
         data_metric_file_path : str
             a string containing path of CSV file of data_metric sheet imported from MMCA literature review dataset
 
-        paper_details_file_path : str
-            a string containing path of CSV file of paper details sheet imported from MMCA literature review dataset
-
-        paper_meta_file_path : str
-            a string containing path of CSV file of paper meta sheet imported from MMCA literature review dataset
         """
         self.data_metric_file_path = data_metric_file_path
-        self.paper_details_file_path = paper_details_file_path
-        self.paper_meta_file_path = paper_meta_file_path
         self.paper_store = dict()
         self.paper_count = 0
         self.populate_dataset()
-
-        try:
-            self.update_setting_task_sample_experimental()
-        except Exception as e:
-            print(e)
-            print('Literature dataset could not update contextual information, e.g., study setting, learning task, sample size, and  experimental type.')
 
     def get_record(self, df, index):
         """
@@ -926,11 +969,11 @@ class LiteratureDataset:
         This function adds details of sample size, type of study settings, and learning task.
 
         """
-        context_org = pd.read_csv(self.paper_details_file_path)
+        context_org = pd.read_csv(self.data_metric_file_path)
 
         context = context_org[['study_setting', 'task',
-                               'sample_size', 'experimental_conditions']]
-        context.index = context_org['ID updated']
+                               'N_individuals', 'experimental_conditions']]
+        context.index = context_org['id']
         for ind in self.paper_store.keys():
             self.paper_store[ind].set_study_setting(
                 context.to_dict()['study_setting'][int(ind)])
@@ -1059,10 +1102,15 @@ class LiteratureDataset:
             try:
                 record = self.get_record(df, paper_index)
                 paper_object = Paper(record)
+                
                 self.paper_store[paper_object.paper_id] = paper_object
+                
+            
             except Exception as e:
+                record = self.get_record(df, paper_index)
                 print(e)
-                print('Excluding paper:',paper_id)
+                print('Excluding paper:',paper_index)
+                
         print('Literature dataset is succefully populated. \n  Total papers:', len(
             self.paper_store))
 
@@ -1098,7 +1146,16 @@ class LiteratureDataset:
                             vals.append(attr_val)
         return list(set(vals))
 
-    def plot_trends(self,attribute,skip_values=[],fig_title='',savefig=True):
+    def plot_trends(self,
+                    attribute,
+                    skip_values=[],
+                    fig_title='',
+                    savefig=True,
+                    facecolor='#EEF0F9',
+                    x_label="Year",
+                    y_label="Number of research studies",
+                    return_data=False,
+                    attribute_label=""):
         """
         This function prints the trend of specified attribute.
 
@@ -1114,11 +1171,17 @@ class LiteratureDataset:
             title of the figure
         save_fig: boolean
             flag to save the figure
+        x_label: str
+            label for x-axis
+        y_label: str
+            label for y-axis
+        return_data: bool
+            flag to specify whether to return the data or not
         """
 
 
         papers = self.paper_store
-        years = list(range(1999,2023))
+        years = list(range(1999,2026))
 
         attr_type = {}
         base_dict = {}
@@ -1147,7 +1210,7 @@ class LiteratureDataset:
             year = paper.pub_year
             attr_vals = getattr(paper,attribute)
             # set for taking unique values per paper
-
+            
             attribute_values = list(attr_vals.values())
 
             while True:
@@ -1163,21 +1226,48 @@ class LiteratureDataset:
                 else:
                     if used_data.lower() not in skip_values:
                         attr_type[used_data][year] += 1
+        if return_data:
+            for a in attr_type.keys():
+                print(a,':',sum(list(attr_type[a].values())))
+        
+        fig, ax = plt.subplots(subplot_kw={'projection': 'fancy_box_axes'},dpi=300)
+        ax.spines[["bottom", "left", "right", "top"]].set_visible(False)
+        ax.set_facecolor(facecolor)
 
-        for a in attr_type.keys():
-            print(a,':',sum(list(attr_type[a].values())))
+        ax.grid(
+            True,             # enable grid
+            color='gray',     # light gray grid lines
+            alpha=0.3,        # transparency
+            linestyle='--',   # dashed style looks nicer in papers
+            linewidth=0.8     # slightly thin
+        )
         
-        plt.figure()
-        
+
         for ind,dt in enumerate(attr_uniques):
             if dt not in skip_values:
                 if len(attr_markers) == 0:
                     #@todo: place the legend outside the figure
-                    plt.plot(list(attr_type[dt].keys()),np.cumsum(list(attr_type[dt].values())),linestyle='-',label=dt)
+                    ax.plot(list(attr_type[dt].keys()),np.cumsum(list(attr_type[dt].values())),linestyle='--',linewidth=.95,label=dt)
                 else:
-                    plt.plot(list(attr_type[dt].keys()),np.cumsum(list(attr_type[dt].values())),markers[ind],linestyle='-',label=dt)
-        plt.legend()
-        plt.title(fig_title)
+                    ax.plot(list(attr_type[dt].keys()),np.cumsum(list(attr_type[dt].values())),markers[ind],linestyle='--',linewidth=.95,label=dt)
+        # Draw figure so that legend is placed
+        fig.canvas.draw()
+       
+       # Add rounded corners to legend
+        legend = ax.legend(
+            title=attribute_label,
+            frameon=True,
+            fancybox=True,  # Enables rounded corners
+            edgecolor="#5C7BD1",
+            bbox_to_anchor=(.05, 0.95),
+            loc="upper left" 
+        )
+        legend.get_frame().set_boxstyle("round,pad=0.2, rounding_size=0.9")  # Adjust rounding
+        ax.set_xlabel(x_label, fontsize=10)
+        ax.set_ylabel(y_label, fontsize=10)        
+        fig.tight_layout()
+        
+        ax.set_title(fig_title, fontsize=12, fontweight='bold', pad=10)
         if savefig:
-            plt.savefig('{}.png'.format(fig_title))
+            plt.savefig('{}.png'.format(fig_title),bbox_inches="tight", pad_inches=0.5)
         plt.show()
